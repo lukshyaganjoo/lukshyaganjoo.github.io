@@ -1,0 +1,38 @@
+---
+layout: default
+title: archaic lanterns
+parent: my musings
+nav_order: 5
+---
+
+# archaic lanterns 
+Blazes of glory at midnight  
+Flicker ever so slightly in misfit murkiness  
+A gilded cage, his own creation  
+The deleterious flames; a gratifying nectar  
+
+The traveller gripped his lantern by his breast  
+Sputters of blood dripped from his chafed lips  
+Respiratory constitution, all for momentary warmth  
+Mystifying effects, that of which he was aware  
+
+He stopped, a moment of rest  
+Besides him, the lantern grew a bloodshot orange  
+He stole a glance at the shattered glass; a horrible transfiguration  
+The serenity of rationalism and courage    
+Overpowered urges, forged in heresy  
+
+Lanterns were known for their lead traced fumes  
+A cautionary tale; appreciable distance, quite the necessity  
+
+A quick dust off the cloak  
+He tossed aside the wavering blemish  
+The cold took over his limbs; rendered his journey impossible  
+He much preferred the continual frost, than cruel moments of comfort  
+An iron-willed being, he found the lock  
+Weary, fatigued; yet finally free  
+
+Untethered strings, now free of knots  
+To be or not to be healed, can they ever?  
+
+~Lukshya
