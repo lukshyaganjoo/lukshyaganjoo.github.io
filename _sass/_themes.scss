@@ -5,11 +5,11 @@
 :root {
   --global-bg-color: #{$dark-periwinkle};
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$light-periwinkle};
+  --global-text-color: #{$white-color};
   --global-text-color-light: #{$grey-color};
   --global-theme-color: #{$dark-periwinkle};
-  --global-hover-color: #{$purple-color};
-  --global-hover-text-color: #{$white-color};
+  --global-hover-color: #{$light-periwinkle};
+  --global-hover-text-color: #{$light-periwinkle};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
