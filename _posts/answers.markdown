@@ -1,8 +1,8 @@
 ---
 layout: post
-title: a post with formatting and links
-date: 2015-03-15 16:40:16
-description: march & april, looking forward to summer
+title: answers
+date: 2024-07-13 16:40:16
+description: a half-baked attempt at philosophy
 tags: formatting links
 categories: sample-posts
 ---
