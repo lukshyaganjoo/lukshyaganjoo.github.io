@@ -1,9 +1,9 @@
 ---
 layout: post
-title: answers?
-date: 2024-07-13 11:54:18
-description: a half-baked attempt at philosophy
-tags: essays
+title: a post with formatting and links
+date: 2015-03-15 16:40:16
+description: march & april, looking forward to summer
+tags: formatting links
 categories: sample-posts
 ---
 
