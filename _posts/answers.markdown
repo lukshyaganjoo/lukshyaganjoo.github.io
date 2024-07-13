@@ -3,7 +3,7 @@ layout: post
 title: answers?
 date: 2024-07-13 11:54:18
 description: a half-baked attempt at philosophy
-tags: essays 
+tags: essays
 categories: sample-posts
 ---
 
