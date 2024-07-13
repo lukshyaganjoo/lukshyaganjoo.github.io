@@ -3,13 +3,13 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #{$dark-periwinkle};
+  --global-bg-color: #{$light-periwinkle};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$white-color};
   --global-text-color-light: #{$white-color};
-  --global-theme-color: #{$dark-periwinkle};
-  --global-hover-color: #{$light-periwinkle};
-  --global-hover-text-color: #{$light-periwinkle};
+  --global-theme-color: #{$light-periwinkle};
+  --global-hover-color: #{$dark-periwinkle};
+  --global-hover-text-color: #{$dark-periwinkle};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
