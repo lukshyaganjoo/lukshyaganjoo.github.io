@@ -7,8 +7,6 @@ tags: formatting links
 categories: sample-posts
 ---
 
-# answers?
-
 Human beings are weird. We're filled with this strange sense of inadequacy when placed in a situation of laying ourselves bare; to people, we know very little about. There's a prevalent thought process among us, a hindering fear of perfection in others that often times stops us from being truly ourselves with people. It's unfortunate really considering that everyone has something they're hiding from these seemingly perfect creatures. But you have to admit it is one of the greatest ironies that the very people who just might be able to understand the true nature of the self, are often the ones we lie most afraid of.
 
 Perhaps it's just a nihilistic approach of life to be grateful of your inadequacies, but I'm comforted by the fact that there's a lot of things I'm abysmal at, it does accentuate the perpetuity of the hamster wheel model of endlessly running and drives people mad with the point of their existence
