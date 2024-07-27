@@ -56,7 +56,7 @@
 html[data-theme="dark"] {
   --global-bg-color: #{$dark-periwinkle};
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{#{$white-color}};
+  --global-text-color: #{$white-color};
   --global-text-color-light: #{$grey-color-light};
   --global-theme-color: #{$cyan-color};
   --global-hover-color: #{$cyan-color};
