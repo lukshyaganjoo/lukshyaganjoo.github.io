@@ -5,7 +5,7 @@
 :root {
   --global-bg-color: #{$light-periwinkle};
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$light-periwinkle};
+  --global-text-color: #{$dark-periwinkle};
   --global-text-color-light: #{$grey-color};
   --global-theme-color: #{$dark-periwinkle};
   --global-hover-color: #{$dark-periwinkle};
@@ -57,7 +57,7 @@ html[data-theme="dark"] {
   --global-bg-color: #{$dark-periwinkle};
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$light-periwinkle};
-  --global-text-color-light: #{$grey-color-light};
+  --global-text-color-light: #{$light-periwinkle};
   --global-theme-color: #{$cyan-color};
   --global-hover-color: #{$cyan-color};
   --global-hover-text-color: #{$white-color};
