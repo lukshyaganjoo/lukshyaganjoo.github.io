@@ -8,78 +8,22 @@ categories: sample-posts
 typograms: true
 ---
 
-This is an example post with some [typograms](https://github.com/google/typograms/) code.
+# my time at college
 
-````markdown
-```typograms
-+----+
-|    |---> My first diagram!
-+----+
-```
-````
+For the three people who still read this, hello! I'm glad you stuck around, terribly sorry for the protracted hiatus. A lot has happened in the past year and I suppose I haven't really prioritized writing as much as I'd like to have. Well it might have been that or the simple fact that yours truly wasn't being funneled into a perpetual state of existential dread, but who can possibly tell, all we can do is conjecture and well, your guess is as good as mine.
 
-Which generates:
+I've thought about my grand re-entry into the glamorous world of blog writing for quite some time and how I could open in a manner only fitting for the high paced stakes that is the blog post. I suppose in this contrived pursuit of what can only be described as pragmatic perfection, I got wrapped up in the possibilities of what could be and not what actually was. This has been something I have been working on for some quite some time, and while I do still get caught up in all the possibilities, I have gotten better at noticing the details and actually seeing things to fruition. (Just gave myself a pat on the back for the absolutely minuscule amounts of progress I've made).
 
-```typograms
-+----+
-|    |---> My first diagram!
-+----+
-```
+I suppose much of my life, at least the parts I fondly remember has been this sort of quest, this journey through the vast world that we know as knowledge. Perhaps not the most authentic purpose to be imbued with, but on some subconscious level, it is what motivates me, what drives me to do the things I do. When I say "knowledge", I don't only mean of the academic variety, of course that happens to be a major part of what I'm fascinated by, but perhaps just as intriguing is the knowledge that comes with human experience, of learning new cultures, new perspectives, meeting new people and perhaps even understanding how one becomes a better version of themself not just for them, but for those around them. This sort of "learning" has always been something I've been obsessed with and behind the caffeine riddled addict that is Lukshya Ganjoo, there is still that same 11 year old who lost his mind because he had just learned that there were in fact numbers of the negative variety.
 
-Another example:
+I think that's somewhat the main theme I'm trying to follow while writing this, this nuanced view of rebirth that acknowledges one's roots and grows in ways that I hope have been meaningful and somewhat productive. This is a really geeky thing to bring up, but one of my favorite pieces of pop culture is the cult classic "Tron Legacy". I can't quite put my finger on what it was that stuck with me, but one of the main themes in that movie was faith and redemption. A father who screwed up in recognizing the things that actually mattered in his life, reborn through the regifted chance of saving his son and putting an end to his life's work.
 
-````markdown
-```typograms
-.------------------------.
-|.----------------------.|
-||"https://example.com" ||
-|'----------------------'|
-| ______________________ |
-||                      ||
-||   Welcome!           ||
-||                      ||
-||                      ||
-||  .----------------.  ||
-||  | username       |  ||
-||  '----------------'  ||
-||  .----------------.  ||
-||  |"*******"       |  ||
-||  '----------------'  ||
-||                      ||
-||  .----------------.  ||
-||  |   "Sign-up"    |  ||
-||  '----------------'  ||
-||                      ||
-|+----------------------+|
-.------------------------.
-```
-````
+The simplicity of the story is perhaps its biggest strength, it tells a straightforward narrative and does so brilliantly. It's a compelling story that makes for a brilliant watch. Also the music score by Daft Punk is perhaps the finest piece of synth wave I've heard in my life. I think faith and the hope to continue has been something we've all been struggling with, not just cause the world is in an absolutely debilitating state of affairs right now, but perhaps in a more personal setting.
 
-which generates:
+Bringing it all back, my time in college has been busy to say the least. I suppose I've been so caught up in all my work, that I've somewhat lost touch with old friends, family members, the people whom I shared an entire chapter of my life with before coming here. Would I have done things differently? Yeah absolutely, but you see hindsight is a powerful tool. I've been making efforts to reconnect with the people I spent an almost fraction of my life with, and it's been going well, I feel like I've caught up on a lot of lost ground. It goes without saying, that this is no place to stop, but I feel accomplished for actually doing something about what I thought I would regret for the rest of my life.
 
-```typograms
-.------------------------.
-|.----------------------.|
-||"https://example.com" ||
-|'----------------------'|
-| ______________________ |
-||                      ||
-||   Welcome!           ||
-||                      ||
-||                      ||
-||  .----------------.  ||
-||  | username       |  ||
-||  '----------------'  ||
-||  .----------------.  ||
-||  |"*******"       |  ||
-||  '----------------'  ||
-||                      ||
-||  .----------------.  ||
-||  |   "Sign-up"    |  ||
-||  '----------------'  ||
-||                      ||
-|+----------------------+|
-.------------------------.
-```
+If there's anything this place has taught me, it's that I'm always confused, literally. And I don't say that with contempt or the negative connotation that usually follows statements of that form, I mean that in as good of a light as being confused can be portrayed in. Remember how I mentioned that I'm obsessed with the academic variety of learning. Yeah, I think that's fully helped me to transition into this state of acknowledgement that there is so much I don't know, several things that I still ponder about, laying perplexed on the tiny benches this university provides. Being confused is not a bad thing though, and getting comfortable with that state of existence is something I've gotten really good at. There isn't a hot minute that I'm not confronted with something that I don't understand, and you know what, I think that's beautiful. If nothing, it has helped alleviate at least some of the burden that I used to carry with me when learning some of the coolest shit that happens here.
 
-For more examples, check out the [typograms documentation](https://google.github.io/typograms/#examples).
+That's all I have for now, I think. This was a somewhat unfiltered version of my thoughts, and did not go through the level of semantic correction I normally indulge in with any given blog post of mine. I think there's an admirable kind of power to that though, something that dare I say could be considered a breath of fresh air. For now, farewell and if time is any indicator, I will be back with more things to talk about.
+
+~Lukshya
