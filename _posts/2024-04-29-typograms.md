@@ -1,14 +1,12 @@
 ---
 layout: post
-title: a post with typograms
+title: my time at college
 date: 2024-04-29 23:36:10
 description: this is what included typograms code could look like
 tags: formatting diagrams
 categories: sample-posts
 typograms: true
 ---
-
-# my time at college
 
 For the three people who still read this, hello! I'm glad you stuck around, terribly sorry for the protracted hiatus. A lot has happened in the past year and I suppose I haven't really prioritized writing as much as I'd like to have. Well it might have been that or the simple fact that yours truly wasn't being funneled into a perpetual state of existential dread, but who can possibly tell, all we can do is conjecture and well, your guess is as good as mine.
 
