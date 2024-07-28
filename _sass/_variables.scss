@@ -35,7 +35,7 @@ $black-color: #000000 !default;
 // Theme colors
 
 $code-bg-color-light: rgba($light-periwinkle, 0.05);
-$code-bg-color-dark: $light-periwinkle !default;
+$code-bg-color-dark: rgba($dark-periwinkle, 0.05);
 
 // Font awesome location
 $fa-font-path: "../webfonts";
