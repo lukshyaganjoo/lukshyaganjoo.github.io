@@ -4,7 +4,6 @@ title: fever dream
 date: 2024-01-26 17:57:00
 description: i had a lot of fun with this one 
 tags: poetry
-map: true
 ---
 
 Dealing in delirium is toying with death  
