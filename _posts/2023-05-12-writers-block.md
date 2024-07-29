@@ -1,9 +1,10 @@
 ---
 layout: post
-title: a first hand experience with writers block
+title: a first-hand account of writer's block
+date: 2023-05-12 15:53:00-0400
+description: coming up with an excuse for my recent inactivity
+tags: essays
 ---
-
-# a first hand experience with writers block
 
 'Hello there'
 
