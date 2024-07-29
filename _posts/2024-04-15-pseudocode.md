@@ -1,7 +1,7 @@
 ---
 layout: post
 title: finding balance 
-date: 2024-04-15 00:01:00
+date: 2024-02-15 
 description: a departure from the grief that typically gives birth to writing
 pseudocode: true
 ---
