@@ -1,93 +1,34 @@
 ---
 layout: post
-title: a post with geojson
+title: fever dream
 date: 2024-01-26 17:57:00
-description: this is what included geojson code could look like
-tags: formatting charts maps
-categories: sample-posts
+description: i had a lot of fun with this one 
+tags: poetry
 map: true
 ---
 
-This is an example post with some [geojson](https://geojson.org/) code. The support is provided thanks to [Leaflet](https://leafletjs.com/). To create your own visualization, go to [geojson.io](https://geojson.io/).
+Dealing in delirium is toying with death  
+Desperation for absolution of sin is the door to damnation  
+The dread of the desert had found its next victim  
+A poetic man, a dullard dominated by delusions of degeneracy
 
-````markdown
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      }
-    }
-  ]
-}
-```
-````
+Cumbersome circumstances leave one with the illusion of free will  
+No stranger to the cruel command of creation, he raised his hands  
+Carefully cupped by his chest, directed his bones towards the vast expanse  
+He knew the labyrinth-like ways of the desert, the abominable alleys  
+How else could he have escaped from the mindless tittering of insanity?
 
-Which generates:
+He walked past the jagged crevices; the forlorn paths
+Marched to the beat, a soldier's loyalty  
+Incisions of human frailty, if only the privilege of the aftermath  
+Steps in a precise cadence, a forced fealty
 
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      }
-    }
-  ]
-}
-```
+He made his way, arriving at an isolated cave for a moment's respite  
+For he, not a moment had passed; he was summoned yet again  
+Accepted unreasonable responsibilities dutifully, not a moment's hesitation  
+After all, how could he who forgot have known any better
+
+He looked upon his infinite world, the consequence of his actions  
+Filled with horror, yet simultaneously the greatest delight  
+This? This was his Frankenstein's monster  
+His greatest creation, his final undoing.
