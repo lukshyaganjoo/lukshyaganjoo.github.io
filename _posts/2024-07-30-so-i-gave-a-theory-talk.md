@@ -5,7 +5,7 @@ description: the petersen graph is in almost every sense of the word; a universa
 tags: math
 giscus_comments: false
 date: 2024-07-30
-featured: true
+featured: false
 
 authors:
   - name: Albert Einstein
