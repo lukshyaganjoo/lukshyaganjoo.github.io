@@ -149,9 +149,9 @@ $$
 
 This follows from noticing that any pair of vertices not already joined by an edge are joined by a unique path of length $2$; namely there is a unique vertex which is joined to both.
 
-We can therefore conclude that the matrix $A$ satisfies the matrix equation 
+We can therefore conclude that the matrix $A$ satisfies the matrix equation
 
-$$ 
+$$
 A^2 + A = 2I + J
 $$.
 
@@ -220,15 +220,17 @@ The above results are also true for $A_Q - I_{10}$ since $Q$ is also a Petersen 
 >
 > $$\text{Null} (A_P - I_{10}) \cap \text{Null} (A_Q - I_{10}) \neq \{0\}$$
 
-**proof**  
+**proof**
 For two subspaces $R_1$ and $R_2$ of $\mathbb{R}^{9}$, if $S_1 \cap S_2 = \{0\}$, then $B_{S_1}$ and $B_{S_2}$ are linearly independent. We therefore prove by contrapositive.
 
 We also know that
 
 <p style = "overflow-x:auto">
 $$
-\text{Null} (A_P - I_{10}) \subseteq \text{Span} (1)^{\perp} \quad \text{and} \quad \text{Null} (A_Q - I_{10}) \subseteq \text{Span} (1)^{\perp}
-$$  
+
+\text{Null} (A*P - I*{10}) \subseteq \text{Span} (1)^{\perp} \quad \text{and} \quad \text{Null} (A*Q - I*{10}) \subseteq \text{Span} (1)^{\perp}
+
+$$
 </p>
 $B_{\text{Null} (A_P - I_{10})} \cup B_{\text{Null} (A_Q - I_{10})}$ has 10 vectors in $\mathbb{R}^{9}$ since the bases of each of the null spaces has 5 vectors. Therefore $B_{\text{Null} (A_P - I_{10})} \cup B_{\text{Null} (A_Q - I_{10})}$ must be linearly dependent (since they have more vectors than the dimension of the space they exist in).
 
@@ -240,63 +242,69 @@ The larger consequence of this is that this vector $w$ is orthogonal to the all 
 
 ## the final stages
 
+
 $$
+
 \begin{align*}
-    A_P(v) &= \lambda v \\
-    &= v &&\text{Since 1 is an eigenvalue of $A_P$} \\
-    A_R(w) &= J_{10}(w) - I_{10} (w) - A_P(w) - A_Q(w) &&\text{Using the formula above}\\
-    &= J_{10}(w) - w - w - w &&\text{Substituting values}
+A*P(v) &= \lambda v \\
+&= v &&\text{Since 1 is an eigenvalue of $A_P$} \\
+A_R(w) &= J*{10}(w) - I*{10} (w) - A_P(w) - A_Q(w) &&\text{Using the formula above}\\
+&= J*{10}(w) - w - w - w &&\text{Substituting values}
 \end{align*}
+
 $$
 
 We now compute $J_{10} (w)$ where $w \in \text{Null} (A_P - I_{10})$
 
+
 $$
-J_{10}w = \begin{bmatrix}
-    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1
+
+J\_{10}w = \begin{bmatrix}
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1
 \end{bmatrix} w = \begin{bmatrix} 1^{T} \\
-    1^{T} \\
-    1^{T} \\
-    1^{T} \\
-    1^{T} \\
-    1^{T} \\
-    1^{T} \\
-    1^{T} \\
-    1^{T} \\
-    1^{T} \end{bmatrix}w =
-    \begin{bmatrix}
-    1^{T}w \\
-    1^{T}w \\
-    1^{T}w \\
-    1^{T}w \\
-    1^{T}w \\
-    1^{T}w \\
-    1^{T}w \\
-    1^{T}w \\
-    1^{T}w \\
-    1^{T}w
+1^{T} \\
+1^{T} \\
+1^{T} \\
+1^{T} \\
+1^{T} \\
+1^{T} \\
+1^{T} \\
+1^{T} \\
+1^{T} \end{bmatrix}w =
+\begin{bmatrix}
+1^{T}w \\
+1^{T}w \\
+1^{T}w \\
+1^{T}w \\
+1^{T}w \\
+1^{T}w \\
+1^{T}w \\
+1^{T}w \\
+1^{T}w \\
+1^{T}w
 \end{bmatrix} =
 \begin{bmatrix}
-    0 \\
-    0 \\
-    0 \\
-    0 \\
-    0 \\
-    0 \\
-    0 \\
-    0 \\
-    0 \\
-    0
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0
 \end{bmatrix}
+
 $$
 
 $$\therefore A_R(w) = J_{10}(w) - w - w - w = -3w.$$
@@ -326,8 +334,11 @@ diameter $d$ and maximum degree $k$. An intuitive way to recognize what the moor
 actually tells us is how _wide_ a graph can get. Let $M$ be the moore bound that a
 graph of the above specifications can meet, we therefore have that
 
+
 $$
-M = 1 + k \sum_{i = 0}^{d - 1} (k - 1)^i
+
+M = 1 + k \sum\_{i = 0}^{d - 1} (k - 1)^i
+
 $$
 
 Graphs that attain this bound $M$ are known as Moore graphs.
@@ -361,8 +372,11 @@ The entire reason we're even talking about moore graphs is that the petersen gra
 Assume $G$ is a $d$-regular Moore graph of girth 5. A reminder that the girth of a graph is
 defined to be $2k + 1$ where $k$ is the diameter of the graph. Solving the above equation for the girth, we get that the diameter of the graph must be 2, i.e. $k = 2$. Substituting in this value into the Moore bound, we get that the number of the vertices in the graph is given by
 
+
 $$
+
 n = 1 + d + d(d- 1) = d^{2} + 1
+
 $$
 
 As we did for the petersen graph, we consider the square of the adjacency matrix $A^{2}$
@@ -370,12 +384,15 @@ once again. Notice that the adjacenct vertices don't share any neighbours since 
 
 In other words, we have that
 
+
 $$
-(A^{2} + A)_{i, j} =
+
+(A^{2} + A)\_{i, j} =
 \begin{cases}
 d & \forall i = j \\
 1 & \forall i \neq j
 \end{cases}
+
 $$
 
 We therefore have that $A$ satisfies the equation
@@ -400,8 +417,10 @@ the equation we have that
 $$\begin{align*}
 A^{2}x + Ax &= (d - 1)x = 0 \\
 \lambda^{2}x + \lambda x &= (d - 1)x \implies
-\lambda^2 + \lambda - (d - 1) = 0 
-\end{align*}$$
+\lambda^2 + \lambda - (d - 1) = 0
+\end{align*}
+$$
+
 </p>
 **obtaining the parameters for which moore graphs exist**  
 We can use the quadratic formula to ascertain that the roots of the equation $ax^2 + bx + c = 0$ are given by $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. Plugging in constants from the equation above, we have that $\lambda = \frac{-1 \pm \sqrt{1 + 4(d - 1)}}{2} = - \frac{1}{2} \pm \frac{\sqrt{4d - 3}}{2}$.
