@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /proofs/
-title: vignettes of math 
+title: vignettes of math
 nav: true
 nav_order: 1
 pagination:
