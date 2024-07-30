@@ -377,6 +377,7 @@ d & \forall i = j \\
 $$
 
 We therefore have that $$A$$ satisfies the equation
+
 $$
 A^{2} + A = (d - 1)I + J
 $$
