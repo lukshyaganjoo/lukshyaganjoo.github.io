@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /proofs/
-title: vignettes of math
+title: vignettes of math 
 nav: true
 nav_order: 1
 pagination:
@@ -18,14 +18,14 @@ pagination:
 
 <div class="post">
 
-{% assign blog_name_size = site.blog_name | size %}
-{% assign blog_description_size = site.blog_description | size %}
+{% assign proofs_name_size = site.proofs_name | size %}
+{% assign proofs_description_size = site.proofs_description | size %}
 
-{% if blog_name_size > 0 or blog_description_size > 0 %}
+{% if proofs_name_size > 0 or proofs_description_size > 0 %}
 
   <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
+    <h1>{{ site.proofs_name }}</h1>
+    <h2>{{ site.proofs_description }}</h2>
   </div>
   {% endif %}
 
@@ -35,7 +35,7 @@ pagination:
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/proofs/tag/' | relative_url }}">{{ tag }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -46,7 +46,7 @@ pagination:
       {% endif %}
       {% for category in site.display_categories %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/proofs/category/' | relative_url }}">{{ category }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -85,7 +85,7 @@ pagination:
 
                     <p class="post-meta">
                       {{ read_time }} min read &nbsp; &middot; &nbsp;
-                      <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
+                      <a href="{{ year | prepend: '/proofs/' | prepend: site.baseurl}}">
                         <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
                     </p>
                   </div>
@@ -148,13 +148,13 @@ pagination:
         {% endif %}
       </p>
       <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
+        <a href="{{ year | prepend: '/proofs/' | prepend: site.baseurl}}">
           <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
 
           {% if tags != "" %}
           &nbsp; &middot; &nbsp;
             {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
+            <a href="{{ tag | slugify | prepend: '/proofs/tag/' | prepend: site.baseurl}}">
               <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
               {% endfor %}
           {% endif %}
@@ -162,7 +162,7 @@ pagination:
           {% if categories != "" %}
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
+            <a href="{{ category | slugify | prepend: '/proofs/category/' | prepend: site.baseurl}}">
               <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a> &nbsp;
               {% endfor %}
           {% endif %}
