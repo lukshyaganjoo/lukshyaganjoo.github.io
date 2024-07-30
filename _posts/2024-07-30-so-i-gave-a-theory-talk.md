@@ -133,7 +133,7 @@ Each node in $K_{10}$ has $9$ edges incident to it while each node in the Peters
 
 ## eigenvalues of the petersen graph
 
-Finding the eigenvalues of any matrix, let alone one that of size $10 * 10$ is a fairly computational task and isn't enlightening in any form whatsoever. So why are we trying to find the eigenvalues of the petersen graph? Well we can take advantage of the fact that the adjacency matrix represents information that carries physical meaning (vertex-edge relations of a graph) and can use the language of linear transformations and some geometric intuition to gain insight into the eigenvalues of this graph.
+Finding the eigenvalues of any matrix, let alone one that of size $10 \times 10$ is a fairly computational task and isn't enlightening in any form whatsoever. So why are we trying to find the eigenvalues of the petersen graph? Well we can take advantage of the fact that the adjacency matrix represents information that carries physical meaning (vertex-edge relations of a graph) and can use the language of linear transformations and some geometric intuition to gain insight into the eigenvalues of this graph.
 
 Let $A$ be the adjacency matrix of the Petersen Graph. If $A$ encodes information about the number of length $1$, $A^2$ represents information about the number of length $2$ paths, and in general, $A^k$ encodes information about the number of $k$-length paths in a given graph. With this information in our belt, we know can make a pretty nifty observation.
 
