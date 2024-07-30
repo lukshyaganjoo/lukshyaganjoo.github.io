@@ -96,9 +96,9 @@ $\lambda_1$ and $\lambda_2$ respectively. Therefore we have that
 
 $$
 \begin{align*}
-y^{T} Ax = y^{T} \lambda_1 x &\implies y^T A^T x &= y^{T} \lambda_1 x \\
+y^{T} Ax = y^{T} \lambda_1 x &\implies y^T A^T x = y^{T} \lambda_1 x \\
 &\implies (Ay)^{T} x = \lambda_1 y^{T} x \\
-&\implies (\lambda_2 y)^T x &= \lambda_1 y^{T} x = \lambda_2 y^{T} x \\
+&\implies (\lambda_2 y)^T x = \lambda_1 y^{T} x = \lambda_2 y^{T} x \\
 &\implies y^{T} x (\lambda_2 - \lambda_1) = 0
 \end{align*}
 $$
