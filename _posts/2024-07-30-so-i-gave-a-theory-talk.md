@@ -94,16 +94,19 @@ The row space of a matrix $A$ is defined as follows, $\text{Row}(A) = \{y^T A : 
 Let $x$ and $y$ be eigenvectors of the matrix $A$ corresponding to eigenvalues
 $\lambda_1$ and $\lambda_2$ respectively. Therefore we have that
 
-$$\begin{align*}
+$$
+\begin{align*}
 Ax &= \lambda_1 x \\
 Ay &= \lambda_2 y \\
 y^{T} Ax &= y^{T} \lambda_1 x &&\text{Multiplying the first equation with $y^T$} \\
 y^T A^T x &= y^{T} \lambda_1 x &&\text{$A = A^T$} \\
 (Ay)^{T} x &= \lambda_1 y^{T} x \\
-(\lambda_2 y)^T x &= \lambda_1 y^{T} x \\ 
-\lambda_2 y^{T} x &= \lambda_1 y^{T} x \\ 
+(\lambda_2 y)^T x &= \lambda_1 y^{T} x \\
+\lambda_2 y^{T} x &= \lambda_1 y^{T} x \\
 y^{T} x (\lambda_2 - \lambda_1) &= 0
-\end{align*}$$
+\end{align*}
+$$
+
 However, we already know that $\lambda_2 \neq \lambda_1$. Therefore $\lambda_2 - \lambda_1 \neq 0$, and it must be the case that $y^{T}x = 0$.
 
 Therefore $x$ and $y$ are orthogonal.
@@ -115,11 +118,14 @@ Therefore $x$ and $y$ are orthogonal.
 > We define the adjacency matrix of a graph $G = (V, E)$ as the following,
 >
 > $$
-> A_{ij} = 
-  \begin{cases}
+> A_{ij} =
+>   \begin{cases}
+> $$
+
       1 & \text{there is an edge from} \; j \; \text{to} \; i\\
       0 & \text{there is no edge from} \; j \; \text{to} \; i\\
     \end{cases}
+
 > $$
 
 Since we're dealing with an undirected graph in this proof, every edge $ab$ is counted as the same edge as if there were an edge $ba$ in the graph. As a consequence, the adjacency matrices for this family of graphs will be symmetric.
@@ -127,6 +133,7 @@ Since we're dealing with an undirected graph in this proof, every edge $ab$ is c
 The way to think about it is that the adjacency matrix of a graph $G$ encodes information about the number of length $1$ paths between any pair of vertices $i$ and $j$, i.e. information about the vertices immediately "adjacent" to each other.
 
 ### motivation:
+
 Each node in $K_{10}$ has $9$ edges incident to it while each node in the Petersen graph has $3$ edges incident to it. So it is plausible that $K_{10}$ can be covered perfectly by $3$ Petersen graphs. This means that you can lay down three Petersens on $K_{10}$ so that vertices go to vertices and each edge of $K_{10}$ lies under an edge of exactly one of the three Petersens. This hints at some pretty cutting-edge stuff in the field of graph decomposition and graph coloring and the parallels in higher dimensions is absolutely incredible. With some linear algebra at our disposal, we will show that it is not possible to completely cover $K_{10}$ with three Petersen graphs.
 
 ---
@@ -139,7 +146,6 @@ Let $A$ be the adjacency matrix of the Petersen Graph. If $A$ encodes informatio
 
 Consider the $i, j^{th}$ entry of the matrix $A^2 + A$ (the sum of the matrices representing information about the number of length $2$ paths and the regular adjacency matrix of the petersen graph). Since, every vertex in the petersen graph has degree $3$, each vertex has $3$ length $2$ paths back itself whereas there are no length $1$ paths from a vertex to itself. With this information under our belt, we can say that
 
-
 $$
 
 (A^2 + A)\_{i, j} =
@@ -147,6 +153,7 @@ $$
 3 & \forall i = j \\
 1 & \forall i \neq j
 \end{cases}
+
 
 $$
 
@@ -168,7 +175,6 @@ Thus the possible eigenvectors for $A$ are prescribed. We already know that $\ma
 >
 > $$K_{10} = J_{10} - I_{10}$$
 
-
 **proof:**The adjacency matrix of $K_{10}$ has all but its diagonal entries being equal to $1$, since every node in the full graph is connected to every other node except itself. The diagonal entries of $K_{10}$ are filled in with $0$'s since there is no path from any of the nodes to itself. One can also clearly see that the matrix described by the equation $J_{10} - I_{10}$ where $J_{10}$ is the matrix with all its entries being equal to $1$, is a matrix that has all but its diagonal entries being equal to $1$ and its diagonal entries being equal to $0$.
 
 Therefore the adjacency matrix of $K_{10} = J_{10} - I_{10}$
@@ -183,7 +189,6 @@ Therefore the adjacency matrix of $K_{10} = J_{10} - I_{10}$
 >
 > <p style = "overflow-x:auto"> $$\text{Null} (A_P - I_{10}) \subseteq \text{Span} (1)^{\perp}$$</p>
 
-
 **proof:** We wish to show that $1^{T} = y^{T}(A_P - I_{10})$ for some vector $y \in R^{10}$. Consider $y = 1^{T}$. The matrix product $1^{T}(A_P - I_{10})$ yields the vector whose entries are the sum of the entries of the columns of $A_P - I_{10}$. for an arbitrary column $i$ in its adjacency matrix, by the way the Petersen graph was defined we know that he graph has 3 outgoing edges which means that the sum of the entries of a column in its adjacency matrix is 3. However note that the diagonal entries of the adjacency matrix will be 0 since the Petersen graph does not contain self-loops. After subtracting the $i$th column of $I_{10}$, the sum of the columns of the matrix $A_P - I_{10}$ is 2. Note that the identity matrix has 0 in every entry where $i \neq j$. Since the above holds true for an arbitrary column of the matrix, We can conclude that every column of $A_P - I_{10}$ sums up to a 2. More fundamentally, the product $1^{T}(A_{P} - I_{10})$ generates the all twos
 vector or 2$\mathbf{1}^{T}$.
 
@@ -195,12 +200,12 @@ Therefore we can assert that $\text{Span}(1) \subseteq \text{Row} (A_P - I_{10})
 >
 > $$B^{\perp} \subseteq A^{\perp}$$
 
-
 **proof** Let $x$ be an arbitrary vector such that $x \in B^{\perp}$. By definition of the orthogonal complement, we have that $\forall v \in B, x^{T}v = 0$, i.e. they are orthogonal. However we know that any vector contained in $B$ will be a vector contained in $A$, ($A$ is a subset of the vectors contained in $B$). Therefore we can reframe the above statement to be $\forall v \in A, x^{T}v = 0$, that is $x$ is orthogonal to every vector in $A$. By definition, this means that $x \in A^{\perp}$
 
 $$\therefore A \subseteq B \implies B^{\perp} \subseteq A^{\perp}$$
 
 Using the aforementioned proof and taking orthogonal complements, we have that
+
 <p style = "overflow-x:auto">
 $$
 
