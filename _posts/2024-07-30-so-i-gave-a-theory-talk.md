@@ -94,7 +94,6 @@ The row space of a matrix $A$ is defined as follows, $\text{Row}(A) = \{y^T A : 
 Let $x$ and $y$ be eigenvectors of the matrix $A$ corresponding to eigenvalues
 $\lambda_1$ and $\lambda_2$ respectively. Therefore we have that
 
-<p style = "overflow-x:auto">
 $$\begin{align*}
 Ax &= \lambda_1 x \\
 Ay &= \lambda_2 y \\
@@ -105,9 +104,7 @@ y^T A^T x &= y^{T} \lambda_1 x &&\text{$A = A^T$} \\
 \lambda_2 y^{T} x &= \lambda_1 y^{T} x \\ 
 y^{T} x (\lambda_2 - \lambda_1) &= 0
 \end{align*}$$
-</p>
-However, we already know that $\lambda_2 \neq \lambda_1$. Therefore 
-$\lambda_2 - \lambda_1 \neq 0$, and it must be the case that $y^{T}x = 0$.
+However, we already know that $\lambda_2 \neq \lambda_1$. Therefore $\lambda_2 - \lambda_1 \neq 0$, and it must be the case that $y^{T}x = 0$.
 
 Therefore $x$ and $y$ are orthogonal.
 
@@ -118,15 +115,12 @@ Therefore $x$ and $y$ are orthogonal.
 > We define the adjacency matrix of a graph $G = (V, E)$ as the following,
 >
 > $$
-
-    A_{i, j} =
-    \begin{cases}
+> A_{ij} = 
+  \begin{cases}
       1 & \text{there is an edge from} \; j \; \text{to} \; i\\
       0 & \text{there is no edge from} \; j \; \text{to} \; i\\
     \end{cases}
-
-$$
-
+> $$
 
 Since we're dealing with an undirected graph in this proof, every edge $ab$ is counted as the same edge as if there were an edge $ba$ in the graph. As a consequence, the adjacency matrices for this family of graphs will be symmetric.
 
@@ -439,8 +433,7 @@ s^{5} + s^{4} + 6s^{3} - 2s^2 + (9 - 32a)s - 15 &= 0 &&\text{After an ungodly am
 \end{align*}
 $$
 </p>
-To satisfy the above equation, we have that $s$ must divide 15, i.e. $s \in 
-\{1, 3, 5, 15 \}$. Since $s^2 = 4d - 3$, we have that $d \in \{1, 3, 7, 57 \}$.
+To satisfy the above equation, we have that $s$ must divide 15, i.e. $s \in \{1, 3, 5, 15 \}$. Since $s^2 = 4d - 3$, we have that $d \in \{1, 3, 7, 57 \}$.
 
 When $d = 1$, we get the complete graph on 2 vertices, i.e. $K_2$ which is not a Moore
 graph since it doesn't meet the Moore bound.
@@ -454,15 +447,3 @@ For all the other cases, we have that
 
 There's a lemma floating around the internet somewhere where it states that Moore graphs
 don't exist for diameters greater than 2 which is kind of insane if you think about it. It's also the reason their existence is so fascinating and why we've listed most of if not all the Moore graphs there can be.
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML'></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      displayMath: [['$$','$$'], ['\\[','\\]']],
-      processEscapes: true,
-      processEnvironments: true,
-    }
-  });
-</script>
