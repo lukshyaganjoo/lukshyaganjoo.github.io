@@ -31,6 +31,7 @@ bibliography: 2018-12-22-distill.bib
 #     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
 toc:
   - name: notation and some motivation
+  - subsections: 
     - name: notation
     - name: motivation
     # if a section has subsections, you can add them as follows:
