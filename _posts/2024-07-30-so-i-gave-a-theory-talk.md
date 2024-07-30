@@ -70,7 +70,7 @@ _styles: >
 Before I get to some of the really cool motivation for this problem, I wanna make sure that everyone here is familiar with the the kinds of graphs we'll be working with in the domain of this proof.
 
 ![petersen graph](math-images/Petersen1_tiny.png)
-This is the Petersen graph. Veteran graph theoreticians will be familiar with this pentagram inscribed within the spokes of a regular pentagon. The Petersen graph is used as a counter example in tons of graph theory proofs which is one of the reasons it's so well studied, partly what we'll be doing here. The Petersen graph has $10$ nodes and $15$ edges, and is what we call $3$-regular.
+This is the Petersen graph. Veteran graph theoreticians will be familiar with this pentagram inscribed within the spokes of a regular pentagon. The Petersen graph is used as a counter example in tons of graph theory proofs which is one of the reasons it's so well studied, partly what we'll be doing here. The Petersen graph has $$10$$ nodes and $15$ edges, and is what we call $3$-regular.
 
 **Note:** A graph is said to be $d$-regular $iff$ every vertex has the same degree $d$. (i.e. it is strongly regular)
 
@@ -138,7 +138,7 @@ Consider the $i, j^{th}$ entry of the matrix $A^2 + A$ (the sum of the matrices 
 
 $$
 
-(A^2 + A)\_{i, j} =
+(A^2 + A)_{ij} =
 \begin{cases}
 3 & \forall i = j \\
 1 & \forall i \neq j
@@ -149,7 +149,11 @@ $$
 
 This follows from noticing that any pair of vertices not already joined by an edge are joined by a unique path of length $2$; namely there is a unique vertex which is joined to both.
 
-We can therefore conclude that the matrix $A$ satisfies the matrix equation $$A^2 + A = 2I + J$$.
+We can therefore conclude that the matrix $A$ satisfies the matrix equation 
+
+$$ 
+A^2 + A = 2I + J
+$$.
 
 Note that $J$ has eigenvalue 10 (of multiplicity 1 with eigenvector 1) and eigenvalue 0 of multiplicity 9. Thus $2I + J$ has eigenvalue 12 of multiplicity 1 and eigenvalue 2 of multiplicity 9. Now if $x$ is an eigenvector of A of eigenvalue $\lambda$ then $x$ is an eigenvector of $A^2 + A$ of eigenvalue $\lambda^2 + \lambda$.
 
@@ -202,7 +206,9 @@ $$
 \begin{align*}
 \text{Span}(1) \subseteq \text{Row} (A*P - I*{10}) &\implies \text{Null} (A*P - I*{10}) \subseteq \text{Span} (1)^{\perp} \\
 &\implies \text{Null} (A*P - I*{10}) \subseteq \text{Span} (1)^{\perp}
-\end{align*}$$
+\end{align*}
+
+$$
 
 </p>
 
