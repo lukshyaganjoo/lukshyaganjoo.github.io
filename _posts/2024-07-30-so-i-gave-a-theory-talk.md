@@ -118,14 +118,11 @@ Therefore $x$ and $y$ are orthogonal.
 > We define the adjacency matrix of a graph $G = (V, E)$ as the following,
 >
 > $$
-> A_{ij} =
->   \begin{cases}
-> $$
-
+  A_{ij} =   
+    \begin{cases}
       1 & \text{there is an edge from} \; j \; \text{to} \; i\\
       0 & \text{there is no edge from} \; j \; \text{to} \; i\\
     \end{cases}
-
 > $$
 
 Since we're dealing with an undirected graph in this proof, every edge $ab$ is counted as the same edge as if there were an edge $ba$ in the graph. As a consequence, the adjacency matrices for this family of graphs will be symmetric.
