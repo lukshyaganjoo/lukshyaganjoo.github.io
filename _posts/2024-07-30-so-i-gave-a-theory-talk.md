@@ -134,7 +134,7 @@ The way to think about it is that the adjacency matrix of a graph $G$ encodes in
 ### motivation:
 Each node in $K_{10}$ has $9$ edges incident to it while each node in the Petersen graph has $3$ edges incident to it. So it is plausible that $K_{10}$ can be covered perfectly by $3$ Petersen graphs. This means that you can lay down three Petersens on $K_{10}$ so that vertices go to vertices and each edge of $K_{10}$ lies under an edge of exactly one of the three Petersens. This hints at some pretty cutting-edge stuff in the field of graph decomposition and graph coloring and the parallels in higher dimensions is absolutely incredible. With some linear algebra at our disposal, we will show that it is not possible to completely cover $K_{10}$ with three Petersen graphs.
 
---- 
+---
 
 ## eigenvalues of the petersen graph
 
@@ -146,11 +146,13 @@ Consider the $i, j^{th}$ entry of the matrix $A^2 + A$ (the sum of the matrices 
 
 
 $$
+
 (A^2 + A)\_{i, j} =
 \begin{cases}
 3 & \forall i = j \\
 1 & \forall i \neq j
 \end{cases}
+
 $$
 
 This follows from noticing that any pair of vertices not already joined by an edge are joined by a unique path of length $2$; namely there is a unique vertex which is joined to both.
@@ -161,7 +163,7 @@ Note that $J$ has eigenvalue 10 (of multiplicity 1 with eigenvector 1) and eigen
 
 Thus the possible eigenvectors for $A$ are prescribed. We already know that $\mathbf{1}$ is an eigenvector of $A$ of eigenvalue 3 (or at least it is easy to check). The other 9 eigenvalues must satisfy $\lambda^2 + \lambda = 2$ thus either 1 or -2 with total multiplicity being 9. Now the trace of $A$, which is 0, is the sum of the eigenvalues and so we deduce that 1 has multiplicity 5 and -2 has multiplicity 4.
 
---- 
+---
 
 ## the actual proof
 
@@ -238,20 +240,23 @@ Therefore $B_{S_1} \cap B_{S_2} \neq \{0\}$ where $S_1$ and $S_2$ refer to the t
 
 The larger consequence of this is that this vector $w$ is orthogonal to the all ones vector, i.e. ${\bf 1}^{T}w = 0$
 
---- 
+---
 
 ## the final stages
 
-$$\begin{align*}
+$$
+\begin{align*}
     A_P(v) &= \lambda v \\
     &= v &&\text{Since 1 is an eigenvalue of $A_P$} \\
     A_R(w) &= J_{10}(w) - I_{10} (w) - A_P(w) - A_Q(w) &&\text{Using the formula above}\\
     &= J_{10}(w) - w - w - w &&\text{Substituting values}
-\end{align*}$$
+\end{align*}
+$$
 
-We now compute $J_{10} (w)$ where $w \in \text{Null} (A_P - I_{10})$  
+We now compute $J_{10} (w)$ where $w \in \text{Null} (A_P - I_{10})$
 
-$$J_{10}w = \begin{bmatrix}
+$$
+J_{10}w = \begin{bmatrix}
     1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
     1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
     1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
@@ -271,7 +276,7 @@ $$J_{10}w = \begin{bmatrix}
     1^{T} \\
     1^{T} \\
     1^{T} \\
-    1^{T} \end{bmatrix}w = 
+    1^{T} \end{bmatrix}w =
     \begin{bmatrix}
     1^{T}w \\
     1^{T}w \\
@@ -282,8 +287,8 @@ $$J_{10}w = \begin{bmatrix}
     1^{T}w \\
     1^{T}w \\
     1^{T}w \\
-    1^{T}w 
-\end{bmatrix} = 
+    1^{T}w
+\end{bmatrix} =
 \begin{bmatrix}
     0 \\
     0 \\
@@ -295,12 +300,13 @@ $$J_{10}w = \begin{bmatrix}
     0 \\
     0 \\
     0
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 $$\therefore A_R(w) = J_{10}(w) - w - w - w = -3w.$$
 We have therefore arrived at a contradiction. In the beginning of the proof, we found all the eigenvalues of the Petersen Graph and concluded that -3 was not amongst that list. However as we can see, we have proved that -3 in fact is an eigenvalue for the adjacency matrix of a Petersen graph. Therefore it is not possible to cover the full graph or $K_{10}$ with 3 Petersen graphs.
 
---- 
+---
 
 ## key takeaways
 
@@ -308,7 +314,7 @@ How cool is this!! All we did here was take advantage of some fairly simple
 linear algebra to prove a really fundamental fact about graphs that pop up quite frequently in the study of networks. For those interested, there is a conjecture in the "colorful" field of graph decomposition by the name of [Ringel's Conjecture](https://www.quantamagazine.org/mathematicians-prove-ringels-graph-theory-conjecture-20200219/)
 that actually illustrates how exactly you can cover complete graphs of this variety. If there's anything I want you to take away from this proof, it's that geometric intution is unparalleled and this technique of analyzing eigenvalues not only can save you computation, it gives you critical insight into what the graph actually represents, a deeper understanding of what it "does", so to speak. It is so easy to get bogged down in what might just seem like computation after computation. But there is a bigger picture, and that bigger picture is usually a bigger graph.
 
---- 
+---
 
 ## higher dimensions and moore graphs
 
