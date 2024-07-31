@@ -20,5 +20,3 @@ while the coolness factor of math is unstated and undeniable, i particularly enj
 i am presently under the guidance of professor sara mouradian and vikram kashyap, where i'm focused on gate-based quantum computation utilizing qudit gates. in broad strokes, i study qudit-gate fidelity, gate decomposition, and the experimental advantages in the context of an enlarged basis. in the same vein, i've also ta'ed for a graduate course on quantum computing, taught by andrea coladangelo. from the algebraic perspective, i'm currently reading commutative algebra by Reid along with Brian Nugent. Reid's book is particularly nice because it focuses on commutative algebra with several connections to algebraic geometry.
 
 if you're in the same city, looking to chat, or find yourself in need of a scrumptious banana bread recipe i'm always looking forward to making new friends :). feel free to reach out!
-
-{% if page.news %}
