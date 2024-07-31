@@ -69,12 +69,12 @@ _styles: >
 
 Before I get to some of the really cool motivation for this problem, I wanna make sure that everyone here is familiar with the the kinds of graphs we'll be working with in the domain of this proof.
 
-![petersen graph](math-images/Petersen1_tiny.png)
+![petersen graph](_posts/math-images/Petersen1_tiny.png)
 This is the Petersen graph. Veteran graph theoreticians will be familiar with this pentagram inscribed within the spokes of a regular pentagon. The Petersen graph is used as a counter example in tons of graph theory proofs which is one of the reasons it's so well studied, partly what we'll be doing here. The Petersen graph has $$10$$ nodes and $15$ edges, and is what we call $3$-regular.
 
 **Note:** A graph is said to be $d$-regular $iff$ every vertex has the same degree $d$. (i.e. it is strongly regular)
 
-![complete graph](math-images/full.png)
+![complete graph](_posts/math-images/full.png)
 
 This is the complete graph on $10$ vertices. For the sake of convenience, we will refer to this graph as $K_{10}$. It has $10$ nodes and $45$ edges (i.e., all possible edges among $10$ nodes). If we follow along from the same scheme of defining things, the number of edges in $K_{n}$ (the complete graph with $n$ vertices) is given by $\binom{n}{2}$.
 
