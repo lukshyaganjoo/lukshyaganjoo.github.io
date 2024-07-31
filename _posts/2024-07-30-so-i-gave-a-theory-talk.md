@@ -69,13 +69,17 @@ _styles: >
 
 Before I get to some of the really cool motivation for this problem, I wanna make sure that everyone here is familiar with the the kinds of graphs we'll be working with in the domain of this proof.
 
-<img src = "/assets/img/Petersen1_tiny.png" alt = "petersen graph" style = "width: 20%; margin: auto;">
+<p style="text-align:center;">
+<img src = "/assets/img/Petersen1_tiny.png" alt = "petersen graph" style = "width: 50%; margin: auto;">
+</p>
 
 This is the Petersen graph. Veteran graph theoreticians will be familiar with this pentagram inscribed within the spokes of a regular pentagon. The Petersen graph is used as a counter example in tons of graph theory proofs which is one of the reasons it's so well studied, partly what we'll be doing here. The Petersen graph has $$10$$ nodes and $15$ edges, and is what we call $3$-regular.
 
 **Note:** A graph is said to be $d$-regular $iff$ every vertex has the same degree $d$. (i.e. it is strongly regular)
 
-<img src = "/assets/img/full.png" alt = "complete graph" style = "width: 20%; margin: auto;">
+<p style="text-align:center;">
+<img src = "/assets/img/full.png" alt = "complete graph" style = "width: 50%; margin: auto;">
+</p>
 
 This is the complete graph on $10$ vertices. For the sake of convenience, we will refer to this graph as $K_{10}$. It has $10$ nodes and $45$ edges (i.e., all possible edges among $10$ nodes). If we follow along from the same scheme of defining things, the number of edges in $K_{n}$ (the complete graph with $n$ vertices) is given by $\binom{n}{2}$.
 
@@ -346,7 +350,9 @@ Graphs that attain this bound $M$ are known as Moore graphs.
 
 **obtaining the moore bound**
 
-<img src = "/assets/img/notes.jpg" alt = "moore graphs" style = "width: 20%; margin: auto;">
+<p style="text-align:center;"> 
+  <img src = "/assets/img/notes.jpg" alt = "moore graphs" style = "width: 50%; margin: auto;">
+</p>
 
 Consider the breadth first search of a graph $G$. From the above picture, we
 can clearly see that level 0 has only one node, this being the root of the tree
