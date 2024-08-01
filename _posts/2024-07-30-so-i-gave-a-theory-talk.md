@@ -332,7 +332,7 @@ Graphs that attain this bound $M$ are known as Moore graphs.
 
 **obtaining the moore bound**
 
-<p style="text-align:center;"> 
+<p style="text-align:center;">
   <img src = "/assets/img/notes.jpg" alt = "moore graphs" style = "width: 100%; margin: auto;">
 </p>
 
