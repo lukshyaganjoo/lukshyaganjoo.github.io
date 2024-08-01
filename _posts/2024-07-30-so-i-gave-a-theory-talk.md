@@ -155,7 +155,7 @@ Thus the possible eigenvectors for $\mathbf{A}$ are prescribed. We already know 
 
 > **lemma 2**
 >
-> If $\mathbf{K}_{10}$ represents the adjaceny matrix of the complete graph on 10 vertices, $\mathbf{J}_{10}$ represents the matrix with all its entries being equal to $1$ and $\mathbf{I}_{10}$ represents the identity matrix of size $10 \times 10$, then
+> If $$\mathbf{K}_{10}$$ represents the adjaceny matrix of the complete graph on 10 vertices, $\mathbf{J}_{10}$ represents the matrix with all its entries being equal to $1$ and $\mathbf{I}_{10}$ represents the identity matrix of size $10 \times 10$, then
 >
 > $$\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I}_{10}$$
 
