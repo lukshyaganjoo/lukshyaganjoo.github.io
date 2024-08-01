@@ -175,7 +175,7 @@ Therefore the adjacency matrix of $$\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{
 
 **proof:** We wish to show that $$\mathbf{1}^{\top} = \mathbf{y}^{\top}(\mathbf{A}_P - I_{10})$$ for some vector $$\mathbf{y} \in R^{10}$$. Consider $$\mathbf{y} = \mathbf{1}^{\top}$$. The matrix product $$\mathbf{1}^{\top}(\mathbf{A}_P - \mathbf{I}_{10})$$ yields the vector whose entries are the sum of the entries of the columns of $$\mathbf{A}_P - \mathbf{I}_{10}$$. for an arbitrary column $$i$$ in its adjacency matrix, by the way the Petersen graph was defined we know that he graph has 3 outgoing edges which means that the sum of the entries of a column in its adjacency matrix is 3. However note that the diagonal entries of the adjacency matrix will be 0 since the Petersen graph does not contain self-loops. After subtracting the $$i$$th column of $$\mathbf{I}_{10}$$, the sum of the columns of the matrix $$\mathbf{A}_P - \mathbf{I}_{10}$$ is 2. Note that the identity matrix has 0 in every entry where $$i \neq j$$. Since the above holds true for an arbitrary column of the matrix, We can conclude that every column of $$\mathbf{A}_P - \mathbf{I}_{10}$$ sums up to a 2. More fundamentally, the product $$\mathbf{1}^{\top}(\mathbf{A}_{P} - \mathbf{I}_{10})$$ generates the all twos vector or 2$\mathbf{1}^{\top}$.
 
-Therefore we can assert that $\text{Span}(\mathbf{1}) \subseteq \text{Row} (\mathbf{A}_P - \mathbf{I}_{10})$.
+Therefore we can assert that $$\text{Span}(\mathbf{1}) \subseteq \text{Row} (\mathbf{A}_P - \mathbf{I}_{10})$$.
 
 > **side proof**
 >
@@ -184,7 +184,6 @@ Therefore we can assert that $\text{Span}(\mathbf{1}) \subseteq \text{Row} (\mat
 > $$B^{\perp} \subseteq A^{\perp}$$
 
 **proof** Let $\mathbf{x} \in B^{\perp}$. By definition of the orthogonal complement, we have that $\forall \mathbf{v} \in B, \mathbf{x}^{\top}\mathbf{v} = 0$. However we know that any vector contained in $B$ will be a vector contained in $A$, ($A$ is a subset of the vectors contained in $B$). Therefore $\mathbf{x}$ is orthogonal to every vector in $A$. By definition, this means that $\mathbf{x} \in A^{\perp}$
-
 $$\therefore A \subseteq B \implies B^{\perp} \subseteq A^{\perp}$$
 
 Using the aforementioned proof and taking orthogonal complements, we have that
@@ -198,13 +197,13 @@ $$
 $$
 </p>
 
-The above results are also true for $\mathbf{A}_Q - \mathbf{I}_{10}$ since $Q$ is also a Petersen graph.
+The above results are also true for $$\mathbf{A}_Q - \mathbf{I}_{10}$$ since $$Q$$ is also a Petersen graph.
 
 > **lemma 4**
 >
 > Assuming the standard definitions of the matrices $A_P, A_Q$ and $A_R$, we have that
 >
-> $$\text{Null} (A_P - I_{10}) \cap \text{Null} (A_Q - I_{10}) \neq \{0\}$$
+> $$\text{Null} (\mathbf{A}_P - \mathbf{I}_{10}) \cap \text{Null} (\mathbf{A}_Q - \mathbf{I}_{10}) \neq \{0\}$$
 
 **proof**
 For two subspaces $R_1$ and $R_2$ of $\mathbb{R}^{9}$, if $S_1 \cap S_2 = \{0\}$, then $B_{S_1}$ and $B_{S_2}$ are linearly independent. We therefore prove by contrapositive.
@@ -213,39 +212,35 @@ We also know that
 
 <p style = "overflow-x:auto">
 $$
-
-\text{Null} (A*P - I*{10}) \subseteq \text{Span} (1)^{\perp} \quad \text{and} \quad \text{Null} (A*Q - I*{10}) \subseteq \text{Span} (1)^{\perp}
-
+\text{Null} (\mathbf{A}_P - \mathbf{I}_{10}) \subseteq \text{Span} (\mathbf{1})^{\perp} \quad \text{and} \quad \text{Null} (\mathbf{A}_Q - I*{10}) \subseteq \text{Span} (\mathbf{1})^{\perp}
 $$
 </p>
-$B_{\text{Null} (A_P - I_{10})} \cup B_{\text{Null} (A_Q - I_{10})}$ has 10 vectors in $\mathbb{R}^{9}$ since the bases of each of the null spaces has 5 vectors. Therefore $B_{\text{Null} (A_P - I_{10})} \cup B_{\text{Null} (A_Q - I_{10})}$ must be linearly dependent (since they have more vectors than the dimension of the space they exist in).
+
+$B_{\text{Null} (\mathbf{A}_P - \mathbf{I}_{10})} \cup B_{\text{Null} (\mathbf{A}_Q - \mathbf{I}_{10})}$ has 10 vectors in $\mathbb{R}^{9}$ since the bases of each of the null spaces has 5 vectors. Therefore $B_{\text{Null} (\mathbf{A}_P - \mathbf{I}_{10})} \cup B_{\text{Null} (\mathbf{A}_Q - \mathbf{I}_{10})}$ must be linearly dependent (since they have more vectors than the dimension of the space they exist in).
 
 Therefore $B_{S_1} \cap B_{S_2} \neq \{0\}$ where $S_1$ and $S_2$ refer to the two subspaces above. This implies the existence of a non-zero vector $w$ that exists in their intersection.
 
-The larger consequence of this is that this vector $w$ is orthogonal to the all ones vector, i.e. ${\bf 1}^{T}w = 0$
+The larger consequence of this is that this vector $$\mathbf{w}$$ is orthogonal to the all ones vector, i.e. $${\bf 1}^{\top} \mathbf{w} = 0$$
 
 ---
 
 ## the final stages
 
-
+<p style = "overflow-x:auto">
 $$
-
 \begin{align*}
-A*P(v) &= \lambda v \\
-&= v &&\text{Since 1 is an eigenvalue of $A_P$} \\
-A_R(w) &= J*{10}(w) - I*{10} (w) - A_P(w) - A_Q(w) &&\text{Using the formula above}\\
-&= J*{10}(w) - w - w - w &&\text{Substituting values}
+\mathbf{A}_P(\mathbf{v}) &= \lambda \mathbf{v} = \mathbf{v} &&\text{Since 1 is an eigenvalue of $\mathbf{A}_P$} \\
+\mathbf{A}_R(\mathbf{w}) &= \mathbf{J}_{10}(\mathbf{w}) - \mathbf{I}_{10} (\mathbf{w}) - \mathbf{A}_P(\mathbf{w}) - \mathbf{A}_Q(\mathbf{w}) \\
+&= \mathbf{J}_{10}(\mathbf{w}) - \mathbf{w} - \mathbf{w} - \mathbf{w} 
 \end{align*}
-
 $$
+</p>
 
 We now compute $J_{10} (w)$ where $w \in \text{Null} (A_P - I_{10})$
 
-
+<p style = "overflow-x:auto">
 $$
-
-J\_{10}w = \begin{bmatrix}
+\mathbf{J}_{10}\mathbf{w} = \begin{bmatrix}
 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
@@ -256,27 +251,28 @@ J\_{10}w = \begin{bmatrix}
 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1
-\end{bmatrix} w = \begin{bmatrix} 1^{T} \\
-1^{T} \\
-1^{T} \\
-1^{T} \\
-1^{T} \\
-1^{T} \\
-1^{T} \\
-1^{T} \\
-1^{T} \\
-1^{T} \end{bmatrix}w =
+\end{bmatrix} \mathbf{w} = \begin{bmatrix} \mathbf{1}^{\top} \\
+\mathbf{1}^{\top} \\
+\mathbf{1}^{\top} \\
+\mathbf{1}^{\top} \\
+\mathbf{1}^{\top} \\
+\mathbf{1}^{\top} \\
+\mathbf{1}^{\top} \\
+\mathbf{1}^{\top} \\
+\mathbf{1}^{\top} \\
+\mathbf{1}^{\top}
+\end{bmatrix}w =
 \begin{bmatrix}
-1^{T}w \\
-1^{T}w \\
-1^{T}w \\
-1^{T}w \\
-1^{T}w \\
-1^{T}w \\
-1^{T}w \\
-1^{T}w \\
-1^{T}w \\
-1^{T}w
+\mathbf{1}^{\top} \mathbf{w} \\
+\mathbf{1}^{\top} \mathbf{w} \\
+\mathbf{1}^{\top} \mathbf{w} \\
+\mathbf{1}^{\top} \mathbf{w} \\
+\mathbf{1}^{\top} \mathbf{w} \\
+\mathbf{1}^{\top} \mathbf{w} \\
+\mathbf{1}^{\top} \mathbf{w} \\
+\mathbf{1}^{\top} \mathbf{w} \\
+\mathbf{1}^{\top} \mathbf{w} \\
+\mathbf{1}^{\top} \mathbf{w}
 \end{bmatrix} =
 \begin{bmatrix}
 0 \\
@@ -290,10 +286,11 @@ J\_{10}w = \begin{bmatrix}
 0 \\
 0
 \end{bmatrix}
-
 $$
+</p>
 
-$$\therefore A_R(w) = J_{10}(w) - w - w - w = -3w.$$
+$$\therefore \mathbf{A}_R(\mathbf{w}) = \mathbf{J}_{10}(\mathbf{w}) - \mathbf{w} - \mathbf{w} - \mathbf{w} = -3\mathbf{w}.$$
+
 We have therefore arrived at a contradiction. In the beginning of the proof, we found all the eigenvalues of the Petersen Graph and concluded that -3 was not amongst that list. However as we can see, we have proved that -3 in fact is an eigenvalue for the adjacency matrix of a Petersen graph. Therefore it is not possible to cover the full graph or $K_{10}$ with 3 Petersen graphs.
 
 ---
@@ -301,8 +298,7 @@ We have therefore arrived at a contradiction. In the beginning of the proof, we 
 ## key takeaways
 
 How cool is this!! All we did here was take advantage of some fairly simple
-linear algebra to prove a really fundamental fact about graphs that pop up quite frequently in the study of networks. For those interested, there is a conjecture in the "colorful" field of graph decomposition by the name of [Ringel's Conjecture](https://www.quantamagazine.org/mathematicians-prove-ringels-graph-theory-conjecture-20200219/)
-that actually illustrates how exactly you can cover complete graphs of this variety. If there's anything I want you to take away from this proof, it's that geometric intution is unparalleled and this technique of analyzing eigenvalues not only can save you computation, it gives you critical insight into what the graph actually represents, a deeper understanding of what it "does", so to speak. It is so easy to get bogged down in what might just seem like computation after computation. But there is a bigger picture, and that bigger picture is usually a bigger graph.
+linear algebra to prove a really fundamental fact about graphs that pop up quite frequently in the study of networks. For those interested, there is a conjecture in the "colorful" field of graph decomposition by the name of [Ringel's Conjecture](https://www.quantamagazine.org/mathematicians-prove-ringels-graph-theory-conjecture-20200219/) that actually illustrates how exactly you can cover complete graphs of this variety. If there's anything I want you to take away from this proof, it's that geometric intution is unparalleled and this technique of analyzing eigenvalues not only can save you computation, it gives you critical insight into what the graph actually represents, a deeper understanding of what it "does", so to speak. It is so easy to get bogged down in what might just seem like computation after computation. But there is a bigger picture, and that bigger picture is usually a bigger graph.
 
 ---
 
@@ -323,7 +319,7 @@ graph of the above specifications can meet, we therefore have that
 
 $$
 
-M = 1 + k \sum\_{i = 0}^{d - 1} (k - 1)^i
+M = 1 + k \sum_{i = 0}^{d - 1} (k - 1)^i
 
 $$
 
@@ -375,19 +371,19 @@ once again. Notice that the adjacenct vertices don't share any neighbours since 
 In other words, we have that
 
 
+<p style = "overflow-x:auto">
 $$
-
-(A^{2} + A)\_{i, j} =
+(A^{2} + A)_{i, j} =
 \begin{cases}
 d & \forall i = j \\
 1 & \forall i \neq j
 \end{cases}
-
 $$
+</p>
 
-We therefore have that $A$ satisfies the equation
+We therefore have that $$\mathbf{A}$$ satisfies the equation
 $
-A^{2} + A = (d - 1)I + J
+\mathbf{A}^{2} + \mathbf{A} = (d - 1)\mathbf{I} + \mathbf{J}
 $
 
 > **lemma 6**
@@ -397,7 +393,7 @@ $
 > $$\lambda^{2} + \lambda - (d - 1) = 0$$
 
 **proof**
-I suppose I should have talked about this earlier, but the all ones matrix $J_d$
+I suppose I should have talked about this earlier, but the all ones matrix $$\mathbf{J}_d$$
 has eigenvalues 0 and $d$, where the eigenvalue $d$ corresponds to an eigenspace with the all ones vector or ${\bf 1}$.
 
 Let $x$ be the eigenvector corresponding to eigenvalue 0. Multiplying both sides of
@@ -405,8 +401,8 @@ the equation we have that
 
 <p style = "overflow-x:auto">
 $$\begin{align*}
-A^{2}x + Ax &= (d - 1)x = 0 \\
-\lambda^{2}x + \lambda x &= (d - 1)x \implies
+\mathbf{A}^{2}\mathbf{x} + \mathbf{A}x &= (d - 1)\mathbf{x} = 0 \\
+\lambda^{2}\mathbf{x} + \lambda \mathbf{x} &= (d - 1)\mathbf{x} \implies
 \lambda^2 + \lambda - (d - 1) = 0
 \end{align*}
 $$
