@@ -71,7 +71,7 @@ This is the complete graph on $10$ vertices. For the sake of convenience, we wil
 
 In this proof, $\mathbf{J}_{n}$ refers to the all ones matrix with dimension/size $n \times n$.
 
-The row space of a matrix $\mathbf{A}$ is defined as follows, $\text{Row}(A) = \\{y^T A : y \in \mathbb{R}^{n}\\}$
+The row space of a matrix $\mathbf{A}$ is defined as follows, $\text{Row}(A) = \\{\mathbf{y}^{\mathbf{\top}} A : \mathbf{y} \in \mathbb{R}^{n}\\}$
 
 > **definition**
 >
@@ -159,9 +159,9 @@ Thus the possible eigenvectors for $\mathbf{A}$ are prescribed. We already know 
 >
 > $$\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I}_{10}$$
 
-**proof:** The adjacency matrix of $K_{10}$ has all but its diagonal entries being equal to $1$, since every node in the full graph is connected to every other node except itself. The diagonal entries of $\mathbf{K}_{10}$ are filled in with $0$'s since there is no path from any of the nodes to itself. One can also clearly see that the matrix described by the equation $\mathbf{J}_{10} - \mathbf{I}_{10}$ is a matrix that has all but its diagonal entries being equal to $1$ and its diagonal entries being equal to $0$.
+**proof:** The adjacency matrix of $$K_{10}$$ has all but its diagonal entries being equal to $1$, since every node in the full graph is connected to every other node except itself. The diagonal entries of $$\mathbf{K}_{10}$$ are filled in with $0$'s since there is no path from any of the nodes to itself. One can also clearly see that the matrix described by the equation $$\mathbf{J}_{10} - \mathbf{I}_{10}$$ is a matrix that has all but its diagonal entries being equal to $1$ and its diagonal entries being equal to $0$.
 
-Therefore the adjacency matrix of $\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I}_{10}$
+Therefore the adjacency matrix of $$\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I}_{10}$$
 
 > **Assumption:**
 >
@@ -171,12 +171,12 @@ Therefore the adjacency matrix of $\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I
 
 > **lemma 3**
 >
-> <p style = "overflow-x:auto"> $$\text{Null} (A_P - I_{10}) \subseteq \text{Span} (1)^{\perp}$$</p>
+> <p style = "overflow-x:auto"> $$\text{Null} (\mathbf{A}_P - \mathbf{I}_{10}) \subseteq \text{Span} (\mathbf{1})^{\perp}$$</p>
 
-**proof:** We wish to show that $1^{T} = y^{T}(A_P - I_{10})$ for some vector $y \in R^{10}$. Consider $y = 1^{T}$. The matrix product $1^{T}(A_P - I_{10})$ yields the vector whose entries are the sum of the entries of the columns of $A_P - I_{10}$. for an arbitrary column $i$ in its adjacency matrix, by the way the Petersen graph was defined we know that he graph has 3 outgoing edges which means that the sum of the entries of a column in its adjacency matrix is 3. However note that the diagonal entries of the adjacency matrix will be 0 since the Petersen graph does not contain self-loops. After subtracting the $i$th column of $I_{10}$, the sum of the columns of the matrix $A_P - I_{10}$ is 2. Note that the identity matrix has 0 in every entry where $i \neq j$. Since the above holds true for an arbitrary column of the matrix, We can conclude that every column of $A_P - I_{10}$ sums up to a 2. More fundamentally, the product $1^{T}(A_{P} - I_{10})$ generates the all twos
-vector or 2$\mathbf{1}^{T}$.
+**proof:** We wish to show that $\mathbf{1}^{\top} = \mathbf{y}^{\top}(\mathbf{A}_P - I_{10})$ for some vector $y \in R^{10}$. Consider $\mathbf{y} = \mathbf{1}^{\top}$. The matrix product $\mathbf{1}^{\top}(\mathbf{A}_P - \mathbf{I}_{10})$ yields the vector whose entries are the sum of the entries of the columns of $\mathbf{A}_P - \mathbf{I}_{10}$. for an arbitrary column $i$ in its adjacency matrix, by the way the Petersen graph was defined we know that he graph has 3 outgoing edges which means that the sum of the entries of a column in its adjacency matrix is 3. However note that the diagonal entries of the adjacency matrix will be 0 since the Petersen graph does not contain self-loops. After subtracting the $i$th column of $\mathbf{I}_{10}$, the sum of the columns of the matrix $\mathbf{A}_P - \mathbf{I}_{10}$ is 2. Note that the identity matrix has 0 in every entry where $i \neq j$. Since the above holds true for an arbitrary column of the matrix, We can conclude that every column of $A_P - I_{10}$ sums up to a 2. More fundamentally, the product $\mathbf{1}^{\top}(\mathbf{A}_{P} - \mathbf{I}_{10})$ generates the all twos
+vector or 2$\mathbf{1}^{\top}$.
 
-Therefore we can assert that $\text{Span}(1) \subseteq \text{Row} (A_P - I_{10})$.
+Therefore we can assert that $\text{Span}(\mathbf{1}) \subseteq \text{Row} (\mathbf{A}_P - \mathbf{I}_{10})$.
 
 > **side proof**
 >
@@ -184,7 +184,7 @@ Therefore we can assert that $\text{Span}(1) \subseteq \text{Row} (A_P - I_{10})
 >
 > $$B^{\perp} \subseteq A^{\perp}$$
 
-**proof** Let $x$ be an arbitrary vector such that $x \in B^{\perp}$. By definition of the orthogonal complement, we have that $\forall v \in B, x^{T}v = 0$, i.e. they are orthogonal. However we know that any vector contained in $B$ will be a vector contained in $A$, ($A$ is a subset of the vectors contained in $B$). Therefore we can reframe the above statement to be $\forall v \in A, x^{T}v = 0$, that is $x$ is orthogonal to every vector in $A$. By definition, this means that $x \in A^{\perp}$
+**proof** Let $\mathbf{x} \in B^{\perp}$. By definition of the orthogonal complement, we have that $\forall \mathbf{v} \in B, \mathbf{x}^{\top}\mathbf{v} = 0$. However we know that any vector contained in $B$ will be a vector contained in $A$, ($A$ is a subset of the vectors contained in $B$). Therefore $\mathbf{x}$ is orthogonal to every vector in $A$. By definition, this means that $\mathbf{x} \in A^{\perp}$
 
 $$\therefore A \subseteq B \implies B^{\perp} \subseteq A^{\perp}$$
 
@@ -193,13 +193,13 @@ Using the aforementioned proof and taking orthogonal complements, we have that
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
-\text{Span}(1) \subseteq \text{Row} (A*P - I*{10}) &\implies \text{Null} (A*P - I*{10}) \subseteq \text{Span} (1)^{\perp} \\
-&\implies \text{Null} (A*P - I*{10}) \subseteq \text{Span} (1)^{\perp}
+\text{Span}(\mathbf{1}) \subseteq \text{Row} (\mathbf{A}_P - \mathbf{I}_{10}) &\implies \text{Null} (\mathbf{A}_P - \mathbf{I}_{10}) \subseteq \text{Span} (\mathbf{1})^{\perp} \\
+&\implies \text{Null} (\mathbf{A}_P - \mathbf{I}_{10}) \subseteq \text{Span} (\mathbf{1})^{\perp}
 \end{align*}
 $$
 </p>
 
-The above results are also true for $A_Q - I_{10}$ since $Q$ is also a Petersen graph.
+The above results are also true for $\mathbf{A}_Q - \mathbf{I}_{10}$ since $Q$ is also a Petersen graph.
 
 > **lemma 4**
 >
