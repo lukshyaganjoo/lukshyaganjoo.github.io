@@ -316,10 +316,10 @@ diameter $d$ and maximum degree $k$. An intuitive way to recognize what the moor
 actually tells us is how _wide_ a graph can get. Let $M$ be the moore bound that a
 graph of the above specifications can meet, we therefore have that
 
-
 $$
 
 M = 1 + k \sum_{i = 0}^{d - 1} (k - 1)^i
+
 
 $$
 
@@ -358,10 +358,10 @@ The entire reason we're even talking about moore graphs is that the petersen gra
 Assume $G$ is a $d$-regular Moore graph of girth 5. A reminder that the girth of a graph is
 defined to be $2k + 1$ where $k$ is the diameter of the graph. Solving the above equation for the girth, we get that the diameter of the graph must be 2, i.e. $k = 2$. Substituting in this value into the Moore bound, we get that the number of the vertices in the graph is given by
 
-
 $$
 
 n = 1 + d + d(d- 1) = d^{2} + 1
+
 
 $$
 
@@ -369,7 +369,6 @@ As we did for the petersen graph, we consider the square of the adjacency matrix
 once again. Notice that the adjacenct vertices don't share any neighbours since if they did, there would be a triangle in $G$. Non-adjacent vertices share exactly one neighbor, because the diameter of $G$ is 2. Hence, $A^{2}$ has $d$ on the diagonal, 0 for edges and 1 for non-edges.
 
 In other words, we have that
-
 
 <p style = "overflow-x:auto">
 $$
