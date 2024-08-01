@@ -155,7 +155,7 @@ Thus the possible eigenvectors for $\mathbf{A}$ are prescribed. We already know 
 
 > **lemma 2**
 >
-> If $\mathbf{K}_{10}$ represents the adjaceny matrix of the complete graph on 10 vertices, $\mathbf{J}_{10}$ represents the matrix with all its entries being equal to $1$ and $\mathbf{I}_{10}$ represents the identity matrix of size $10 \times  10$, then
+> If $\mathbf{K}_{10}$ represents the adjaceny matrix of the complete graph on 10 vertices, $\mathbf{J}_{10}$ represents the matrix with all its entries being equal to $1$ and $\mathbf{I}_{10}$ represents the identity matrix of size $10 \times 10$, then
 >
 > $$\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I}_{10}$$
 
@@ -165,7 +165,7 @@ Therefore the adjacency matrix of $\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I
 
 > **Assumption:**
 >
-> $$A_P + A_Q + A_R = J_{10} - I_{10}$$
+> $$\mathbf{A}_P + \mathbf{A}_Q + \mathbf{A}_R = J_{10} - I_{10}$$
 >
 > We consider three permutation matrices of the Petersen Graph $A_P, A_Q$ and $A_R$ (matrices formed by simultaneous row and column swaps in the original adjacency matrix of the petersen graph). We construct each of these permutation matrices such that $A_Q = CAC^{-1}$ where $C$ is some matrix. By this construction, $A_Q$ and $A$ are similar, and an important consequence is that they have the same eigenvalues. This assumption and construction is true for $A_P$ and $A_R$.
 
