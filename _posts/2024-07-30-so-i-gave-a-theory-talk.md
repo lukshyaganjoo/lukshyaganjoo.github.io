@@ -7,20 +7,6 @@ giscus_comments: false
 date: 2024-07-30
 featured: false
 
-authors:
-  - name: Albert Einstein
-    url: "https://en.wikipedia.org/wiki/Albert_Einstein"
-    affiliations:
-      name: IAS, Princeton
-  - name: Boris Podolsky
-    url: "https://en.wikipedia.org/wiki/Boris_Podolsky"
-    affiliations:
-      name: IAS, Princeton
-  - name: Nathan Rosen
-    url: "https://en.wikipedia.org/wiki/Nathan_Rosen"
-    affiliations:
-      name: IAS, Princeton
-
 bibliography: 2018-12-22-distill.bib
 
 # Optionally, you can add a table of contents to your post.
@@ -73,9 +59,9 @@ Before I get to some of the really cool motivation for this problem, I wanna mak
 <img src = "/assets/img/Petersen1_tiny.png" alt = "petersen graph" style = "width: 100%; margin: auto;">
 </p>
 
-This is the Petersen graph. Veteran graph theoreticians will be familiar with this pentagram inscribed within the spokes of a regular pentagon. The Petersen graph is used as a counter example in tons of graph theory proofs which is one of the reasons it's so well studied, partly what we'll be doing here. The Petersen graph has $$10$$ nodes and $15$ edges, and is what we call $3$-regular.
+This is the Petersen graph. Veteran graph theoreticians will be familiar with this pentagram inscribed within the spokes of a regular pentagon. The Petersen graph is used as a counter example in tons of graph theory proofs which is one of the reasons it's so well studied, partly what we'll be doing here. The Petersen graph has $10$ nodes and $15$ edges, and is what we call $3$-regular.
 
-**Note:** A graph is said to be $d$-regular $iff$ every vertex has the same degree $d$. (i.e. it is strongly regular)
+**Note:** A graph is said to be $d$-regular iff every vertex has the same degree $d$. (i.e. it is strongly regular)
 
 <p style="text-align:center;">
 <img src = "/assets/img/full.png" alt = "complete graph" style = "width: 100%; margin: auto;">
@@ -83,32 +69,34 @@ This is the Petersen graph. Veteran graph theoreticians will be familiar with th
 
 This is the complete graph on $10$ vertices. For the sake of convenience, we will refer to this graph as $K_{10}$. It has $10$ nodes and $45$ edges (i.e., all possible edges among $10$ nodes). If we follow along from the same scheme of defining things, the number of edges in $K_{n}$ (the complete graph with $n$ vertices) is given by $\binom{n}{2}$.
 
-In this proof, $J_{n}$ refers to the all ones matrix with dimension/size $n * n$.
+In this proof, $\mathbf{J}_{n}$ refers to the all ones matrix with dimension/size $n \times n$.
 
-The row space of a matrix $A$ is defined as follows, $\text{Row}(A) = \{y^T A : y \in \mathbb{R}^{n}\}$
+The row space of a matrix $\mathbf{A}$ is defined as follows, $\text{Row}(A) = \\{y^T A : y \in \mathbb{R}^{n}\\}$
 
 > **definition**
 >
-> $$\textsf{Trace}(A) = \sum \limits_{x \in E_{x}(A)}^{} \lambda_{x}$$
+> $$\textsf{Trace}(\mathbf{A}) = \sum \limits_{x \in E_{x}(\mathbf{A})}^{} \lambda_{x}$$
 
 > **lemma 1**
 >
-> For a symmetric matrix $A$, eigenvectors corresponding to _distinct_ eigenvalues are orthogonal
+> For a symmetric matrix $\mathbf{A}$, eigenvectors corresponding to _distinct_ eigenvalues are orthogonal
 
 **proof**  
-Let $x$ and $y$ be eigenvectors of the matrix $A$ corresponding to eigenvalues
+Let $\mathbf{x}$ and $\mathbf{y}$ be eigenvectors of the matrix $\mathbf{A}$ corresponding to eigenvalues
 $\lambda_1$ and $\lambda_2$ respectively. Therefore we have that
 
+<p style = "overflow-x:auto">
 $$
 \begin{align*}
-y^{T} Ax = y^{T} \lambda_1 x &\implies y^T A^T x = y^{T} \lambda_1 x \\
-&\implies (Ay)^{T} x = \lambda_1 y^{T} x \\
-&\implies (\lambda_2 y)^T x = \lambda_2 y^{T} x \\
-&\implies y^{T} x (\lambda_2 - \lambda_1) = 0
+\mathbf{y}^{\top} \mathbf{Ax} = \mathbf{y}^{\top} \lambda_1 \mathbf{x} &\implies \mathbf{y}^{\top} \mathbf{A}^\top \mathbf{x} = \mathbf{y}^{\top} \lambda_1 \mathbf{x} \\
+&\implies \mathbf{(Ay)}^{\top} \mathbf{x} = \lambda_1 \mathbf{y}^{\top}\mathbf{x} \\
+&\implies (\lambda_2 \mathbf{y})^\top \mathbf{x} = \lambda_2 \mathbf{y}^{\top}\mathbf{x} \\
+&\implies \mathbf{y}^{\top}\mathbf{x} (\lambda_2 - \lambda_1) = 0
 \end{align*}
 $$
+</p>
 
-However, we already know that $\lambda_2 \neq \lambda_1$. Therefore $\lambda_2 - \lambda_1 \neq 0$, and it must be the case that $y^{T}x = 0$.
+However, we already know that $\lambda_2 \neq \lambda_1$. Therefore $\lambda_2 - \lambda_1 \neq 0$, and it must be the case that $\mathbf{y}^{\top}\mathbf{x} = 0$.
 
 Therefore $x$ and $y$ are orthogonal.
 
@@ -118,12 +106,14 @@ Therefore $x$ and $y$ are orthogonal.
 >
 > We define the adjacency matrix of a graph $G = (V, E)$ as the following,
 >
+> <p style = "overflow-x:auto">
 > $$
 > A_{ij} = \begin{cases}1 & \text{there is an edge from} \; j \; \text{to} \; i\\0 & \text{there is no edge from} \; j \; \text{to} \; i\\
 > \end{cases}
 > $$
+> </p>
 
-Since we're dealing with an undirected graph in this proof, every edge $ab$ is counted as the same edge as if there were an edge $ba$ in the graph. As a consequence, the adjacency matrices for this family of graphs will be symmetric.
+Since we're dealing with an undirected graph in this proof, every edge $(a, b)$ is counted as the same edge as if there were an edge $(b, a)$ in the graph. As a consequence, the adjacency matrices for this family of graphs will be symmetric.
 
 The way to think about it is that the adjacency matrix of a graph $G$ encodes information about the number of length $1$ paths between any pair of vertices $i$ and $j$, i.e. information about the vertices immediately "adjacent" to each other.
 
@@ -137,32 +127,27 @@ Each node in $K_{10}$ has $9$ edges incident to it while each node in the Peters
 
 Finding the eigenvalues of any matrix, let alone one that of size $10 \times 10$ is a fairly computational task and isn't enlightening in any form whatsoever. So why are we trying to find the eigenvalues of the petersen graph? Well we can take advantage of the fact that the adjacency matrix represents information that carries physical meaning (vertex-edge relations of a graph) and can use the language of linear transformations and some geometric intuition to gain insight into the eigenvalues of this graph.
 
-Let $A$ be the adjacency matrix of the Petersen Graph. If $A$ encodes information about the number of length $1$, $A^2$ represents information about the number of length $2$ paths, and in general, $A^k$ encodes information about the number of $k$-length paths in a given graph. With this information in our belt, we know can make a pretty nifty observation.
+Let $\mathbf{A}$ be the adjacency matrix of the Petersen Graph. If $\mathbf{A}$ encodes information about the number of length $1$, $\mathbf{A}^2$ represents information about the number of length $2$ paths, and in general, $A^k$ encodes information about the number of $k$-length paths in a given graph. With this information in our belt, we know can make a pretty nifty observation.
 
-Consider the $i, j^{th}$ entry of the matrix $A^2 + A$ (the sum of the matrices representing information about the number of length $2$ paths and the regular adjacency matrix of the petersen graph). Since, every vertex in the petersen graph has degree $3$, each vertex has $3$ length $2$ paths back itself whereas there are no length $1$ paths from a vertex to itself. With this information under our belt, we can say that
+Consider the $i, j^{th}$ entry of the matrix $\mathbf{A}^2 + \mathbf{A}$ (the sum of the matrices representing information about the number of length $2$ paths and the regular adjacency matrix of the petersen graph). Since, every vertex in the petersen graph has degree $3$, each vertex has $3$ length $2$ paths back itself whereas there are no length $1$ paths from a vertex to itself. With this information under our belt, we can say that
 
+<p style = "overflow-x:auto">
 $$
-
 (A^2 + A)_{ij} =
 \begin{cases}
 3 & \forall i = j \\
 1 & \forall i \neq j
 \end{cases}
-
-
 $$
+</p>
 
 This follows from noticing that any pair of vertices not already joined by an edge are joined by a unique path of length $2$; namely there is a unique vertex which is joined to both.
 
-We can therefore conclude that the matrix $A$ satisfies the matrix equation
+We can therefore conclude that the matrix $\mathbf{}$ satisfies the matrix equation $\mathbf{A}^2 + \mathbf{A} = 2\mathbf{I} + \mathbf{J}$
 
-$$
-A^2 + A = 2I + J
-$$.
+Note that $\mathbf{J}$ has eigenvalue 10 (of multiplicity 1 with eigenvector 1) and eigenvalue 0 of multiplicity 9. Thus $2\mathbf{I} + \mathbf{J}$ has eigenvalue 12 of multiplicity 1 and eigenvalue 2 of multiplicity 9. Now if $x$ is an eigenvector of A of eigenvalue $\lambda$ then $\mathbf{x}$ is an eigenvector of $\mathbf{A}^2 + \mathbf{A}$ of eigenvalue $\lambda^2 + \lambda$.
 
-Note that $J$ has eigenvalue 10 (of multiplicity 1 with eigenvector 1) and eigenvalue 0 of multiplicity 9. Thus $2I + J$ has eigenvalue 12 of multiplicity 1 and eigenvalue 2 of multiplicity 9. Now if $x$ is an eigenvector of A of eigenvalue $\lambda$ then $x$ is an eigenvector of $A^2 + A$ of eigenvalue $\lambda^2 + \lambda$.
-
-Thus the possible eigenvectors for $A$ are prescribed. We already know that $\mathbf{1}$ is an eigenvector of $A$ of eigenvalue 3 (or at least it is easy to check). The other 9 eigenvalues must satisfy $\lambda^2 + \lambda = 2$ thus either 1 or -2 with total multiplicity being 9. Now the trace of $A$, which is 0, is the sum of the eigenvalues and so we deduce that 1 has multiplicity 5 and -2 has multiplicity 4.
+Thus the possible eigenvectors for $\mathbf{A}$ are prescribed. We already know that $\mathbf{1}$ is an eigenvector of $\mathbf{A}$ of eigenvalue 3 (or at least it is easy to check). The other 9 eigenvalues must satisfy $\lambda^2 + \lambda = 2$ thus either 1 or -2 with total multiplicity being 9. Now the trace of $\mathbf{A}$, which is 0, is the sum of the eigenvalues and so we deduce that 1 has multiplicity 5 and -2 has multiplicity 4.
 
 ---
 
@@ -170,13 +155,13 @@ Thus the possible eigenvectors for $A$ are prescribed. We already know that $\ma
 
 > **lemma 2**
 >
-> If $K_{10}$ represents the adjaceny matrix of the complete graph on 10 vertices, $J_{10}$ represents the matrix with all its entries being equal to $1$ and $I_{10}$ represents the identity matrix of size $10 * 10$, then
+> If $\mathbf{K}_{10}$ represents the adjaceny matrix of the complete graph on 10 vertices, $\mathbf{J}_{10}$ represents the matrix with all its entries being equal to $1$ and $\mathbf{I}_{10}$ represents the identity matrix of size $10 \times  10$, then
 >
-> $$K_{10} = J_{10} - I_{10}$$
+> $$\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I}_{10}$$
 
-**proof:**The adjacency matrix of $K_{10}$ has all but its diagonal entries being equal to $1$, since every node in the full graph is connected to every other node except itself. The diagonal entries of $K_{10}$ are filled in with $0$'s since there is no path from any of the nodes to itself. One can also clearly see that the matrix described by the equation $J_{10} - I_{10}$ where $J_{10}$ is the matrix with all its entries being equal to $1$, is a matrix that has all but its diagonal entries being equal to $1$ and its diagonal entries being equal to $0$.
+**proof:** The adjacency matrix of $K_{10}$ has all but its diagonal entries being equal to $1$, since every node in the full graph is connected to every other node except itself. The diagonal entries of $\mathbf{K}_{10}$ are filled in with $0$'s since there is no path from any of the nodes to itself. One can also clearly see that the matrix described by the equation $\mathbf{J}_{10} - \mathbf{I}_{10}$ is a matrix that has all but its diagonal entries being equal to $1$ and its diagonal entries being equal to $0$.
 
-Therefore the adjacency matrix of $K_{10} = J_{10} - I_{10}$
+Therefore the adjacency matrix of $\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I}_{10}$
 
 > **Assumption:**
 >
@@ -207,14 +192,11 @@ Using the aforementioned proof and taking orthogonal complements, we have that
 
 <p style = "overflow-x:auto">
 $$
-
 \begin{align*}
 \text{Span}(1) \subseteq \text{Row} (A*P - I*{10}) &\implies \text{Null} (A*P - I*{10}) \subseteq \text{Span} (1)^{\perp} \\
 &\implies \text{Null} (A*P - I*{10}) \subseteq \text{Span} (1)^{\perp}
 \end{align*}
-
 $$
-
 </p>
 
 The above results are also true for $A_Q - I_{10}$ since $Q$ is also a Petersen graph.
