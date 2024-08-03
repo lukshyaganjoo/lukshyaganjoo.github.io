@@ -29,9 +29,7 @@ now that i'm done rambling about the context, the problem in and of itself is ac
 > For any $$n$$ real numbers $$a_1, a_2, \dots a_n$$ satisfying $$a_1^2 + a_2^2 + \dots + a_n^2 = 1$$, if $$\sigma_1 \sigma_2, \dots, \sigma_n \in \{-1, 1\}$$ are i.i.d uniform random signs, then
 >
 > $$
-
     \Pr \left[\left \vert \sum_{i = 1}^{n} a_i \sigma_i\right \vert  \leq 1\right] \geq \frac{1}{32}
-
 $$
 
 ## the proof
@@ -43,11 +41,8 @@ we split the proof into two cases based on the size of coefficients
 >
 > Additionally we define the random variable $$X = \sum \limits_{i = 1}^{n} a_i \sigma_i$$. Based on the assumption of the case, we assume without loss of generality that $$\vert  a_1 \vert  \geq 1/\sqrt{2}$$ and apply Chebyshev's inequality on $$X_1 = X - a_1 \sigma_1$$ to conclude that
 >
->
-$$
-
+> $$
     \Pr[\vert X \vert  \leq 1] \geq \frac{1}{4}
-
 $$
 
 
@@ -96,11 +91,8 @@ $$
 >
 > The really clever thing we can do is to split the sum $$X = Y + Z$$ into two pieces and apply Chebyshev's inequality separately to $$Y$$ and $$Z$$ to conclude that
 >
->
-$$
-
+> $$
     \Pr[\vert X\vert  \leq 1] \geq \frac{1}{32}
-
 $$
 
 
@@ -283,12 +275,8 @@ $$
 > **theorem 4**
 >
 > Based on the above definitions of $$Y$$ and $$Z$$, we have that
->
->
-$$
-
+> $$
     \text{Var}(Y) - \text{Var}(Z) < 1/2
-
 $$
 
 
@@ -302,9 +290,9 @@ $$
 \text{Var}\left(\sum_{i = 1}^{n/2} a_{2i - 1} \sigma_{2i - 1}\right) - \text{Var}\left(\sum_{i = 1}^{n/2} a_{2i} \sigma_{2i}\right) \\
  &= \sum_{i = 1}^{n/2} a_{2i - 1}^2 \text{Var}(\sigma_{2i - 1}) - \sum_{i = 1}^{n/2} a_{2i}^2 \text{Var}(\sigma_{2i}) \\
  &= \sum_{i = 1}^{n/2} a_{2i - 1}^2 - \sum_{i = 1}^{n/2} a_{2i}^2 = \sum_{i = 1}^{n/2} (a_{2i - 1}^2 - a_{2i}^2) &&\text{Theorem 1} \\
- &= a_1^2 + a_3^2 + \dots + a_{n - 1}^2 - a_2^2 - a_4^2 - \dots - a_n^2 \\
+ &= a_1^2 + a_3^2 + \dots + a_{n - 1}^2 - a_2^2 - a_4^2 - \dots - a_n^2 \
  &= a_1^2 + (a_3^2 - a_2^2) + (a_5^2 - a_4^2) + \dots + (a_{n - 1}^2 - a_n^2) \\
- &= a_1^2 + \sum_{i = 2}^{n/2} \underbrace{(a_{2i - 1}^2 - a_{2i - 2}^2)}\_{< 0} < a_1^2 < 1/2
+ &= a_1^2 + \sum_{i = 2}^{n/2} \underbrace{(a_{2i - 1}^2 - a_{2i - 2}^2)}_{< 0} < a_1^2 < 1/2
 \end{align*}
 
 $$
