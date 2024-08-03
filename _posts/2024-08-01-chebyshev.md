@@ -1,10 +1,10 @@
 ---
 layout: distill
-title: so i gave a theory talk
-description: the petersen graph is in almost every sense of the word; a universal counter-example
+title: chebyshev ruins convocations
+description: i spent far too much time looking at normal distributions for this one
 tags: math
 giscus_comments: false
-date: 2024-07-30
+date: 2024-08-01
 featured: false
 
 bibliography: 2018-12-22-distill.bib
@@ -13,9 +13,6 @@ toc:
   - name: some background
   - name: the actual problem
   - name: theorems and references
-  - name: the final stages
-  - name: key takeaways
-  - name: higher dimensions and moore graphs
 ---
 
 ## some background
