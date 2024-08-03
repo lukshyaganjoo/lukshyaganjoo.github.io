@@ -1,0 +1,172 @@
+---
+layout: distill
+title: cauchy schwarz and beyond
+description: The object of today's study is the cauchy schwarz inequality specifically the version involving dot products. For those unaware, the cauchy schwarz is probably one of the most broken lemmas in mathematics. So ubiquitious is this theorem, that it is given different names depending on the form of the inequality we use and for what purpose specifically we're using it.
+tags: math
+giscus_comments: false
+date: 2024-07-30
+featured: false
+---
+
+Let's start from the beginning. We will state some different forms of the cauchy schwarz inequality, prove the form involving dot products and cover what I think is a really cool problem that uses the inequality.
+
+For the different forms of the cauchy schwarz inequality, we have
+
+- Probability Theory: $$\lvert \mathbb{E}(XY) \rvert^{2} \leq \mathbb{E}(X^{2}) \mathbb{E}(Y^{2})$$.
+- $$\mathbb{R}^2$$-dot product: $$\vert {\bf a} \cdot {\bf b} \vert^{2} \leq ({\bf a} \cdot {\bf a}) \; ({\bf b} \cdot {\bf b})$$ .
+- $$R^{n} - \; n$$ - dimensional Euclidean Space:
+  $$
+  \left(\sum \limits_{i = 1}^{n} u_{i} v_{i}\right)^{2} \leq
+  \left(\sum \limits_{i = 1}^{n} u_i\right)^{2} \left(\sum \limits_{i = 1}^{n} v_i\right)^{2}
+  $$
+
+> cauchy schwarz theorem
+>
+> For all vectors $${\bf a}$$ and $${\bf b}$$ in $$R^{n}$$, we have that
+>
+> $$$$\vert\ {\bf a} \cdot {\bf b} \vert^{2} \leq \vert \vert {\bf a} \vert \vert^{2} \vert \vert {\bf b} \vert \vert^{2}$$$$
+
+**proof 1:**
+
+Let $$\mathbf{a}$$ and $$\mathbf{b}$$ be vectors living in $$R^{n}$$ such that $$\mathbf{a} = \langle a_1, a_2, a_3, \dots, a_n \rangle$$ and $$\mathbf{b} = \langle b_1, b_2, b_3, \dots, b_n \rangle$$. We first simplify both sides of the inequality, and proceed from there.
+
+We have that,
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+\lvert\ {\bf a} \cdot {\bf b}\rvert^{2} &= ({\bf a} \cdot {\bf b}) ({\bf a} \cdot {\bf b}) \\
+&= \langle a_1, a_2, a_3, \dots, a_n \rangle \langle b_1, b_2, b_3, \dots, b_n \rangle \\
+&= (a_1 b_1 + a_2 b_2 + \dots + a_n b_n) (a_1 b_1 + a_2 b_2 + \dots + a_n b_n) \\
+&= (a_1 b_1 + a_2 b_2 + \dots + a_n b_n)^{2} \\
+&= \left(\sum_{i = 1}^{n} a_i b_i\right)^2 = D^2 \\
+({\bf a} \cdot {\bf a}) &= \langle a_1, a_2, a_3, \dots, a_n \rangle \langle a_1, a_2, a_3, \dots, a_n \rangle \\
+&= a_{1}^{2} + a_{2}^{2} + \dots a_{n}^{2} \\
+&= \sum_{i = 1}^{n} a_{i}^{2} = A \\
+({\bf b} \cdot {\bf b}) &= \langle b_1, b_2, b_3, \dots, b_n \rangle \langle b_1, b_2, b_3, \dots, b_n \rangle \\
+({\bf b} \cdot {\bf b}) &= b_{1}^{2} + b_{2}^{2} + \dots + b_{n}^{2} \\
+&= \sum_{i = 1}^{n} b_{i}^{2} = B
+\end{align*}
+$$
+</p>
+So we are therefore tasked with proving the following inequality, $$D^{2} \leq AB$$
+
+Rearranging, we have that
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+&\
+D^{2} \leq AB \\
+&\
+D^{2} - AB \leq 0 \\
+&\
+4D^{2} - 4AB \leq 0 &&\text{Multiplying both sides by 4} \\
+&\
+(2D)^{2} - 4AB \leq 0
+\end{align*}
+$$
+</p>
+
+One of the coolest thing about math to me is how you can transform certain kinds of problems into problems that might be easier to solve or perhaps represent. This is one of those moments. This might look familiar to some people already but given a quadratic equation $$ax^{2} + bx + c = 0$$, the discrimanant $$D_{Q}$$ is given by $$b^{2} - 4ac$$. The entire reason I changed the form of the inequalitywe had to prove was so that it could better mimic this form of the discriminant for something as widely ubiquitous as the quadratic formula.
+
+Given this observation, we can prove an equivalent statement to the inequality we wish to show, namely that the quadratic equation given by $$Ax^2 + 2Dx + B$$ has no real roots or exactly one real root. This is because the discrimanant of this quadratic equation is given by $$4D^{2} - 4AB$$, and the same would imply that $$4D^{2} - 4AB \leq 0$$, which is exactly what we want :)
+
+Substituting in the values for $$A$$, $$B$$, and $$D$$, we have that
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+Ax^2 + 2Dx + B &= \left(a_1^2 + \dots + a_n^2\right) x^2 + 2 \left(a_1 b_1 + \dots + a_n b_n\right) x + \left(b_1^2 + \dots + b_n^2\right) \\
+&= \left(a_1^2 x^2 + \dots + a_n x^2\right) + 2 \left(a_1 b_1 x + \dots + a_n b_n x\right) + \left(b_1^2 x^2 + \dots + b_n^2 x^2\right) \\
+&= \left(a_1^2 x^2 + 2a_1 b_1 x + b_1^2\right) + \dots + \left(a_n^2 x^2 + 2a_n b_n x + b_n^2\right) \\
+&= \left(a_1 x + b_1\right)^2 + \dots + \left(a_n x + b_n\right)^2 \\
+&\geq 0
+\end{align*}
+$$
+</p>
+
+- **case 1:** $$Ax^2 + 2Dx + B > 0$$
+  In this case, we have that the quadratic equation has no real roots, which is exactly one of the conditions we want.
+- **case 2:** $$Ax^2 + 2Dx + B = 0$$
+  Note that this is equivalent to saying that $$\left(a_1 x + b_1\right)^2 + \dots + \left(a_n x + b_n\right)^2 = 0$$ which necessarily implies that for all $$i \in \{1, 2, \dots, n\}$$, $$a_i x + b_i = 0$$, which implies that the equation only has one real root, thereby satisfying the second condition we want and completing the proof.
+
+**proof 2:** This is a proof that at least to me feels slightly more natural, and personally I think this proof technique is cooler (I may be biased here though).
+
+We begin by defining the function $$f(t) = \|mathbf{x} - t\mathbf{y}\|^2 = \langle \mathbf{x} - t\mathbf{y}, \mathbf{x} - t\mathbf{y} \rangle$$. Simplifying, this gives us
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+f(t) &= \langle \mathbf{x} - ty, \mathbf{x} - t\mathbf{y} \rangle \\
+&= \langle \mathbf{x}, \mathbf{x} - t\mathbf{y} \rangle - t \langle y, \mathbf{y} - t\mathbf{y} \rangle \\
+&= \langle \mathbf{x}, \mathbf{x} \rangle - t\langle \mathbf{x}, \mathbf{y} \rangle - t \left(\langle \mathbf{y}, \mathbf{x} \rangle - t \langle \mathbf{y}, \mathbf{y} \rangle \right) \\
+&= \langle \mathbf{x}, \mathbf{x} \rangle - 2t \langle \mathbf{x}, \mathbf{y} \rangle + t^2 \langle \mathbf{y}, \mathbf{y} \rangle \\
+&= \|\mathbf{x}\|^2 - 2t \langle \mathbf{x}, \mathbf{y} \rangle + t^2 \|\mathbf{y}\|^2
+\end{align*}
+$$
+</p>
+
+Since $$f(t) = \|mathbf{x} - t\mathbf{y}\|^2$$, we have that $$f(t) \geq 0$$ for all $$t \in \mathbb{R}$$. We make the clever observation of exploiting this fact for the minima of $$f$$, and proceed to find the derivative, set it equal to 0, and solve for $$t_{\text{min}}$$.
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+f'(t) &= -2 \langle \mathbf{x}, \mathbf{y} \rangle + 2t \|\mathbf{y}\|^2\\
+0 &= -2 \langle \mathbf{x}, \mathbf{y} \rangle + 2t_{\text{min}} \|\mathbf{y}\|^2 &&\text{Setting $$f'(t) = 0$$} \\
+-2 \langle \mathbf{x}, \mathbf{y} \rangle &= 2t_{\text{min}} \|\mathbf{y}\|^2 \\
+\langle \mathbf{x}, \mathbf{y} \rangle &= t_{\text{min}} \|\mathbf{y}\|^2 &&\text{Dividing both sides by 2} \\
+t_{\text{min}} &= \frac{\langle \mathbf{x}, \mathbf{y} \rangle}{\|\mathbf{y}\|^2} &&\text{Dividing both sides by $$\|\mathbf{y}\|^2$$}
+\end{align*}
+$$
+</p>
+
+Evaluating, we have that
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+f(t_{\text{min}}) &= \|\mathbf{x}\|^2 - 2t_{\text{min}} \langle \mathbf{x}, \mathbf{y} \rangle + t_{\text{min}}^2 \|\mathbf{y}\|^2 \\
+&= \|\mathbf{x}\|^2 - 2 \frac{\langle \mathbf{x}, \mathbf{y} \rangle}{\|\mathbf{y}\|^2} \langle \mathbf{x}, \mathbf{y} \rangle + \left(\frac{\langle \mathbf{x}, \mathbf{y} \rangle}{\|\mathbf{y}\|^2}\right)^2 \|\mathbf{y}\|^2 \\
+&= \|\mathbf{x}\|^2 - 2 \frac{\langle \mathbf{x}, \mathbf{y} \rangle}{\|\mathbf{y}\|^2} \langle \mathbf{x}, \mathbf{y} \rangle + \left(\frac{\langle \mathbf{x}, \mathbf{y} \rangle^2}{\|\mathbf{y}\|^2}\right) \\
+&= \frac{\|\mathbf{x}\|^2 \|\mathbf{y}\|^2 - 2 \langle \mathbf{x}, \mathbf{y} \rangle^2 + \langle \mathbf{x}, \mathbf{y}\rangle^2}{\|\mathbf{y}\|^2} \\
+&= \frac{\|\mathbf{x}\|^2 \|\mathbf{y}\|^2 - \langle \mathbf{x}, \mathbf{y} \rangle^2}{\|\mathbf{y}\|^2} \geq 0 \\
+&\implies \|\mathbf{x}\|^2 \|\mathbf{y}\|^2 - \langle \mathbf{x}, \mathbf{y}\rangle^2 \geq 0 \\
+&\implies \langle \mathbf{x}, \mathbf{y} \rangle \leq \|\mathbf{x}\| \|\mathbf{y}\|
+\end{align*}
+$$
+</p>
+
+> **fun lemma :D**
+>
+> For a non-negative random variable $$Y$$, we have that
+>
+> $$$$\frac{\mathbb{E}[Y]^2}{\mathbb{E}[Y^2]} \leq \Pr(Y \neq 0) \leq \mathbb{E}[Y]$$$$
+
+**proof:**
+We first prove the right-hand side of the inequality, i.e. $$\Pr(Y \neq 0) \leq \mathbb{E}[Y]$$. Using the definition of expectation, we have that
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+\mathbb{E}[Y] &= \sum_{y \in \Omega_{y}} y \cdot \Pr(Y = y) \\
+&= \sum_{\substack{y \in \Omega_{y} \\ y \neq 0}} y \cdot \Pr(Y = y) &&\text{Separating out the term when $$y$$ is 0} \\
+&\geq \sum_{y \in \Omega_{y}, y \neq 0} \Pr(Y = y) &&\text{Since $$y \geq 0$$}\\
+&\geq \Pr(Y \neq 0)
+\end{align*}
+$$
+</p>
+
+We now prove the left-hand side of the inequality, Consider the expression $$\mathbb{E}[Y^2] \Pr(Y \neq 0)$$. We have that the following is true
+
+<p style="overflow-x:auto">
+$$
+\begin{align*}
+\mathbb{E}[Y]^2 \Pr(Y \neq 0) &= \sum_{y \neq 0} \underbrace{\Pr(Y = y)}_{a_i = \sqrt{\Pr(Y = y)}} \; \sum_{y \neq 0} \underbrace{y^{2} \Pr(Y = y)}_{b_i = y \sqrt{\Pr(Y = y)}} &&\text{Using the definition of expectation} \\
+&\geq \sum_{y \neq 0} y \sqrt{\Pr(Y = y)} \sqrt{\Pr(Y = y)} &&\text{Via Cauchy Schwarz} \\
+&\geq \sum_{y \neq 0} y \Pr(Y = y) \\
+&\geq \mathbb{E}[Y] &&\text{Using the definition of expectation} \\
+&\implies \frac{\mathbb{E}[Y]}{\mathbb{E}[Y]^2} \leq  \Pr(Y \neq 0)
+\end{align*}
+$$
+</p>
