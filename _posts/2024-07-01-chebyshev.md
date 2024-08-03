@@ -57,10 +57,10 @@ $$
 $$
 
 \begin{align*}
-\mathbb{E}[X_1] &= \mathbb{E}\left[X - a_1 \sigma_1 \right] &&\text{by definition of } X*1 \\\
-&= \mathbb{E}\left[\sum*{i = 1}^{n} a*i \sigma_i - a_1 \sigma_1 \right] &&\text{by definition of } X \\\
-&= \mathbb{E}\left[\sum*{i = 2}^{n} a*i \sigma_i\right] \\\
-&= \sum*{i = 2}^{n} a_i \mathbb{E}[\sigma_i] = 0 &&\text{linearity of expectation and Theorem 1}
+\mathbb{E}[X_1] &= \mathbb{E}\left[X - a_1 \sigma_1 \right] &&\text{by definition of } X_1 \\\
+&= \mathbb{E}\left[\sum_{i = 1}^{n} a_i \sigma_i - a_1 \sigma_1 \right] &&\text{by definition of } X \\\
+&= \mathbb{E}\left[\sum_{i = 2}^{n} a_i \sigma_i\right] \\\
+&= \sum_{i = 2}^{n} a_i \mathbb{E}[\sigma_i] = 0 &&\text{linearity of expectation and Theorem 1}
 \end{align*}
 
 $$
@@ -109,7 +109,7 @@ $$
 <p style = "overflow-x:auto">
 $$
 
-Y = \sum*{i = 1}^{n/2} a*{2i - 1} \sigma*{2i - 1} \quad \text{and} \quad Z = \sum*{i = 1}^{n/2} a*{2i} \sigma*{2i}
+Y = \sum_{i = 1}^{n/2} a_{2i - 1} \sigma_{2i - 1} \quad \text{and} \quad Z = \sum_{i = 1}^{n/2} a_{2i} \sigma_{2i}
 
 $$
 </p>
@@ -119,7 +119,7 @@ We have that
 <p style = "overflow-x:auto">
 $$
 
-Y + Z = \sum*{i = 1}^{n/2} a*{2i - 1} \sigma*{2i - 1} + \sum*{i = 1}^{n/2} a*{2i} \sigma*{2i} = \sum\_{i = 1}^{n} a_i \sigma_i = X
+Y + Z = \sum_{i = 1}^{n/2} a_{2i - 1} \sigma_{2i - 1} + \sum_{i = 1}^{n/2} a_{2i} \sigma_{2i} = \sum_{i = 1}^{n} a_i \sigma_i = X
 
 $$
 </p>
@@ -130,7 +130,7 @@ This necessarily implies as a consequence of the linearity of variance for indep
 $$
 
 \begin{align}
-1 = \text{Var}\left(\sum\_{i = 1}^{n} a_i \sigma_i\right)= \text{Var}(X) = \text{Var}(Y) + \text{Var}(Z)
+1 = \text{Var}\left(\sum_{i = 1}^{n} a_i \sigma_i\right)= \text{Var}(X) = \text{Var}(Y) + \text{Var}(Z)
 \end{align}
 
 $$
@@ -233,12 +233,12 @@ Note that the setting we're interested in is when the $$\sigma_i$$'s are indepen
 $$
 
 \begin{align*}
-\text{Var}(X*1) &= \text{Var}\bigg(X - a_1 \sigma_1\bigg) &&\text{by definition of } X \\\
-&= \text{Var}\left(\sum*{i = 1}^{n} a*i \sigma_i - a_1 \sigma_1\right) &&\text{by definition of } X_1 \\\
-&= \text{Var}\left(\sum*{i = 2}^{n} a*i \sigma_i\right) &&\text{simplifying} \\\
-&= \sum*{i = 2}^{n} \text{Var}(a*i \sigma_i) = \sum*{i = 2}^{n} a*i^2 \text{Var}(\sigma_i) &&\text{independence} \\\
-&= \sum*{i = 2}^{n} a*i^2 = \sum*{i = 1}^{n} a*i^2 - a_1^2 &&\text{Theorem 1} \\\
-&= 1 - a*{1}^2 = 1 - \vert a\_{1}\vert ^{2} &&\text{since } a_1 \in \mathbb{R}
+\text{Var}(X_1) &= \text{Var}\bigg(X - a_1 \sigma_1\bigg) &&\text{by definition of } X \\
+&= \text{Var}\left(\sum_{i = 1}^{n} a_i \sigma_i - a_1 \sigma_1\right) &&\text{by definition of } X_1 \\
+&= \text{Var}\left(\sum_{i = 2}^{n} a*i \sigma_i\right) &&\text{simplifying} \\
+&= \sum_{i = 2}^{n} \text{Var}(a_i \sigma_i) = \sum_{i = 2}^{n} a_i^2 \text{Var}(\sigma_i) &&\text{independence} \\
+&= \sum_{i = 2}^{n} a_i^2 = \sum_{i = 1}^{n} a_i^2 - a_1^2 &&\text{Theorem 1} \\
+&= 1 - a_{1}^2 = 1 - \vert a_{1}\vert ^{2} &&\text{since } a_1 \in \mathbb{R}
 \end{align*}
 
 $$
@@ -265,7 +265,7 @@ $$
 <p style = "overflow-x:auto">
 $$
 
-\mathbb{E}[Y] = \mathbb{E}\left[\sum_{i = 1}^{n/2} a_{2i - 1} \sigma_{2i - 1}\right] = \sum*{i = 1}^{n/2} a*{2i - 1} \mathbb{E}[\sigma_{2i - 1}] = 0
+\mathbb{E}[Y] = \mathbb{E}\left[\sum_{i = 1}^{n/2} a_{2i - 1} \sigma_{2i - 1}\right] = \sum_{i = 1}^{n/2} a_{2i - 1} \mathbb{E}[\sigma_{2i - 1}] = 0
 
 $$
 </p>
@@ -275,7 +275,7 @@ Similarly, we have that
 <p style = "overflow-x:auto">
 $$
 
-\mathbb{E}[Z] = \mathbb{E}\left[\sum_{i = 1}^{n/2} a_{2i} \sigma_{2i}\right] = \sum*{i = 1}^{n/2} a*{2i} \mathbb{E}[\sigma_{2i}] = 0
+\mathbb{E}[Z] = \mathbb{E}\left[\sum_{i = 1}^{n/2} a_{2i} \sigma_{2i}\right] = \sum_{i = 1}^{n/2} a_{2i} \mathbb{E}[\sigma_{2i}] = 0
 
 $$
 </p>
@@ -299,12 +299,12 @@ $$
 
 \begin{align*}
 \text{Var}(Y) - \text{Var}(Z) &=
-\text{Var}\left(\sum*{i = 1}^{n/2} a*{2i - 1} \sigma*{2i - 1}\right) - \text{Var}\left(\sum*{i = 1}^{n/2} a*{2i} \sigma*{2i}\right) \\\
- &= \sum*{i = 1}^{n/2} a*{2i - 1}^2 \text{Var}(\sigma*{2i - 1}) - \sum*{i = 1}^{n/2} a*{2i}^2 \text{Var}(\sigma*{2i}) \\\
- &= \sum*{i = 1}^{n/2} a*{2i - 1}^2 - \sum*{i = 1}^{n/2} a*{2i}^2 = \sum*{i = 1}^{n/2} (a*{2i - 1}^2 - a*{2i}^2) &&\text{Theorem 1} \\\
- &= a_1^2 + a_3^2 + \dots + a*{n - 1}^2 - a*2^2 - a_4^2 - \dots - a_n^2 \\\
- &= a_1^2 + (a_3^2 - a_2^2) + (a_5^2 - a_4^2) + \dots + (a*{n - 1}^2 - a*n^2) \\\
- &= a_1^2 + \sum*{i = 2}^{n/2} \underbrace{(a*{2i - 1}^2 - a*{2i - 2}^2)}\_{< 0} < a_1^2 < 1/2
+\text{Var}\left(\sum_{i = 1}^{n/2} a_{2i - 1} \sigma_{2i - 1}\right) - \text{Var}\left(\sum_{i = 1}^{n/2} a_{2i} \sigma_{2i}\right) \\
+ &= \sum_{i = 1}^{n/2} a_{2i - 1}^2 \text{Var}(\sigma_{2i - 1}) - \sum_{i = 1}^{n/2} a_{2i}^2 \text{Var}(\sigma_{2i}) \\
+ &= \sum_{i = 1}^{n/2} a_{2i - 1}^2 - \sum_{i = 1}^{n/2} a_{2i}^2 = \sum_{i = 1}^{n/2} (a_{2i - 1}^2 - a_{2i}^2) &&\text{Theorem 1} \\
+ &= a_1^2 + a_3^2 + \dots + a_{n - 1}^2 - a_2^2 - a_4^2 - \dots - a_n^2 \\
+ &= a_1^2 + (a_3^2 - a_2^2) + (a_5^2 - a_4^2) + \dots + (a_{n - 1}^2 - a_n^2) \\
+ &= a_1^2 + \sum_{i = 2}^{n/2} \underbrace{(a_{2i - 1}^2 - a_{2i - 2}^2)}\_{< 0} < a_1^2 < 1/2
 \end{align*}
 
 $$
