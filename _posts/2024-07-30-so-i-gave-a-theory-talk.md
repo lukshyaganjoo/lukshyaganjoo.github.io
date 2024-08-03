@@ -212,11 +212,11 @@ We also know that
 
 <p style = "overflow-x:auto">
 $$
-\text{Null} (\mathbf{A}_P - \mathbf{I}_{10}) \subseteq \text{Span} (\mathbf{1})^{\perp} \quad \text{and} \quad \text{Null} (\mathbf{A}_Q - I*{10}) \subseteq \text{Span} (\mathbf{1})^{\perp}
+\text{Null} (\mathbf{A}_P - \mathbf{I}_{10}) \subseteq \text{Span} (\mathbf{1})^{\perp} \quad \text{and} \quad \text{Null} (\mathbf{A}_Q - \mathbf{I}_{10}) \subseteq \text{Span} (\mathbf{1})^{\perp}
 $$
 </p>
 
-$B_{\text{Null} (\mathbf{A}_P - \mathbf{I}_{10})} \cup B_{\text{Null} (\mathbf{A}_Q - \mathbf{I}_{10})}$ has 10 vectors in $\mathbb{R}^{9}$ since the bases of each of the null spaces has 5 vectors. Therefore $B_{\text{Null} (\mathbf{A}_P - \mathbf{I}_{10})} \cup B_{\text{Null} (\mathbf{A}_Q - \mathbf{I}_{10})}$ must be linearly dependent (since they have more vectors than the dimension of the space they exist in).
+$$B_{\text{Null} (\mathbf{A}_P - \mathbf{I}_{10})} \cup B_{\text{Null} (\mathbf{A}_Q - \mathbf{I}_{10})}$$ has 10 vectors in $$\mathbb{R}^{9}$$ since the bases of each of the null spaces has 5 vectors. Therefore $$B_{\text{Null} (\mathbf{A}_P - \mathbf{I}_{10})} \cup B_{\text{Null} (\mathbf{A}_Q - \mathbf{I}_{10})}$$ must be linearly dependent (since they have more vectors than the dimension of the space they exist in).
 
 Therefore $B_{S_1} \cap B_{S_2} \neq \{0\}$ where $S_1$ and $S_2$ refer to the two subspaces above. This implies the existence of a non-zero vector $w$ that exists in their intersection.
 
