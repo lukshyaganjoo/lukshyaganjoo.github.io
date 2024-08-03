@@ -32,12 +32,12 @@ disappear at the sink $$t$$.
 ## the problem 
 - given a flow network $$G = (V, E)$$ with a capacity function $$c : E \rightarrow \mathbb{R}^+$$ and a source $$s \in V$$ and a sink $$t \in V$$, it isn't unereasonable to try and find the maximum flow that can travel through the network. this is a somewhat interesting question to ask because the naive idea of simply sending as much flow as you can on a given edge doesn't really work out. 
 - consider the following flow network 
-![flow network](math-images/network1.png)
+![flow network](/assets/img/network1.png) 
 - the naive idea of finding a path from $$s$$ to $$t$$ and sending as much flow as possible on the edges given by that path doesn't quite work. Consider the following path from $$s$$ to $$t$$ given by 
-![flow network](math-images/network2.png)
+![flow network](/assets/img/network2.png)
 - since the minimimum edge capacity on the given path is 20 units of flow, 
 we send 20 units of flow from $$s$$ to $$t$$ on the given path, and given that all the edges have the same capacity, there is no redirection happening here, where we send exactly 20 units from $$s$$ to $$t$$ as shown below 
-![flow network](math-images/network3.png)
+![flow network](/assets/img/network3.png)
 
 ## the solution and where ford and fulkerson come in
 - we introduce a new concept called a **residual graph**. the residual graph of a graph $$G$$ is defined as a graph $$\mathcal{R} = (V, E)$$, where it has the exact same vertices and edges as the original graph, but differs from the original graph with regards to the capacities along each of the edges. 
