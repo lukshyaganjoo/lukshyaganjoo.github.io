@@ -23,6 +23,7 @@ i genuinely think that there isn't a single person who wouldn't like graph theor
 
 given that the above discussion was quite vague, it may help to see some concrete notions of the tools we'll be using in the problem. 
 
+<!-- prettier-ignore -->
 > **definitions** 
 > 
 > - a graph $$\mathcal{G}$$ is a collection of vertices $$V$$ and edges $$E$$ such that each edge connects two vertices, where notationally we write $$\mathcal{G} = (V, E)$$. a **multi-graph** is a graph that allows for 
