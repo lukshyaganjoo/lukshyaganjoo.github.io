@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: perfect matchings and how **most** graphs are connected
-description: two words: probabilistic method
+description: two words; probabilistic method
 tags: math
 giscus_comments: false
 date: 2024-08-01
