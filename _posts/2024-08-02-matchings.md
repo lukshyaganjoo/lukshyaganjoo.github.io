@@ -5,7 +5,7 @@ description: a taste of the types of results one works with when dealing with ex
 graphs
 tags: math
 giscus_comments: false
-date: 2024-08-01
+date: 2024-08-02
 featured: false
 
 bibliography: 2018-12-22-distill.bib
