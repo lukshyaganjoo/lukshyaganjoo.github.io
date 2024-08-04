@@ -91,9 +91,7 @@ $$
 \end{align*}
 $$
 </p>
-
 Another way to see this is to note that for $$n$$ large enough, since $$n \geq 2$$,  
-
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -166,9 +164,7 @@ The probability that all 3 perfect matchings have no edges crossing this cut is 
 $$
     \Pr[\text{cut of size } 2i \text{ has no edges for 3 perfect matchings}] = \left(\frac{\frac{(2i)!}{2^i i!} \cdot \frac{(2n - 2i)!}{2^{n - i} (n - i)!}}{\frac{(2n)!}{2^n n!}}\right)^3
 $$
-</p>
-
-since the matchings are drawn uniformly at random. 
+</p> since the matchings are drawn uniformly at random. 
 
 We also note that there are $$\binom{2n}{2i}$$ ways to choose the vertices for the cut. Therefore trudging through all the algebra in the sum we had earlier gives us 
 
@@ -204,13 +200,11 @@ $$
 </p>
 
 We now turn our attention to bounding the following sum, for $$u = 3$$.  
-
 <p style = "overflow-x:auto">
 $$
     \Pr[G_k \text{ is disconnected}] \leq \frac{1}{n^{n}} \sum_{i = 1}^{n - 1} i^{i} (n - i)^{n - 1}
 $$
 </p>
-
 Therefore, reiterating things so I don't lose sight of the goal  
 
 <p style = "overflow-x:auto">
@@ -236,9 +230,7 @@ $$
 \end{align*} 
 $$
 </p>
-
 We now argue that the function is decreasing, i.e. $$f'(x) < 0$$. We have  
-
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -252,15 +244,12 @@ $$
 
 where the last inequality follows from the fact that $$x \leq n/2$$, and so we have $$\frac{x}{n - x} < 1$$ and therefore $$\log \left(\frac{x}{n - x}\right) < 0$$.
 
-Therefore the maximum of $$f$$ for $$2 \leq x \leq n/2$$ is attained at $$x = 2$$, which gives us the very 
-useful fact that for all $$x \in [2, n/2]$$, $$f(x) \leq f(2)$$, i.e.  
-
+Therefore the maximum of $$f$$ for $$2 \leq x \leq n/2$$ is attained at $$x = 2$$, which gives us the very useful fact that for all $$x \in [2, n/2]$$, $$f(x) \leq f(2)$$, i.e.  
 <p style = "overflow-x:auto">
 $$
     f(x) \leq 2^2 (n - 2)^{n - 2} = 4 (n - 2)^{n - 2}
 $$
 </p>
-
 Putting all these facts together, we have 
 
 <p style = "overflow-x:auto">
@@ -276,23 +265,18 @@ $$
 </p>
 
 As $$n \to \infty$$, clearly  
-
 <p style = "overflow-x:auto">
 $$
     e^{-1 + 1/n} = e^{-1/n(n - 1)} \approx \left(1 - 1/n\right)^{n - 1} = \left(\frac{n - 1}{n}\right)^{n - 1} \to 1/e
 $$
 </p>
-
-and 
-
+and
 <p style = "overflow-x:auto">
 $$
     e^{-2 + 4/n} = e^{-2/n(n - 2)} \approx \left(1 - 2/n\right)^{n - 2} = \left(\frac{n - 2}{n}\right)^{n - 2} \to 1/e^2
 $$
 </p>
-
 Taking limits, we get  
-
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -301,14 +285,11 @@ $$
 \end{align*}
 $$ 
 </p>
-
 which finally implies  
-
 <p style = "overflow-x:auto">
 $$
     \Pr\bigg[\mathcal{G}_k \text{ is disconnected}\bigg]  \to 0 \text{ as } n \to \infty \Longleftrightarrow 
     \Pr\bigg[\mathcal{G}_k \text{ is connected}\bigg] \to 1 \text{ as } n \to \infty
 $$
 </p>
-
 and we are finally done. We have emerged victorious. 
