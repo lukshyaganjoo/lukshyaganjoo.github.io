@@ -93,7 +93,7 @@ we finally stop the dilly-dallying and get to the main point of this post, the m
 > Let $$(\mathcal{G}, s, t, c)$$ be a flow network, $$C(S, T)$$ be an $$s-t$$ cut, and $$f$$ be a flow in $$\mathcal{G}$$, then: 
 >
 > $$
-    f(S, T) \leq c(S, T)
+    \begin{align*}f(S, T) \leq c(S, T)\end{align*}
 $$
 
 
@@ -116,7 +116,8 @@ The larger consequence of this lemma is that for **any cut** you choose in the f
 > Let $$(\mathcal{G}, s, t, c)$$ be a flow network, $$C(S, T)$$ be an $$s-t$$ cut, and $$f$$ be a flow in $$\mathcal{G}$$, with $$v \in T$$, then: 
 >
 > $$
-    f(S, T) = f(S \cup \{v\}, T \setminus \{v\})
+    \begin{align*}f(S, T) = f(S \cup \{v\}, T \setminus \{v\})
+    \end{align*}
 $$
 
 
@@ -162,8 +163,9 @@ $$
 >
 > Let $$(\mathcal{G}, s, t, c)$$ be a flow network, $$C(S, T)$$ be an $$s-t$$ cut, and $$f$$ be a flow in $$\mathcal{G}$$, then:
 >
-> $$
+> $$\begin{align*}
     f(S, T) = \text{val}(f)
+  \end{align*}
 $$
 
 
@@ -186,8 +188,9 @@ $$
 >
 > Let $$(\mathcal{G}, s, t, c)$$ be a flow network, $$C(S, T)$$ be an $$s-t$$ cut, and $$f$$ be a flow in $$\mathcal{G}$$, then:
 >
-> $$
+> $$\begin{align*}
     \text{val}(f) \leq c(S, T)
+  \end{align*}
 $$
 
 
