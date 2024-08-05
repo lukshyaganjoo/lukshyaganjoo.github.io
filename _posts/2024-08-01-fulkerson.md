@@ -16,9 +16,7 @@ toc:
   - name: the proof
 ---
 
-In any standard algorithms class, there's going to be an entire section of the course dedicated 
-to what computer scientists refer to as "flow". Besides being creatively named, it is also quite 
-powerful in solving a variety of problems. For the purposes of motivation, I will go over some background, one of the more important network flow algorithms, and an application of this algorithm in the context of proving a seemingly unnatural equivalence.
+In any standard algorithms class, there's going to be an entire section of the course dedicated to what computer scientists refer to as "flow". Besides being creatively named, it is also quite powerful in solving a variety of problems. For the purposes of motivation, I will go over some background, one of the more important network flow algorithms, and an application of this algorithm in the context of proving a seemingly unnatural equivalence.
 
 ## background and definitions 
 - a **flow network** is a directed graph $$G = (V, E)$$ with a capacity function $$c : E \rightarrow \mathbb{R}^+$$ and a source $$s \in V$$ and a sink $$t \in V$$.

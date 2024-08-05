@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: perfect matchings and how **most** graphs are connected
+title: perfect matchings and how most graphs are connected
 description: a taste of the types of results one works with when dealing with expander 
 graphs
 tags: math
