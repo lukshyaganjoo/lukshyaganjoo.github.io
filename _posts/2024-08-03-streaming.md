@@ -23,7 +23,7 @@ toc:
 ## introduction
 the object of consideration for today might be slightly different than what you're used to. the computational 
 model we will be using for this proof is the streaming model. in this model, we are given a sequence of elements 
-in a "stream" and we have to process them one by one. given that the number of elements in our data stream could be significantly larger than the amount of memory we have, we aren't allowed to store the entire stream in memory, and are instead allowed a small amount of space to store the information we deem relevant. the question now becomes; what functions of the input stream can we compute with what amount of time and model? while we will be focusing on space; similar considerations and conclusions can be made for time. under normal circumstances, the study of such a model wouldbe motivated by introducing the notion of **moments** where you consider the stream as a high-dimensional vector and may want to compute the $k$-th moment of the vector. while this is useful, the motivating route we take is slightly different. 
+in a "stream" and we have to process them one by one. given that the number of elements in our data stream could be significantly larger than the amount of memory we have, we aren't allowed to store the entire stream in memory, and are instead allowed a small amount of space to store the information we deem relevant. the question now becomes; what functions of the input stream can we compute with what amount of time and model? while we will be focusing on space; similar considerations and conclusions can be made for time. under normal circumstances, the study of such a model wouldbe motivated by introducing the notion of **moments** where you consider the stream as a high-dimensional vector and may want to compute the $$k$$-th moment of the vector. while this is useful, the motivating route we take is slightly different. 
 
 ## the problem 
 > consider the problem of finding the number of distinct elements in a stream of elements. while this is a trivial problem in the standard computational model since we can simply store the elements and count the number of distinct elements, the streaming model makes this problem significantly more challenging.  
@@ -32,11 +32,11 @@ in a "stream" and we have to process them one by one. given that the number of e
 > **theorem**
 >
 > we present a streaming algorithm to estimate the number of distinct elements in the
-> sequence with multiplicative error $1 \pm \epsilon$ for some $\epsilon \in (0, 1)$. for the algorithm, we assume access to $k$ independent hash functions as described above. the number of hash functions required depends on the desired precision, i.e. $k \leq \mathcal{O}(1/\epsilon^2)$ is sufficient to achieve the desired error guarantee. 
+> sequence with multiplicative error $$1 \pm \epsilon$$ for some $$\epsilon \in (0, 1)$$. for the algorithm, we assume access to $$k$$ independent hash functions as described above. the number of hash functions required depends on the desired precision, i.e. $$k \leq \mathcal{O}(1/\epsilon^2)$$ is sufficient to achieve the desired error guarantee. 
 
 > **definition**
 >
-> a **hash function** is a function $h : A \to B$ where $A = \\{a \in \{0, 1\}^j \mid j \in \mathbb{N}\\}$ is the set of all bit sequences of aritrary length and $B = \\{0, 1\\}^k$ is the set of all bit sequences of a specific length $k \in \mathbb{N}$. Note that it is not important to understand deeply the definition of a hash function, rather simply that with the appropriate independence assumptions, it essentially behaves like a uniform random variable.
+> a **hash function** is a function $$h : A \to B$$ where $$A = \\{a \in \{0, 1\}^j \mid j \in \mathbb{N}\\}$$ is the set of all bit sequences of aritrary length and $$B = \\{0, 1\\}^k$$ is the set of all bit sequences of a specific length $$k \in \mathbb{N}$$. Note that it is not important to understand deeply the definition of a hash function, rather simply that with the appropriate independence assumptions, it essentially behaves like a uniform random variable.
 
 ## a surprisingly simple solution 
 <p style = "overflow-x:auto">
@@ -54,7 +54,7 @@ $$
 \end{array}
 $$
 </p>
-what the above algorithm is essentially doing is hashing each element in the stream $k$ times and keeping track of the minimum hash value for each element. it is then taking the average of these minimum hash values and returning the appropriate estimate on the last line of the algorithm. 
+what the above algorithm is essentially doing is hashing each element in the stream $$k$$ times and keeping track of the minimum hash value for each element. it is then taking the average of these minimum hash values and returning the appropriate estimate on the last line of the algorithm. 
 
 ## why is an average of minimums necessary?
 in order to answer this question, we consider the following modification to the algorithm. 
@@ -79,7 +79,7 @@ it turns out that the above algorithm produces the correct solution on average! 
 
 > **lemma 1**
 >
-> $$ \text{number of distinct elements in the data stream} = \frac{1}{\mathbb{E}[Z]} - 1$$
+> $$\begin{align*}\text{number of distinct elements in the data stream} = \frac{1}{\mathbb{E}[Z]} - 1\end{align*}$$
 
 ## the proof 
 
@@ -87,17 +87,19 @@ it turns out that the above algorithm produces the correct solution on average! 
 
 > **theorem 1**
 >
-> Let $X_1, X_2, \dots, X_n$ be independent random variables uniformly distributed in $[0, 1]$ and let $X := \min\{X_1, X_2, \dots, X_n\}$. Then 
+> Let $$X_1, X_2, \dots, X_n$$ be independent random variables uniformly distributed in $$[0, 1]$$ and let $$X := \min\{X_1, X_2, \dots, X_n\}$$. Then 
 >
-> $$f_X(x) = 
+> $$\begin{align*}
+f_X(x) = 
 \begin{cases}
     0 & \text{if } x \notin [0, 1] \\
     n (1 - x)^{n - 1} & \text{if } x \in [0, 1]
 \end{cases}
+\end{align*}
 $$
 
 **proof** 
-We proceed as usual; by first computing the CDF, i.e. $F_X(x) = \Pr[X \leq x]$. We have that 
+We proceed as usual; by first computing the CDF, i.e. $$F_X(x) = \Pr[X \leq x]$$. We have that 
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -122,7 +124,7 @@ F_X(x) =
 \end{cases}
 $$
 
-The result thus follows by taking the derivative of $F_X(x)$ giving us 
+The result thus follows by taking the derivative of $$F_X(x)$$ giving us 
 
 $$
 f_X(x) = 
@@ -132,11 +134,10 @@ f_X(x) =
 \end{cases} \text{ as desired.}
 $$
 
-{: .note-title}
 > **theorem 2**
 >
-> let $X_1, X_2, \dots, X_n$ be independent random variables uniformly distributed in $[0, 1]$. let $Y = \min \limits_{i \in [n]} X_i$. then 
-> $$\mathbb{E}[Y] = \frac{1}{n + 1} \text{ and }\text{Var}(Y) \leq \frac{1}{(n + 1)^2}$$
+> let $$X_1, X_2, \dots, X_n$$ be independent random variables uniformly distributed in $$[0, 1]$$. let $$Y = \min \limits_{i \in [n]} X_i$$. then 
+> $$\begin{align*}\mathbb{E}[Y] = \frac{1}{n + 1} \text{ and }\text{Var}(Y) \leq \frac{1}{(n + 1)^2}\end{align*}$$
 
 **proof** we first compute the expectation, by definition  
 <p style = "overflow-x:auto">
@@ -151,7 +152,7 @@ $$
 $$
 </p>
 We now turn our attention to computing the variance. We need one more result before we can proceed. 
-We compute $\mathbb{E}[Y^2]$ and via a similar application of theorem 1 we have that
+We compute $$\mathbb{E}[Y^2]$$ and via a similar application of theorem 1 we have that
 <p style = "overflow-x:auto">
 $$
 \begin{align*}

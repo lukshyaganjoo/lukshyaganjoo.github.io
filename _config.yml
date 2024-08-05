@@ -109,7 +109,6 @@ zotero_username: # your zotero username
 
 contact_note: >
 
-
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
@@ -124,7 +123,7 @@ google_site_verification: # your google-site-verification ID (Google Search Cons
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
-# cv 
+# cv
 # -----------------------------------------------------------------------------
 cv_path: /assets/pdf/luksh_ganjoo_cv.pdf # path to your CV
 cv_download: true # enable download button for CV
