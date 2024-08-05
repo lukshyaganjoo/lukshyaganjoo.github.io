@@ -7,3 +7,7 @@
 
 "Vision":
   color: "#009f36"
+
+"arXiv e-prints":
+  url: https://arxiv.org/
+  color: "#B31B1B"
