@@ -23,7 +23,7 @@ toc:
 ## introduction
 the object of consideration for today might be slightly different than what you're used to. the computational 
 model we will be using for this proof is the streaming model. in this model, we are given a sequence of elements 
-in a "stream" and we have to process them one by one. given that the number of elements in our data stream could be significantly larger than the amount of memory we have, we aren't allowed to store the entire stream in memory, and are instead allowed a small amount of space to store the information we deem relevant. the question now becomes; what functions of the input stream can we compute with what amount of time and model? while we will be focusing on space; similar considerations and conclusions can be made for time. under normal circumstances, the study of such a model wouldbe motivated by introducing the notion of **moments** where you consider the stream as a high-dimensional vector and may want to compute the $$k$$-th moment of the vector. while this is useful, the motivating route we take is slightly different. 
+in a "stream" and we have to process them one by one. given that the number of elements in our data stream could be significantly larger than the amount of memory we have, we aren't allowed to store the entire stream in memory, and are instead allowed a small amount of space to store the information we deem relevant. the question now becomes; what functions of the input stream can we compute with what amount of time and model? while we will be focusing on space; similar considerations and conclusions can be made for time. under normal circumstances, the study of such a model would be motivated by introducing the notion of **moments** where you consider the stream as a high-dimensional vector and may want to compute the $$k$$-th moment of the vector. while this is useful, the motivating route we take is slightly different. 
 
 ## the problem 
 > consider the problem of finding the number of distinct elements in a stream of elements. while this is a trivial problem in the standard computational model since we can simply store the elements and count the number of distinct elements, the streaming model makes this problem significantly more challenging.  
@@ -79,7 +79,9 @@ it turns out that the above algorithm produces the correct solution on average! 
 
 > **lemma 1**
 >
-> $$\begin{align*}\text{number of distinct elements in the data stream} = \frac{1}{\mathbb{E}[Z]} - 1\end{align*}$$
+> $$\begin{align*}
+    \text{number of distinct elements in the data stream} = \frac{1}{\mathbb{E}[Z]} - 1
+\end{align*}$$
 
 ## the proof 
 
@@ -90,11 +92,11 @@ it turns out that the above algorithm produces the correct solution on average! 
 > Let $$X_1, X_2, \dots, X_n$$ be independent random variables uniformly distributed in $$[0, 1]$$ and let $$X := \min\{X_1, X_2, \dots, X_n\}$$. Then 
 >
 > $$\begin{align*}
-f_X(x) = 
-\begin{cases}
-    0 & \text{if } x \notin [0, 1] \\
-    n (1 - x)^{n - 1} & \text{if } x \in [0, 1]
-\end{cases}
+    f_X(x) = 
+    \begin{cases}
+        0 & \text{if } x \notin [0, 1] \\
+        n (1 - x)^{n - 1} & \text{if } x \in [0, 1]
+    \end{cases}
 \end{align*}
 $$
 
@@ -137,7 +139,7 @@ $$
 > **theorem 2**
 >
 > let $$X_1, X_2, \dots, X_n$$ be independent random variables uniformly distributed in $$[0, 1]$$. let $$Y = \min \limits_{i \in [n]} X_i$$. then 
-> $$\begin{align*}\mathbb{E}[Y] = \frac{1}{n + 1} \text{ and }\text{Var}(Y) \leq \frac{1}{(n + 1)^2}\end{align*}$$
+> $$\begin{center}\mathbb{E}[Y] = \frac{1}{n + 1} \text{ and }\text{Var}(Y) \leq \frac{1}{(n + 1)^2}\end{center}$$
 
 **proof** we first compute the expectation, by definition  
 <p style = "overflow-x:auto">
