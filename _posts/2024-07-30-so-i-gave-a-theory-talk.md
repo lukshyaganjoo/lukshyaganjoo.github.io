@@ -76,7 +76,7 @@ The row space of a matrix $$\mathbf{A}$$ is defined as follows, $$\text{Row}(A) 
 > **definition**
 >
 > $$
-> \textsf{Trace}(\mathbf{A}) = \sum \limits_{x \in E_{x}(\mathbf{A})}^{} \lambda_{x}
+> \textsf{Trace}(\mathbf{A}) = \sum \limits_{x \in E_{x}(\mathbf{A})} \lambda_{x}
 > $$
 
 > **lemma 1**
