@@ -138,8 +138,7 @@ $$
 
 > **theorem 2**
 >
-> let $$X_1, X_2, \dots, X_n$$ be independent random variables uniformly distributed in $$[0, 1]$$. let $$Y = \min \limits_{i \in [n]} X_i$$. then 
-> $$\begin{center}\mathbb{E}[Y] = \frac{1}{n + 1} \text{ and }\text{Var}(Y) \leq \frac{1}{(n + 1)^2}\end{center}$$
+> let $$X_1, X_2, \dots, X_n$$ be independent random variables uniformly distributed in $$[0, 1]$$. let $$Y = \min \limits_{i \in [n]} X_i$$. then $$\mathbb{E}[Y] = \frac{1}{n + 1}$$ and $$\text{Var}(Y) \leq \frac{1}{(n + 1)^2}$$.
 
 **proof** we first compute the expectation, by definition  
 <p style = "overflow-x:auto">
