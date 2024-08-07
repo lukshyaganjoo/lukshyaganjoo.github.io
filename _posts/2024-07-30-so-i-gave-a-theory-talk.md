@@ -159,9 +159,11 @@ Thus the possible eigenvectors for $$\mathbf{A}$$ are prescribed. We already kno
 >
 > If $$\mathbf{K}_{10}$$ represents the adjaceny matrix of the complete graph on 10 vertices, $$\mathbf{J}_{10}$$ represents the matrix with all its entries being equal to $$1$$ and $$\mathbf{I}_{10}$$ represents the identity matrix of size $$10 \times 10$$, then
 >
+> <p style = "overflow-x:auto">
 > $$
-> \mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I}_{10}
+> \begin{align*}\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{I}_{10}\end{align*}
 > $$
+> </p>
 
 **proof:** The adjacency matrix of $$K_{10}$$ has all but its diagonal entries being equal to $$1$$, since every node in the full graph is connected to every other node except itself. The diagonal entries of $$\mathbf{K}_{10}$$ are filled in with $$0$$'s since there is no path from any of the nodes to itself. One can also clearly see that the matrix described by the equation $$\mathbf{J}_{10} - \mathbf{I}_{10}$$ is a matrix that has all but its diagonal entries being equal to $$1$$ and its diagonal entries being equal to $$0$$.
 
@@ -169,9 +171,11 @@ Therefore the adjacency matrix of $$\mathbf{K}_{10} = \mathbf{J}_{10} - \mathbf{
 
 > **Assumption:**
 >
+> <p style = "overflow-x:auto:">
 > $$
-> \mathbf{A}_P + \mathbf{A}_Q + \mathbf{A}_R = J_{10} - I_{10}
+> \begin{align*}\mathbf{A}_P + \mathbf{A}_Q + \mathbf{A}_R = J_{10} - I_{10}\end{align*}
 > $$
+> </p>
 
 We consider three permutation matrices of the Petersen Graph $$A_P, A_Q$$ and $$A_R$$ (matrices formed by simultaneous row and column swaps in the original adjacency matrix of the petersen graph). We construct each of these permutation matrices such that $$A_Q = CAC^{-1}$$ where $$C$$ is some matrix. By this construction, $$A_Q$$ and $$A$$ are similar, and an important consequence is that they have the same eigenvalues. This assumption and construction is true for $$A_P$$ and $$A_R$$.
 
@@ -191,9 +195,11 @@ Therefore we can assert that $$\text{Span}(\mathbf{1}) \subseteq \text{Row} (\ma
 >
 > Let $$A$$ and $$B$$ be two subspaces such that $$A \subseteq B$$, then
 >
+> <p style = "overflow-x:auto">
 > $$
 > B^{\perp} \subseteq A^{\perp}
 > $$
+> </p>
 
 **proof** Let $$\mathbf{x} \in B^{\perp}$$. By definition of the orthogonal complement, we have that $$\forall \mathbf{v} \in B, \mathbf{x}^{\top}\mathbf{v} = 0$$. However we know that any vector contained in $$B$$ will be a vector contained in $$A$$, ($$A$$ is a subset of the vectors contained in $$B$$). Therefore $$\mathbf{x}$$ is orthogonal to every vector in $$A$$. By definition, this means that $$\mathbf{x} \in A^{\perp}$$
 $$\therefore A \subseteq B \implies B^{\perp} \subseteq A^{\perp}$$
@@ -215,9 +221,11 @@ The above results are also true for $$\mathbf{A}_Q - \mathbf{I}_{10}$$ since $$Q
 >
 > Assuming the standard definitions of the matrices $$A_P, A_Q$$ and $$A_R$$, we have that
 >
+> <p style = "overflow-x:auto">
 > $$
 > \text{Null} (\mathbf{A}_P - \mathbf{I}_{10}) \cap \text{Null} (\mathbf{A}_Q - \mathbf{I}_{10}) \neq \{0\}
 > $$
+> </p>
 
 **proof**
 For two subspaces $$R_1$$ and $$R_2$$ of $$\mathbb{R}^{9}$$, if $$S_1 \cap S_2 = \{0\}$$, then $$B_{S_1}$$ and $$B_{S_2}$$ are linearly independent. We therefore prove by contrapositive.
