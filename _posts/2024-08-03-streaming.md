@@ -79,9 +79,11 @@ it turns out that the above algorithm produces the correct solution on average! 
 
 > **lemma 1**
 >
+> <p style = "overflow-x:auto">
 > $$\begin{align*}
 > \text{number of distinct elements in the data stream} = \frac{1}{\mathbb{E}[Z]} - 1\end{align*}
 > $$
+> </p>
 
 ## the proof 
 
@@ -91,9 +93,11 @@ it turns out that the above algorithm produces the correct solution on average! 
 >
 > Let $$X_1, X_2, \dots, X_n$$ be independent random variables uniformly distributed in $$[0, 1]$$ and let $$X := \min\{X_1, X_2, \dots, X_n\}$$. Then 
 >
+> <p style = "overflow-x:auto">
 > $$
 > f_X(x) = \begin{cases}0 & \text{if } x \notin [0, 1] \\ n (1 - x)^{n - 1} & \text{if } x \in [0, 1]\end{cases}
 > $$
+> </p>
 
 **proof** 
 We proceed as usual; by first computing the CDF, i.e. $$F_X(x) = \Pr[X \leq x]$$. We have that 
