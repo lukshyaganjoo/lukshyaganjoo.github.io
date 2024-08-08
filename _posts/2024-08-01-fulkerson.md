@@ -115,7 +115,7 @@ The larger consequence of this lemma is that for **any cut** you choose in the f
 >
 > Let $$(\mathcal{G}, s, t, c)$$ be a flow network, $$C(S, T)$$ be an $$s-t$$ cut, and $$f$$ be a flow in $$\mathcal{G}$$, with $$v \in T$$, then: 
 >
-> <p style = "overflow-x:auto"
+> <p style = "overflow-x:auto">
 > $$
     \begin{align*}f(S, T) = f(S \cup \{v\}, T \setminus \{v\})
     \end{align*}
