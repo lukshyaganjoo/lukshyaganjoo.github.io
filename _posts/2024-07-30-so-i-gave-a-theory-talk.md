@@ -75,9 +75,11 @@ The row space of a matrix $$\mathbf{A}$$ is defined as follows, $$\text{Row}(A) 
 
 > **definition**
 >
+> <p style = "overflow-x:auto">
 > $$
 > \textsf{Trace}(\mathbf{A}) = \sum \limits_{x \in E_{x}(\mathbf{A})} \lambda_{x}
 > $$
+> </p>
 
 > **lemma 1**
 >

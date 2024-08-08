@@ -92,9 +92,9 @@ we finally stop the dilly-dallying and get to the main point of this post, the m
 >
 > Let $$(\mathcal{G}, s, t, c)$$ be a flow network, $$C(S, T)$$ be an $$s-t$$ cut, and $$f$$ be a flow in $$\mathcal{G}$$, then: 
 >
-> $$
-    \begin{align*}f(S, T) \leq c(S, T)\end{align*}
-$$
+> <p style = "overflow-x:auto">
+> $$\begin{align*}f(S, T) \leq c(S, T)\end{align*}$$
+> </p>
 
 
 **proof:** For every edge $$(u, v)$$ by a consequence of the capacity constraint, we know that $$f(u, v) \leq c(u, v)$$. Therefore, we can ascertain 
@@ -115,10 +115,12 @@ The larger consequence of this lemma is that for **any cut** you choose in the f
 >
 > Let $$(\mathcal{G}, s, t, c)$$ be a flow network, $$C(S, T)$$ be an $$s-t$$ cut, and $$f$$ be a flow in $$\mathcal{G}$$, with $$v \in T$$, then: 
 >
+> <p style = "overflow-x:auto"
 > $$
     \begin{align*}f(S, T) = f(S \cup \{v\}, T \setminus \{v\})
     \end{align*}
 $$
+> </p>
 
 
 **proof:** Let $$C(S, T)$$ be any $$s-t$$ cut and $$v$$ an element in $$T$$. Remove $$v$$ from $$T$$ and place it in $$S$$. Let us now evaluate the flow of the new cut (call it $$C'(S', T')$$) where $$S' = S \cup \{v\}$$ and $$T' = T \setminus \{v\}$$.
@@ -163,10 +165,12 @@ $$
 >
 > Let $$(\mathcal{G}, s, t, c)$$ be a flow network, $$C(S, T)$$ be an $$s-t$$ cut, and $$f$$ be a flow in $$\mathcal{G}$$, then:
 >
+> <p style = "overflow-x:auto">
 > $$\begin{align*}
     f(S, T) = \text{val}(f)
   \end{align*}
 $$
+> </p>
 
 
 **proof:** consider applying lemma 2 to the following cut $$C(S, T)$$ where $$S = \{s\}$$ and $$T = V \setminus \{s\}$$, then:
