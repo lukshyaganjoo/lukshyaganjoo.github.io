@@ -2,10 +2,12 @@
 layout: page
 permalink: /miscellaneous/
 title: miscellaneous
-description: the stuff i've been up to @ uw
+header: the stuff i've been up to @ uw
 nav: true
 nav_order: 6
 ---
+
+## classes i've taken 
 
 <table>
   <tr>
@@ -114,3 +116,33 @@ nav_order: 6
     </td>
   </tr>
 </table>
+
+## teaching 
+
+i've been a teaching assistant for the cs department at uw since the summer right after freshman year. if you're at uw and are considering applying to teach for a class you took at some point; i highly recommend it; definitely one of the most formative experiences i've had in college. below is a possibly outdated list of courses i've ta'ed for 
+
+- **CSE 311: Foundations of Computing I**
+  - Spring 2023
+
+- **CSE 312: Foundations of Computing II**
+  - Summer 2022
+  - Autumn 2022
+
+- **CSE 417: Algorithms and Computational Complexity**
+  - Winter 2024
+
+- **CSE 446: Introduction to Machine Learning**
+  - Winter 2023
+
+- **CSE 493Q: Introduction to Quantum Computing**
+  - Spring 2024
+
+- **CSE 599: Graduate Quantum Computing**
+  - Autumn 2023
+
+some important links if pedagogy and education in cs are interesting/relevant to you 
+- [ta home page](https://www.cs.washington.edu/students/ta/ugrad/how_to_apply)
+- [cs education seminar](https://courses.cs.washington.edu/courses/cse590e/)
+- [association for computing and education (student rso)](https://uwace.vercel.app/)
+
+## research 
