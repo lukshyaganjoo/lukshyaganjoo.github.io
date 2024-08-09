@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /miscellaneous/
-title: the stuff i've been up to @ uw 
-description: Materials for courses you taught. Replace this text with your description.
+title: miscellaneous
+description: the stuff i've been up to @ uw
 nav: true
 nav_order: 6
 ---
