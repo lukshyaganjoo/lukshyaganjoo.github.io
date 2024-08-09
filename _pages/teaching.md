@@ -121,24 +121,35 @@ nav_order: 6
 
 i've been a teaching assistant for the cs department at uw since the summer right after freshman year. if you're at uw and are considering applying to teach for a class you took at some point; i highly recommend it; definitely one of the most formative experiences i've had in college. below is a possibly outdated list of courses i've ta'ed for 
 
-- **CSE 311: Foundations of Computing I**
-  - Spring 2023
+<table>
+  <tbody>
+    <tr>
+      <td><strong>CSE 311: Foundations of Computing I</strong></td>
+      <td>Spring 2023</td>
+    </tr>
+    <tr>
+      <td><strong>CSE 312: Foundations of Computing II</strong></td>
+      <td>Summer 2022, Autumn 2022</td>
+    </tr>
+    <tr>
+      <td><strong>CSE 417: Algorithms and Computational Complexity</strong></td>
+      <td>Winter 2024</td>
+    </tr>
+    <tr>
+      <td><strong>CSE 446: Introduction to Machine Learning</strong></td>
+      <td>Winter 2023</td>
+    </tr>
+    <tr>
+      <td><strong>CSE 493Q: Introduction to Quantum Computing</strong></td>
+      <td>Spring 2024</td>
+    </tr>
+    <tr>
+      <td><strong>CSE 599: Graduate Quantum Computing</strong></td>
+      <td>Autumn 2023</td>
+    </tr>
+  </tbody>
+</table>
 
-- **CSE 312: Foundations of Computing II**
-  - Summer 2022
-  - Autumn 2022
-
-- **CSE 417: Algorithms and Computational Complexity**
-  - Winter 2024
-
-- **CSE 446: Introduction to Machine Learning**
-  - Winter 2023
-
-- **CSE 493Q: Introduction to Quantum Computing**
-  - Spring 2024
-
-- **CSE 599: Graduate Quantum Computing**
-  - Autumn 2023
 
 some important links if pedagogy and education in cs are interesting/relevant to you 
 - [ta home page](https://www.cs.washington.edu/students/ta/ugrad/how_to_apply)
