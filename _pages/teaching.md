@@ -11,178 +11,178 @@ nav_order: 6
 
 <table>
   <tr>
-    <td><strong>Spring 2024</strong></td>
-    <td>MATH 563</td>
+    <td><strong>sp 24</strong></td>
+    <td><font size="2">MATH 563</font></td>
     <td>Graduate Graph Theory</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 404</td>
+    <td><font size="2">MATH 404</font></td>
     <td>Introduction to Modern Algebra III (Galois Theory)</td>
   </tr>
   <tr>
     <td></td>
-    <td>ENGL 182</td>
+    <td><font size="2">ENGL 182</font></td>
     <td>Composition: Multimodal</td>
   </tr>
   <tr>
     <td></td>
-    <td>RELIG 120</td>
+    <td><font size="2">RELIG 120</font></td>
     <td>Yoga: Past and Present</td>
   </tr>
   <tr>
-    <td><strong>Winter 2024</strong></td>
-    <td>EE 539</td>
+    <td><strong>wi 24</strong></td>
+    <td><font size="2">EE 539</font></td>
     <td>Quantum Probability Theory and Stochastic Calculus</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 403</td>
+    <td><font size="2">MATH 403</font></td>
     <td>Introduction to Modern Algebra II (Groups)</td>
   </tr>
   <tr>
     <td></td>
-    <td>LING 269</td>
+    <td><font size="2">LING 269</font></td>
     <td>Swearing and Taboo Language</td>
   </tr>
   <tr>
-    <td><strong>Fall 2023</strong></td>
-    <td>CSE 521</td>
+    <td><strong>fall 23</strong></td>
+    <td><font size="2">CSE 521</font></td>
     <td>Advanced Algorithms</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 514</td>
+    <td><font size="2">MATH 514</font></td>
     <td>Networks and Combinatorial Optimization</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 402</td>
+    <td><font size="2">MATH 402</font></td>
     <td>Introduction to Modern Algebra I (Rings)</td>
   </tr>
   <tr>
     <td></td>
-    <td>MUSIC 162</td>
+    <td><font size="2">MUSIC 162</font></td>
     <td>American Popular Song</td>
   </tr>
   <tr>
-    <td><strong>Spring 2023</strong></td>
-    <td>CSE 493</td>
+    <td><strong>sp 23</strong></td>
+    <td><font size="2">CSE 493</font></td>
     <td>Introduction to Quantum Computing</td>
   </tr>
   <tr>
     <td></td>
-    <td>CSE 422</td>
+    <td><font size="2">CSE 422</font></td>
     <td>Advanced Toolkit for Modern Algorithms</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 336</td>
+    <td><font size="2">MATH 336</font></td>
     <td>Accelerated Advanced Honors Calculus III</td>
   </tr>
   <tr>
     <td></td>
-    <td>PSYCH 210</td>
+    <td><font size="2">PSYCH 210</font></td>
     <td>The Diversity of Human Sexuality</td>
   </tr>
   <tr>
-    <td><strong>Winter 2023</strong></td>
-    <td>CSE 421</td>
+    <td><strong>wi 23</strong></td>
+    <td><font size="2">CSE 421</font></td>
     <td>Introduction to Algorithms</td>
   </tr>
   <tr>
     <td></td>
-    <td>CSE 431</td>
+    <td><font size="2">CSE 431</font></td>
     <td>Introduction to the Theory of Computation</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 335</td>
+    <td><font size="2">MATH 335</font></td>
     <td>Accelerated Advanced Honors Calculus II</td>
   </tr>
   <tr>
-    <td><strong>Autumn 2022</strong></td>
-    <td>CSE 446</td>
+    <td><strong>fall 22</strong></td>
+    <td><font size="2">CSE 446</font></td>
     <td>Introduction to Machine Learning</td>
   </tr>
   <tr>
     <td></td>
-    <td>CSE 351</td>
+    <td><font size="2">CSE 351</font></td>
     <td>The Hardware/Software Interface</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 334</td>
+    <td><font size="2">MATH 334</font></td>
     <td>Accelerated Advanced Honors Calculus I</td>
   </tr>
   <tr>
-    <td><strong>Summer 2022</strong></td>
-    <td>CSE 331</td>
+    <td><strong>su 22</strong></td>
+    <td><font size="2">CSE 331</font></td>
     <td>Software Design and Implementation</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 207</td>
+    <td><font size="2">MATH 207</font></td>
     <td>Introduction to Differential Equations</td>
   </tr>
   <tr>
     <td></td>
-    <td>CHEM 142</td>
+    <td><font size="2">CHEM 142</font></td>
     <td>General Chemistry I</td>
   </tr>
   <tr>
-    <td><strong>Spring 2022</strong></td>
-    <td>CSE 332</td>
+    <td><strong>sp 22</strong></td>
+    <td><font size="2">CSE 332</font></td>
     <td>Data Structures and Parallelism</td>
   </tr>
   <tr>
     <td></td>
-    <td>CSE 312</td>
+    <td><font size="2">CSE 312</font></td>
     <td>Foundations of Computing II</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 318</td>
+    <td><font size="2">MATH 318</font></td>
     <td>Advanced Linear Algebra (Tools and Applications)</td>
   </tr>
   <tr>
     <td></td>
-    <td>ARCH 151</td>
+    <td><font size="2">ARCH 151</font></td>
     <td>Appreciation of Architecture</td>
   </tr>
   <tr>
-    <td><strong>Winter 2022</strong></td>
-    <td>CSE 341</td>
+    <td><strong>wi 22</strong></td>
+    <td><font size="2">CSE 341</font></td>
     <td>Programming Languages</td>
   </tr>
   <tr>
     <td></td>
-    <td>CSE 311</td>
+    <td><font size="2">CSE 311</font></td>
     <td>Foundations of Computing I</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 208</td>
+    <td><font size="2">MATH 208</font></td>
     <td>Introduction to Linear Algebra</td>
   </tr>
   <tr>
     <td></td>
-    <td>EDUC 251</td>
+    <td><font size="2">EDUC 251</font></td>
     <td>Seeking Educational Equity and Diversity</td>
   </tr>
   <tr>
-    <td><strong>Autumn 2021</strong></td>
-    <td>CSE 143X</td>
+    <td><strong>fall 21</strong></td>
+    <td><font size="2">CSE 143X</font></td>
     <td>Accelerated Introduction to Java</td>
   </tr>
   <tr>
     <td></td>
-    <td>MATH 126</td>
+    <td><font size="2">MATH 126</font></td>
     <td>Calculus and Analytic Geometry</td>
   </tr>
   <tr>
     <td></td>
-    <td>PSYCH 101</td>
+    <td><font size="2">PSYCH 101</font></td>
     <td>Introduction to Psychology</td>
   </tr>
 </table>
