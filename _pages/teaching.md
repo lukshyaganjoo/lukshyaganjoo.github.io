@@ -1,5 +1,5 @@
 ---
-layout: blankpage
+layout: page
 permalink: /miscellaneous/
 title: miscellaneous
 header: the stuff i've been up to @ uw
