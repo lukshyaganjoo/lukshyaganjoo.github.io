@@ -228,7 +228,7 @@ some important links if pedagogy and education in cs are interesting/relevant to
   \end{align*}
   $$
   </p>
-    - you can find the pre-print here at [arXiv](https://arxiv.org/abs/2408.00933). we're also in the vetting process of submitting this to [involve](https://msp.org/involve/about/journal/about.html).
+  you can find the pre-print here at [arXiv](https://arxiv.org/abs/2408.00933). we're also in the vetting process of submitting this to [involve](https://msp.org/involve/about/journal/about.html).
 - in a past life, i worked with [Sara Mouradian](https://people.ece.uw.edu/mouradian_sara/index.html) and [Vikram Kashyap](https://vikramkashyap.com/) on understanding systems of qu$$d$$its and how they affected fidelity estimates and error rates in experiment. this project investigated error correction codes, developing a notion of universality for qu$$d$$it systems and how different architectures could be used to improve the fidelity of quantum computations. some relevant links for the same 
   - [a talk i gave at the uw undergradate research symposium](/assets/pdf/errorEstimates.pdf)
   - [a research presentation with some more exposition](/assets/pdf/research_presentation.pdf)
