@@ -221,9 +221,13 @@ some important links if pedagogy and education in cs are interesting/relevant to
 
 - i'm currently working with Andrea Coladangelo and Chinmay Nirkhe on the $$\textsf{QMC}$$ problem where we're trying to develop better approximation algorithms to find a high energy state for a class of $$k$$-local hamiltonians that while physically motivated, also serve as a generalization for the [max-cut](https://en.wikipedia.org/wiki/Maximum_cut) problem. 
 - this spring, i worked within [WXML](https://wxml.math.washington.edu/) on a project with [Stefan Steinerberger](https://math.washington.edu/people/stefan-steinerberger) alongside some other students on the **Bad Science Matrix problem** which consisted in finding, among all $$\mathbf{A} \in \mathbb{R}^{n \times n}$$, with rows having unit $$\ell^2$$ norm, the one that maximized 
+  <p style = "overflow-x:auto">
   $$
-    \beta(\mathbf{A}) = \frac{1}{2^n} \sum_{\mathbf{x} \in \{-1, 1\}^n} \|\|\mathbf{A}\mathbf{x}\|_\inf
+  \begin{align*}
+    \beta(\mathbf{A}) = \frac{1}{2^n} \sum_{\mathbf{x} \in \{-1, 1\}^n} \|\mathbf{A}\mathbf{x}\|_{\inf}
+  \end{align*}
   $$
+  </p>
     - [paper](https://arxiv.org/abs/2408.00933)
 - in a past life, i worked with Sara Mouradian and Vikram Kashyap on understanding systems of qu$d$its and how they affected fidelity estimates and error rates in experiment. this project investigated error correction codes, developing a notion of universality for qu$d$it systems and how different architectures could be used to improve the fidelity of quantum computations. some relevant links for the same 
   - [a talk i gave at the uw undergradate research symposium](/assets/pdf/errorEstimates.pdf)
