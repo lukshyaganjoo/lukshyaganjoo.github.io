@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: blankpage
 permalink: /miscellaneous/
 title: miscellaneous
 header: the stuff i've been up to @ uw
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
 ## classes i've taken
