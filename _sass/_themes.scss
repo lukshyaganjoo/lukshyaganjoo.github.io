@@ -81,40 +81,41 @@ html[data-theme="dark"] {
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
 
-  .repo-img-light {
+.repo-img-light {
+  display: none;
+}
+.repo-img-dark {
+  display: block;
+}
+
+html[data-theme-setting="dark"] {
+  #light-toggle-system {
     display: none;
   }
-  .repo-img-dark {
+
+  #light-toggle-dark {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
+
+  #light-toggle-light {
+    display: none;
+  }
+}
+
+html[data-theme-setting="light"] {
+  #light-toggle-system {
+    display: none;
+  }
+
+  #light-toggle-dark {
+    display: none;
+  }
+
+  #light-toggle-light {
+    padding-left: 10px;
+    padding-top: 12px;
     display: block;
   }
 }
-// html[data-theme-setting="dark"] {
-//   #light-toggle-system {
-//     display: none;
-//   }
-
-//   #light-toggle-dark {
-//     padding-left: 10px;
-//     padding-top: 12px;
-//     display: block;
-//   }
-
-//   #light-toggle-light {
-//     display: none;
-//   }
-// }
-
-// html[data-theme-setting="light"] {
-//   #light-toggle-system {
-//     display: none;
-//   }
-
-//   #light-toggle-dark {
-//     display: none;
-//   }
-
-//   #light-toggle-light {
-//     padding-left: 10px;
-//     padding-top: 12px;
-//     display: block;
-//   }

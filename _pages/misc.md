@@ -202,11 +202,11 @@ i've been a teaching assistant for the cs department at uw since the summer righ
 - **CSE 417: Algorithms and Computational Complexity**
   - Winter 2024
 
-- **CSE 446: Introduction to Machine Learning**
-  - Winter 2023
-
 - **CSE 434: Introduction to Quantum Computing**
   - Spring 2024
+
+- **CSE 446: Introduction to Machine Learning**
+  - Winter 2023
 
 - **CSE 534: Graduate Quantum Computing**
   - Fall 2023
