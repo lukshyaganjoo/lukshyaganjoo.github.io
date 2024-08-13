@@ -4,7 +4,7 @@ permalink: /miscellaneous/
 title: miscellaneous
 header: the stuff i've been up to @ uw
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
 ## classes i've taken
