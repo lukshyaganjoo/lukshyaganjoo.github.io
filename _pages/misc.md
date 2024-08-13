@@ -197,7 +197,7 @@ i've been a teaching assistant for the cs department at uw since the summer righ
 
 - **CSE 312: Foundations of Computing II**
   - Summer 2022
-  - Autumn 2022
+  - Fall 2022
 
 - **CSE 417: Algorithms and Computational Complexity**
   - Winter 2024
@@ -205,11 +205,12 @@ i've been a teaching assistant for the cs department at uw since the summer righ
 - **CSE 446: Introduction to Machine Learning**
   - Winter 2023
 
-- **CSE 493Q: Introduction to Quantum Computing**
+- **CSE 434: Introduction to Quantum Computing**
   - Spring 2024
 
-- **CSE 599: Graduate Quantum Computing**
-  - Autumn 2023
+- **CSE 534: Graduate Quantum Computing**
+  - Fall 2023
+  - Fall 2024
 
 some important links if pedagogy and education in cs are interesting/relevant to you
 
