@@ -1,8 +1,7 @@
 ---
 layout: page
-permalink: /miscellaneous/
-title: miscellaneous
-header: the stuff i've been up to @ uw
+permalink: /uw/
+title: stuff @ uw
 nav: true
 nav_order: 3
 ---
@@ -235,3 +234,8 @@ some important links if pedagogy and education in cs are interesting/relevant to
   - [a research presentation with some more exposition](/assets/pdf/research_presentation.pdf)
 - i also participated in the [directed reading program](https://sites.uw.edu/wdrp/) the math department @ uw runs. alongside Brian Nugent, we read up on a different perspective on teaching commutative algebra, see: [Miles Reid](https://en.wikipedia.org/wiki/Miles_Reid), one that was more focused on the geometric aspects of the subject. as a consequence i got to see a lot of beautiful results from algebraic geometry i wouldn't have otherwise seen. 
   - [a summary talk i gave on the stuff we learnt](/assets/pdf/commutative_algebra.pdf)
+
+## lecture notes 
+as u can already tell; i'm a huge fan of writing. also a big $$\latex$$ person; whatever that may entail. here are some lecture notes i've written; many of which are still works in progress.
+
+- [notes on graph theory ]
