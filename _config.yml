@@ -124,7 +124,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 # cv
 # -----------------------------------------------------------------------------
-cv_path: /assets/pdf/luksh_ganjoo_cv.pdf # path to your CV
+cv_path: /assets/pdf/luksh_cv.pdf # path to your CV
 
 # -----------------------------------------------------------------------------
 # Blog
