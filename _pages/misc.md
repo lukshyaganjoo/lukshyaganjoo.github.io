@@ -211,6 +211,35 @@ i've been a teaching assistant for the cs department at uw since the summer righ
   - Fall 2023
   - Fall 2024
 
+<!-- Teaching section -->
+<h2 style="margin-top: 40px">Teaching</h2>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item align-items-center">
+    " Introduction to Deep Learning ("
+    <a href="http://introtodeeplearning.com/" target="_blank" rel="noopener noreferrer">6.S191</a>
+    ") "
+    <span class="badge bg-danger">teaching assistant</span>
+    <span class="badge bg-light text-dark">IAP (Winter) 2020</span>
+    <span class="badge bg-light text-dark">IAP (Winter) 2021</span>
+  </li>
+  <li class="list-group-item align-items-center">
+    " Introduction to Inference (6.008) "
+    <span class="badge bg-warning text-dark">lab assistant</span>
+    <span class="badge bg-light text-dark">Fall 2019</span>
+  </li>
+  <li class="list-group-item align-items-center">
+    " Introduction to Machine Learning (6.036) "
+    <span class="badge bg-warning text-dark">lab assistant</span>
+    <span class="badge bg-light text-dark">Spring 2019</span>
+  </li>
+  <li class="list-group-item align-items-center">
+    " Abstract Algebra I (18.701) "
+    <span class="badge bg-info text-dark">grader</span>
+    <span class="badge bg-light text-dark">Fall 2018</span>
+  </li>
+</ul>
+
+
 some important links if pedagogy and education in cs are interesting/relevant to you
 
 - [ta home page](https://www.cs.washington.edu/students/ta/ugrad/how_to_apply)
