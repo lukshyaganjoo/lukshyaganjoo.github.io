@@ -211,10 +211,8 @@ i've been a teaching assistant for the cs department at uw since the summer righ
   - Fall 2023
   - Fall 2024
 
-<!-- Teaching section -->
-<h2 style="margin-top: 40px;">Teaching</h2>
-<ul class="list-group list-group-flush" style="background-color: transparent; border: none;">
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
+<ul class="list-group list-group-flush" style="background-color: transparent; border: none; list-style-type: disc; padding-left: 20px;">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
     Introduction to Deep Learning (<a href="http://introtodeeplearning.com/" target="_blank" rel="noopener noreferrer">6.S191</a>)
     <div>
       <span class="badge bg-danger">teaching assistant</span>
@@ -222,21 +220,21 @@ i've been a teaching assistant for the cs department at uw since the summer righ
       <span class="badge bg-light text-dark">IAP (Winter) 2021</span>
     </div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
     Introduction to Inference (6.008)
     <div>
       <span class="badge bg-warning text-dark">lab assistant</span>
       <span class="badge bg-light text-dark">Fall 2019</span>
     </div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
     Introduction to Machine Learning (6.036)
     <div>
       <span class="badge bg-warning text-dark">lab assistant</span>
       <span class="badge bg-light text-dark">Spring 2019</span>
     </div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
     Abstract Algebra I (18.701)
     <div>
       <span class="badge bg-info text-dark">grader</span>
