@@ -1142,7 +1142,7 @@ swiper-container {
 }
 
 .list-group-item {
-  border-bottom: 1px solid $global-text-color;
+  border-bottom: 1px solid var(--global-text-color);
   background-color: transparent;
   border: none;
 }
