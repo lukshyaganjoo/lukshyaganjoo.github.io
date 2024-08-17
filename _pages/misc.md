@@ -192,7 +192,7 @@ nav_order: 3
 i've been a teaching assistant for the cs department at uw since the summer right after freshman year. if you're at uw and are considering applying to teach for a class you took at some point; i highly recommend it; definitely one of the most formative experiences i've had in college. below is a possibly outdated list of courses i've ta'ed for
 
 <ul class="list-group list-group-flush" style="background-color: transparent; border: none; list-style-type: disc;">
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid global-text-color;">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
     <div>
       <strong>Foundations of Computing I</strong> (CSE 311)
     </div>
@@ -200,7 +200,7 @@ i've been a teaching assistant for the cs department at uw since the summer righ
       <span class="badge bg-info text-dark">sp 23</span>
     </div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid global-text-color;">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
     <div>
       <strong>Foundations of Computing II</strong> (CSE 312)
     </div>
@@ -209,7 +209,7 @@ i've been a teaching assistant for the cs department at uw since the summer righ
       <span class="badge bg-info text-dark">fall 22</span>
     </div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid global-text-color;">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
     <div>
       <strong>Algorithms and Computational Complexity</strong> (CSE 417)
     </div>
@@ -217,7 +217,7 @@ i've been a teaching assistant for the cs department at uw since the summer righ
       <span class="badge bg-info text-dark">wi 24</span>
     </div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid global-text-color;">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
     <div>
       <strong>Introduction to Quantum Computing</strong> (CSE 434)
     </div>
@@ -225,7 +225,7 @@ i've been a teaching assistant for the cs department at uw since the summer righ
       <span class="badge bg-info text-dark">sp 24</span>
     </div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid global-text-color;">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
     <div>
       <strong>Introduction to Machine Learning</strong> (CSE 446)
     </div>
@@ -233,7 +233,7 @@ i've been a teaching assistant for the cs department at uw since the summer righ
       <span class="badge bg-info text-dark">wi 23</span>
     </div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid global-text-color;">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border:">
     <div>
       <strong>Graduate Quantum Computing</strong> (CSE 534)
     </div>
