@@ -191,54 +191,43 @@ nav_order: 3
 
 i've been a teaching assistant for the cs department at uw since the summer right after freshman year. if you're at uw and are considering applying to teach for a class you took at some point; i highly recommend it; definitely one of the most formative experiences i've had in college. below is a possibly outdated list of courses i've ta'ed for
 
-- **CSE 311: Foundations of Computing I**
-  - Spring 2023
-
-- **CSE 312: Foundations of Computing II**
-  - Summer 2022
-  - Fall 2022
-
-- **CSE 417: Algorithms and Computational Complexity**
-  - Winter 2024
-
-- **CSE 434: Introduction to Quantum Computing**
-  - Spring 2024
-
-- **CSE 446: Introduction to Machine Learning**
-  - Winter 2023
-
-- **CSE 534: Graduate Quantum Computing**
-  - Fall 2023
-  - Fall 2024
-
 <ul class="list-group list-group-flush" style="background-color: transparent; border: none; list-style-type: disc; padding-left: 20px;">
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
-    Introduction to Deep Learning (<a href="http://introtodeeplearning.com/" target="_blank" rel="noopener noreferrer">6.S191</a>)
+    <strong>Foundations of Computing I </strong>(CSE 311)
     <div>
-      <span class="badge bg-danger">teaching assistant</span>
-      <span class="badge bg-light text-dark">IAP (Winter) 2020</span>
-      <span class="badge bg-light text-dark">IAP (Winter) 2021</span>
+      <span class="badge bg-info text-dark">sp 23</span>
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
-    Introduction to Inference (6.008)
+    <strong>Foundations of Computing II </strong>(CSE 312)
     <div>
-      <span class="badge bg-warning text-dark">lab assistant</span>
-      <span class="badge bg-light text-dark">Fall 2019</span>
+      <span class="badge bg-info text-dark">su 22</span>
+      <span class="badge bg-info text-dark">fall 22</span>
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
-    Introduction to Machine Learning (6.036)
+    <strong>Algorithms and Computational Complexity </strong>(CSE 417)
     <div>
-      <span class="badge bg-warning text-dark">lab assistant</span>
-      <span class="badge bg-light text-dark">Spring 2019</span>
+      <span class="badge bg-info text-dark">wi 24</span>
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
-    Abstract Algebra I (18.701)
+    <strong>Introduction to Quantum Computing </strong>(CSE 434)
     <div>
-      <span class="badge bg-info text-dark">grader</span>
-      <span class="badge bg-light text-dark">Fall 2018</span>
+      <span class="badge bg-info text-dark">sp 24</span>
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
+    <strong>Introduction to Machine Learning </strong>(CSE 446)
+    <div>
+      <span class="badge bg-info text-dark">wi 23</span>
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
+    <strong>Graduate Quantum Computing </strong>(CSE 534)
+    <div>
+      <span class="badge bg-info text-dark">fall 23</span>
+      <span class="badge bg-info text-dark">fall 24</span>
     </div>
   </li>
 </ul>
