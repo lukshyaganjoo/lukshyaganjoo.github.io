@@ -193,38 +193,50 @@ i've been a teaching assistant for the cs department at uw since the summer righ
 
 <ul class="list-group list-group-flush" style="background-color: transparent; border: none; list-style-type: disc;">
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
-    <strong>Foundations of Computing I </strong>(CSE 311)
+    <div>
+      <strong>Foundations of Computing I</strong> (CSE 311)
+    </div>
     <div>
       <span class="badge bg-info text-dark">sp 23</span>
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
-    <strong>Foundations of Computing II </strong>(CSE 312)
+    <div>
+      <strong>Foundations of Computing II</strong> (CSE 312)
+    </div>
     <div>
       <span class="badge bg-info text-dark">su 22</span>
       <span class="badge bg-info text-dark">fall 22</span>
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
-    <strong>Algorithms and Computational Complexity </strong>(CSE 417)
+    <div>
+      <strong>Algorithms and Computational Complexity</strong> (CSE 417)
+    </div>
     <div>
       <span class="badge bg-info text-dark">wi 24</span>
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
-    <strong>Introduction to Quantum Computing </strong>(CSE 434)
+    <div>
+      <strong>Introduction to Quantum Computing</strong> (CSE 434)
+    </div>
     <div>
       <span class="badge bg-info text-dark">sp 24</span>
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
-    <strong>Introduction to Machine Learning </strong>(CSE 446)
+    <div>
+      <strong>Introduction to Machine Learning</strong> (CSE 446)
+    </div>
     <div>
       <span class="badge bg-info text-dark">wi 23</span>
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
-    <strong>Graduate Quantum Computing </strong>(CSE 534)
+    <div>
+      <strong>Graduate Quantum Computing</strong> (CSE 534)
+    </div>
     <div>
       <span class="badge bg-info text-dark">fall 23</span>
       <span class="badge bg-info text-dark">fall 24</span>
