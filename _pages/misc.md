@@ -191,7 +191,7 @@ nav_order: 3
 
 i've been a teaching assistant for the cs department at uw since the summer right after freshman year. if you're at uw and are considering applying to teach for a class you took at some point; i highly recommend it; definitely one of the most formative experiences i've had in college. below is a possibly outdated list of courses i've ta'ed for
 
-<ul class="list-group list-group-flush" style="background-color: transparent; border: none; list-style-type: disc; padding-left: 20px;">
+<ul class="list-group list-group-flush" style="background-color: transparent; border: none; list-style-type: disc;">
   <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none; border-bottom: 1px solid #ccc;">
     <strong>Foundations of Computing I </strong>(CSE 311)
     <div>
