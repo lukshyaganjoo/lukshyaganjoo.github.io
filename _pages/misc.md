@@ -243,7 +243,6 @@ i've been a teaching assistant for the cs department at uw since the summer righ
     </div>
   </li>
 </ul>
-<br>
 
 some important links if pedagogy and education in cs are interesting/relevant to you
 
