@@ -6,237 +6,36 @@ nav: true
 nav_order: 3
 ---
 
-## classes i've taken
-
-<table>
-  <tr>
-    <td><strong>sp 24</strong></td>
-    <td><font size="2">MATH 563</font></td>
-    <td>Graduate Graph Theory</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 404</font></td>
-    <td>Introduction to Modern Algebra III (Galois Theory)</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">ENGL 182</font></td>
-    <td>Composition: Multimodal</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">RELIG 120</font></td>
-    <td>Yoga: Past and Present</td>
-  </tr>
-  <tr>
-    <td><strong>wi 24</strong></td>
-    <td><font size="2">EE 539</font></td>
-    <td>Quantum Probability Theory and Stochastic Calculus</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 403</font></td>
-    <td>Introduction to Modern Algebra II (Groups)</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">LING 269</font></td>
-    <td>Swearing and Taboo Language</td>
-  </tr>
-  <tr>
-    <td><strong>fall 23</strong></td>
-    <td><font size="2">CSE 521</font></td>
-    <td>Advanced Algorithms</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 514</font></td>
-    <td>Networks and Combinatorial Optimization</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 402</font></td>
-    <td>Introduction to Modern Algebra I (Rings)</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MUSIC 162</font></td>
-    <td>American Popular Song</td>
-  </tr>
-  <tr>
-    <td><strong>sp 23</strong></td>
-    <td><font size="2">CSE 493</font></td>
-    <td>Introduction to Quantum Computing</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">CSE 422</font></td>
-    <td>Advanced Toolkit for Modern Algorithms</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 336</font></td>
-    <td>Accelerated Advanced Honors Calculus III</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">PSYCH 210</font></td>
-    <td>The Diversity of Human Sexuality</td>
-  </tr>
-  <tr>
-    <td><strong>wi 23</strong></td>
-    <td><font size="2">CSE 421</font></td>
-    <td>Introduction to Algorithms</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">CSE 431</font></td>
-    <td>Introduction to the Theory of Computation</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 335</font></td>
-    <td>Accelerated Advanced Honors Calculus II</td>
-  </tr>
-  <tr>
-    <td><strong>fall 22</strong></td>
-    <td><font size="2">CSE 446</font></td>
-    <td>Introduction to Machine Learning</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">CSE 351</font></td>
-    <td>The Hardware/Software Interface</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 334</font></td>
-    <td>Accelerated Advanced Honors Calculus I</td>
-  </tr>
-  <tr>
-    <td><strong>su 22</strong></td>
-    <td><font size="2">CSE 331</font></td>
-    <td>Software Design and Implementation</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 207</font></td>
-    <td>Introduction to Differential Equations</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">CHEM 142</font></td>
-    <td>General Chemistry I</td>
-  </tr>
-  <tr>
-    <td><strong>sp 22</strong></td>
-    <td><font size="2">CSE 332</font></td>
-    <td>Data Structures and Parallelism</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">CSE 312</font></td>
-    <td>Foundations of Computing II</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 318</font></td>
-    <td>Advanced Linear Algebra (Tools and Applications)</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">ARCH 151</font></td>
-    <td>Appreciation of Architecture</td>
-  </tr>
-  <tr>
-    <td><strong>wi 22</strong></td>
-    <td><font size="2">CSE 341</font></td>
-    <td>Programming Languages</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">CSE 311</font></td>
-    <td>Foundations of Computing I</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 208</font></td>
-    <td>Introduction to Linear Algebra</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">EDUC 251</font></td>
-    <td>Seeking Educational Equity and Diversity</td>
-  </tr>
-  <tr>
-    <td><strong>fall 21</strong></td>
-    <td><font size="2">CSE 143X</font></td>
-    <td>Accelerated Introduction to Java</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">MATH 126</font></td>
-    <td>Calculus and Analytic Geometry</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><font size="2">PSYCH 101</font></td>
-    <td>Introduction to Psychology</td>
-  </tr>
-</table>
-
-
 ## teaching
 
 i've been a teaching assistant for the cs department at uw since the summer right after freshman year. if you're at uw and are considering applying to teach for a class you took at some point; i highly recommend it; definitely one of the most formative experiences i've had in college. below is a possibly outdated list of courses i've ta'ed for
 
-<ul class="list-group list-group-flush" style="background-color: transparent; border: none; list-style-type: disc;">
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
-    <div>
-      <strong>Foundations of Computing I</strong> (CSE 311)
-    </div>
-    <div>
-      <span class="badge bg-info text-dark">sp 23</span>
-    </div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item d-flex justify-content-between align-items-center flex-column flex-sm-row">
+    <div><strong>Foundations of Computing I</strong> (CSE 311)</div>
+    <div><span class="badge bg-info text-dark">sp 23</span></div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
-    <div>
-      <strong>Foundations of Computing II</strong> (CSE 312)
-    </div>
+  <li class="list-group-item d-flex justify-content-between align-items-center flex-column flex-sm-row">
+    <div><strong>Foundations of Computing II</strong> (CSE 312)</div>
     <div>
       <span class="badge bg-info text-dark">su 22</span>
       <span class="badge bg-info text-dark">fall 22</span>
     </div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
-    <div>
-      <strong>Algorithms and Computational Complexity</strong> (CSE 417)
-    </div>
-    <div>
-      <span class="badge bg-info text-dark">wi 24</span>
-    </div>
+  <li class="list-group-item d-flex justify-content-between align-items-center flex-column flex-sm-row">
+    <div><strong>Algorithms and Computational Complexity</strong> (CSE 417)</div>
+    <div><span class="badge bg-info text-dark">wi 24</span></div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
-    <div>
-      <strong>Introduction to Quantum Computing</strong> (CSE 434)
-    </div>
-    <div>
-      <span class="badge bg-info text-dark">sp 24</span>
-    </div>
+  <li class="list-group-item d-flex justify-content-between align-items-center flex-column flex-sm-row">
+    <div><strong>Introduction to Quantum Computing</strong> (CSE 434)</div>
+    <div><span class="badge bg-info text-dark">sp 24</span></div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border: none;">
-    <div>
-      <strong>Introduction to Machine Learning</strong> (CSE 446)
-    </div>
-    <div>
-      <span class="badge bg-info text-dark">wi 23</span>
-    </div>
+  <li class="list-group-item d-flex justify-content-between align-items-center flex-column flex-sm-row">
+    <div><strong>Introduction to Machine Learning</strong> (CSE 446)</div>
+    <div><span class="badge bg-info text-dark">wi 23</span></div>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: transparent; border:">
-    <div>
-      <strong>Graduate Quantum Computing</strong> (CSE 534)
-    </div>
+  <li class="list-group-item d-flex justify-content-between align-items-center flex-column flex-sm-row">
+    <div><strong>Graduate Quantum Computing</strong> (CSE 534)</div>
     <div>
       <span class="badge bg-info text-dark">fall 23</span>
       <span class="badge bg-info text-dark">fall 24</span>
