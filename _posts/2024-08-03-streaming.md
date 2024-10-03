@@ -105,7 +105,7 @@ We proceed as usual; by first computing the CDF, i.e. $$F_X(x) = \Pr[X \leq x]$$
 $$
 \begin{align*}
 \Pr[X \leq x] &= 1 - \Pr[X \geq x] = 1 - \Pr[\min\{X_1, X_2, \dots, X_n\} \geq x] \\
-&= 1 - \Pr[X_1 \geq x, X_2 \geq x, \dots, X_n \geq x]  1 - \prod_{i = 1}^n \Pr[X_i \geq x] \\
+&= 1 - \Pr[X_1 \geq x, X_2 \geq x, \dots, X_n \geq x] = 1 - \prod_{i = 1}^n \Pr[X_i \geq x] \\
 &= 1 - \prod_{i = 1}^n (1 - x) = 1 - (1 - x)^n
 \end{align*}
 $$
@@ -140,7 +140,8 @@ We compute $$\mathbb{E}[Y^2]$$ and via a similar application of theorem 1 we hav
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
-\mathbb{E}[Y^2] \int_0^1 x^2 n (1 - x)^{n - 1} dx = n \int_0^1 x^2 (1 - x)^{n - 1} dx = \frac{2}{(n + 1)(n + 2)} && \text{by theorem 1} 
+\mathbb{E}[Y^2] \int_0^1 x^2 n (1 - x)^{n - 1} dx && \text{by theorem 1}  \\
+&= n \int_0^1 x^2 (1 - x)^{n - 1} dx = \frac{2}{(n + 1)(n + 2)}
 \end{align*}
 $$
 </p>
