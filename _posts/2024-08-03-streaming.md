@@ -104,13 +104,9 @@ We proceed as usual; by first computing the CDF, i.e. $$F_X(x) = \Pr[X \leq x]$$
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
-\Pr[X \leq x] &= 1 - \Pr[X \geq x] && \text{by the complement rule} \\
-&= 1 - \Pr[\min\{X_1, X_2, \dots, X_n\} \geq x] && \text{by definition of } X \\
-&= 1 - \Pr[X_1 \geq x, X_2 \geq x, \dots, X_n \geq x] \\
-&= 1 - \prod_{i = 1}^n \Pr[X_i \geq x] && \text{by independence} \\
-&= 1 - \prod_{i = 1}^n (1 - \Pr[X_i \leq x]) && \text{by the complement rule} \\
-&= 1 - \prod_{i = 1}^n (1 - x) && \text{since } X_i \sim \text{Uniform}(0, 1) \\
-&= 1 - (1 - x)^n
+\Pr[X \leq x] &= 1 - \Pr[X \geq x] = 1 - \Pr[\min\{X_1, X_2, \dots, X_n\} \geq x] \\
+&= 1 - \Pr[X_1 \geq x, X_2 \geq x, \dots, X_n \geq x]  1 - \prod_{i = 1}^n \Pr[X_i \geq x] \\
+&= 1 - \prod_{i = 1}^n (1 - x) = 1 - (1 - x)^n
 \end{align*}
 $$
 </p>
@@ -125,15 +121,7 @@ F_X(x) =
 \end{cases}
 $$
 
-The result thus follows by taking the derivative of $$F_X(x)$$ giving us 
-
-$$
-f_X(x) = 
-\begin{cases}
-    0 & \text{if } x \notin [0, 1] \\
-    n (1 - x)^{n - 1} & \text{if } x \in [0, 1]
-\end{cases} \text{ as desired.}
-$$
+The result thus follows by taking the derivative of $$F_X(x)$$.
 
 > **theorem 2**
 >
@@ -143,11 +131,7 @@ $$
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
-\mathbb{E}[Y] &= \int_{-\infty}^\infty x f_Y(x) dx = \int_{-\infty}^0 x f_Y(x) dx + \int_0^1 x f_Y(x) dx + \int_1^\infty x f_Y(x) dx &&\text{by definition} \\
-&= \int_0^1 x n (1 - x)^{n - 1} dx = n \int_0^1 x (1 - x)^{n - 1} dx && \text{by theorem 1} \\
-&= n \int_{0}^{1} (1 - t) t^{n - 1} dt && \text{by the substitution } t = 1 - x \\
-&= n \int_{0}^{1} t^{n - 1} - t^n dt = n \left( \frac{t^n}{n} - \frac{t^{n + 1}}{n + 1}\right) \Bigg|_{0}^{1} \\
-&= n \left(\frac{1}{n} - \frac{1}{n + 1}\right) = 1 - \frac{n}{n + 1} = \frac{1}{n + 1} 
+\mathbb{E}[Y] &= \int_0^1 x n (1 - x)^{n - 1} dx = n \int_0^1 x (1 - x)^{n - 1} dx = \frac{1}{n + 1} && \text{by theorem 1}
 \end{align*}
 $$
 </p>
@@ -156,21 +140,17 @@ We compute $$\mathbb{E}[Y^2]$$ and via a similar application of theorem 1 we hav
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
-\mathbb{E}[Y^2] &= \int_{-\infty}^\infty x^2 f_Y(x) dx = \int_{-\infty}^0 x^2 f_Y(x) dx + \int_0^1 x^2 f_Y(x) dx + \int_1^\infty x^2 f_Y(x) dx \\
-&= \int_0^1 x^2 n (1 - x)^{n - 1} dx = n \int_0^1 x^2 (1 - x)^{n - 1} dx && \text{by theorem 1} \\
-&= n \int_{0}^{1} (1 - t)^2 t^{n - 1} dt && \text{by the substitution } t = 1 - x \\
-&= n \int_{0}^{1} \bigg(1 - 2t + t^2\bigg) t^{n - 1} dt = n \int_{0}^{1} t^{n - 1} - 2t^n + t^{n + 1} dt \\
-&= n \left(\frac{t^n}{n} - \frac{2t^{n + 1}}{n + 1} + \frac{t^{n + 2}}{n + 2}\right)\Bigg|_{0}^{1} \\
-&= n \left(\frac{1}{n} - \frac{2}{n + 1} + \frac{1}{n + 2}\right) = n \left(\frac{(n + 1)(n + 2) - 2n(n + 2) + n(n + 1)}{n(n + 1)(n + 2)}\right) \\
-&= \frac{n^2 + 3n + 2 - 2n^2 - 4n + n^2 + n}{(n + 1)(n + 2)} = \frac{2}{(n + 1)(n + 2)}
+\mathbb{E}[Y^2] \int_0^1 x^2 n (1 - x)^{n - 1} dx = n \int_0^1 x^2 (1 - x)^{n - 1} dx = \frac{2}{(n + 1)(n + 2)} && \text{by theorem 1} 
 \end{align*}
 $$
 </p>
 We now finally compute the variance, which is given by  
 <p style = "overflow-x:auto">
 $$
-\text{Var}(Y) = \mathbb{E}[Y^2] - \mathbb{E}[Y]^2 = \frac{2}{(n + 1)(n + 2)} - \frac{1}{(n + 1)^2} 
-\leq \frac{2}{(n + 1)^2} - \frac{1}{(n + 1)^2} = \frac{1}{(n + 1)^2}
+\begin{align*}
+\text{Var}(Y) &= \mathbb{E}[Y^2] - \mathbb{E}[Y]^2 = \frac{2}{(n + 1)(n + 2)} - \frac{1}{(n + 1)^2} \\
+&\leq \frac{2}{(n + 1)^2} - \frac{1}{(n + 1)^2} = \frac{1}{(n + 1)^2}
+\end{align*}
 $$
 </p>
 
