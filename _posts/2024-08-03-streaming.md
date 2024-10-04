@@ -140,7 +140,7 @@ We compute $$\mathbb{E}[Y^2]$$ and via a similar application of theorem 1 we hav
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
-\mathbb{E}[Y^2] \int_0^1 x^2 n (1 - x)^{n - 1} dx && \text{by theorem 1}  \\
+\mathbb{E}[Y^2] &- \int_0^1 x^2 n (1 - x)^{n - 1} dx && \text{by theorem 1}  \\
 &= n \int_0^1 x^2 (1 - x)^{n - 1} dx = \frac{2}{(n + 1)(n + 2)}
 \end{align*}
 $$
