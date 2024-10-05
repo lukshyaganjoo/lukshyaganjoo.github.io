@@ -109,9 +109,15 @@ $$\mathcal{O}(1/\epsilon^2)$$.
 
 firstly we verify that this modification does not alter the correctness of the estimation on average. this is easy because 
 
+<p style = "overflow-x:auto">
 $$
+\begin{align*}
   Z = \frac{1}{k} \sum_{i = 1}^k Y_i \quad \text{ where } Y_i = \min\{h_i(x_1), h_i(x_2), \dots, h_i(x_m)\}
-$$ and therefore 
+\end{align*}
+$$ 
+</p>
+and therefore 
+<p style = "overflow-x:auto">
 $$
   \mathbb{E}[Z] = \mathbb{E}\left[\frac{1}{k} \sum_{i = 1}^k Y_i\right] = \frac{1}{k} \sum_{i = 1}^k \mathbb{E}[Y_i] = \frac{1}{k} \sum_{i = 1}^k \frac{1}{m + 1} 
   = \frac{1}{k} \cdot \frac{k}{m + 1} = \frac{1}{m + 1}
