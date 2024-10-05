@@ -95,8 +95,7 @@ $$ thereby ensuring that we return the correct estimate on average.
 </p>
 
 So what goes wrong in the above algorithm. The issue is that the variance of the estimator is too high. In fact, 
-defining $$Y = \min \limits_{i \in [k]} (h(x_1), h(x_2), \dots, h(x_n))$$ as above in the algorithm; following similar steps to 
-the variance computation in Theorem 2 yields 
+defining $$Y = \min (h(x_1), h(x_2), \dots, h(x_n))$$ as above in the algorithm; following similar steps to the variance computation in Theorem 2 yields 
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
