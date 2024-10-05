@@ -68,8 +68,7 @@ $$
     \quad \texttt{val} \leftarrow \infty
     \quad \text{for } i = 1 \text{ to } n: \\
     \quad \quad x \leftarrow \texttt{stream}[i] \\
-    \quad \quad \text{for } j = 1 \text{ to } k: \\
-    \quad \quad \quad \texttt{val}_j \leftarrow \min\{\texttt{val}_j, h_j(x)\} \\
+    \quad \quad \quad \texttt{val}_i \leftarrow \min\{\texttt{val}_i, h(x)\} \\
     \quad Z \leftarrow \min \limits_{i \in [k]} \texttt{val}_i \\
     \quad \text{return } \bigg\lfloor \frac{1}{Z} - 1 \bigg\rfloor \\
 \end{array}
