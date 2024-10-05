@@ -64,8 +64,8 @@ in order to answer this question, we consider the following modification to the 
 $$
 \begin{array}{l}
     \textbf{function} \; \texttt{incorrectEstimateDistinct}(\text{stream},  k): \\
-    \quad \text{initialize } k \text{ independent hash functions } h_1, h_2, \dots, h_k, \text{ where } h_i : \{0, \dots, n - 1\} \to [0, 1] \\
-    \quad \texttt{val}_1 \leftarrow \infty, \texttt{ val}_2 \leftarrow \infty, \dots, \texttt{ val}_k \leftarrow \infty \\
+    \quad \text{initialize a} \text{hash function } h \text{ which hashes elements to } [0, 1] \\
+    \quad \texttt{val} \leftarrow \infty
     \quad \text{for } i = 1 \text{ to } n: \\
     \quad \quad x \leftarrow \texttt{stream}[i] \\
     \quad \quad \text{for } j = 1 \text{ to } k: \\
@@ -76,6 +76,25 @@ $$
 $$
 </p>
 it turns out that the above algorithm produces the correct solution on average! (in fact we use this very fact in the proof of the main theorem). 
+Indeed from Theorem 2, we have that $$\mathbb{E}[Z] = \frac{1}{k + 1}$$ and a matter of simple algebra yields that 
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+\mathbb{E}[Z] &= \frac{1}{k + 1} \implies \frac{1}{\mathbb{E}[Z]} = k + 1 \\
+\end{align*}
+$$ thereby ensuring that we return the correct estimate on average. 
+</p>
+So what goes wrong in the above algorithm. The issue is that the variance of the estimator is too high. In fact, 
+defining $$Y = \min \limits_{i \in [k]} (h(x_1), h(x_2), \dots, h(x_n))$$ as above in the algorithm; following similar steps to 
+the variance computation in Theorem 2 yields 
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+\text{Var}(Y) &= \frac{k}{(k + 1)^2 (k + 2)} \approx \frac{1}{(k + 1)^2}
+\end{align*}
+$$
+</p> and therefore by Chebyshev's inequality, the probability that the estimate is off by more than a factor of $$1 \pm \epsilon$$ is
+$$\mathcal{O}(1/\epsilon^2)$$.
 
 > **lemma 1**
 >
@@ -140,7 +159,7 @@ We compute $$\mathbb{E}[Y^2]$$ and via a similar application of theorem 1 we hav
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
-\mathbb{E}[Y^2] &- \int_0^1 x^2 n (1 - x)^{n - 1} dx && \text{by theorem 1}  \\
+\mathbb{E}[Y^2] &= \int_0^1 x^2 n (1 - x)^{n - 1} dx && \text{by theorem 1}  \\
 &= n \int_0^1 x^2 (1 - x)^{n - 1} dx = \frac{2}{(n + 1)(n + 2)}
 \end{align*}
 $$
