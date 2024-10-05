@@ -76,6 +76,16 @@ $$
 $$
 </p>
 it turns out that the above algorithm produces the correct solution on average! (in fact we use this very fact in the proof of the main theorem). 
+
+> **lemma 1**
+>
+> <p style = "overflow-x:auto">
+> $$\begin{align*}
+> \text{number of distinct elements in the data stream} = \frac{1}{\mathbb{E}[Z]} - 1\end{align*}
+> $$
+> </p>
+
+**proof**
 Indeed from Theorem 2, we have that $$\mathbb{E}[Z] = \frac{1}{k + 1}$$ and a matter of simple algebra yields that 
 <p style = "overflow-x:auto">
 $$
@@ -84,6 +94,7 @@ $$
 \end{align*}
 $$ thereby ensuring that we return the correct estimate on average. 
 </p>
+
 So what goes wrong in the above algorithm. The issue is that the variance of the estimator is too high. In fact, 
 defining $$Y = \min \limits_{i \in [k]} (h(x_1), h(x_2), \dots, h(x_n))$$ as above in the algorithm; following similar steps to 
 the variance computation in Theorem 2 yields 
@@ -95,14 +106,6 @@ $$
 $$
 </p> and therefore by Chebyshev's inequality, the probability that the estimate is off by more than a factor of $$1 \pm \epsilon$$ is
 $$\mathcal{O}(1/\epsilon^2)$$.
-
-> **lemma 1**
->
-> <p style = "overflow-x:auto">
-> $$\begin{align*}
-> \text{number of distinct elements in the data stream} = \frac{1}{\mathbb{E}[Z]} - 1\end{align*}
-> $$
-> </p>
 
 ## the proof 
 
