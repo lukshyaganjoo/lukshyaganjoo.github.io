@@ -107,6 +107,22 @@ $$\mathcal{O}(1/\epsilon^2)$$.
 
 ## the proof 
 
+firstly we verify that this modification does not alter the correctness of the estimation on average. this is easy because 
+
+$$
+  Z = \frac{1}{k} \sum_{i = 1}^k Y_i \quad \text{ where } Y_i = \min\{h_i(x_1), h_i(x_2), \dots, h_i(x_m)\}
+$$ and therefore 
+$$
+  \mathbb{E}[Z] = \mathbb{E}\left[\frac{1}{k} \sum_{i = 1}^k Y_i\right] = \frac{1}{k} \sum_{i = 1}^k \mathbb{E}[Y_i] = \frac{1}{k} \sum_{i = 1}^k \frac{1}{m + 1} 
+  = \frac{1}{k} \cdot \frac{k}{m + 1} = \frac{1}{m + 1}
+$$ 
+Turning our attention to the problem child of it all, we now compute the variance of $Z$. We have that
+$$
+\begin{align*}
+  \text{Var}(Z) &= \text{Var}\left(\frac{1}{k} \sum_{i = 1}^k Y_i\right) = \frac{1}{k^2} \text{Var}\left(\sum_{i = 1}^k Y_i\right) = \frac{1}{k^2} \sum_{i = 1}^k \text{Var}(Y_i) \\
+  &\leq \frac{1}{k^2} \sum_{i = 1}^k \frac{1}{(m + 1)^2} = \frac{1}{k^2} \cdot \frac{k}{(m + 1)^2} = \frac{1}{k(m + 1)^2} &&\text{by theorem 2}
+\end{align*}
+$$
 ## theorems and references 
 
 > **theorem 1**
