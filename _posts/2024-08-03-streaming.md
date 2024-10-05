@@ -122,13 +122,17 @@ $$
   \mathbb{E}[Z] = \mathbb{E}\left[\frac{1}{k} \sum_{i = 1}^k Y_i\right] = \frac{1}{k} \sum_{i = 1}^k \mathbb{E}[Y_i] = \frac{1}{k} \sum_{i = 1}^k \frac{1}{m + 1} 
   = \frac{1}{k} \cdot \frac{k}{m + 1} = \frac{1}{m + 1}
 $$ 
+</p>
 Turning our attention to the problem child of it all, we now compute the variance of $Z$. We have that
 $$
+<p style = "overflow-x:auto">
 \begin{align*}
   \text{Var}(Z) &= \text{Var}\left(\frac{1}{k} \sum_{i = 1}^k Y_i\right) = \frac{1}{k^2} \text{Var}\left(\sum_{i = 1}^k Y_i\right) = \frac{1}{k^2} \sum_{i = 1}^k \text{Var}(Y_i) \\
   &\leq \frac{1}{k^2} \sum_{i = 1}^k \frac{1}{(m + 1)^2} = \frac{1}{k^2} \cdot \frac{k}{(m + 1)^2} = \frac{1}{k(m + 1)^2} &&\text{by theorem 2}
 \end{align*}
 $$
+</p>
+
 ## theorems and references 
 
 > **theorem 1**
