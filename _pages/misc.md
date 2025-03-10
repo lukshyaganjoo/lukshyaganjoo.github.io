@@ -34,8 +34,10 @@ i've been a teaching assistant for the cs department at uw since the summer righ
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center flex-column flex-sm-row">
     <div><strong>Introduction to Quantum Computing</strong> (CSE 434)</div>
-    <div><span class="badge bg-info text-dark">sp 24</span></div>
-    <div><span class="badge bg-info text-dark">sp 25</span></div>
+    <div>
+      <span class="badge bg-info text-dark">sp 24</span>
+      <span class="badge bg-info text-dark">sp 25</span>
+    </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center flex-column flex-sm-row">
     <div><strong>Introduction to Machine Learning</strong> (CSE 446)</div>
