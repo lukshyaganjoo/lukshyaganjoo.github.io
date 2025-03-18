@@ -61,7 +61,7 @@ some important links if pedagogy and education in cs are interesting/relevant to
 ## reading and research
 
 - i'm currently working with [Andrea Coladangelo](https://www.andreacoladangelo.com/) and [Chinmay Nirkhe](https://homes.cs.washington.edu/~nirkhe/) on the $$\textsf{QMC}$$ problem where we're trying to develop better approximation algorithms to find a high energy state for a class of $$k$$-local hamiltonians that while physically motivated, also serve as a generalization for the [max-cut](https://en.wikipedia.org/wiki/Maximum_cut) problem. 
-  - [theory lunch slides](/asserts/pdf/qmc.pdf)
+  - [theory lunch slides](/assets/pdf/qmc.pdf)
   - arxiv incoming
 - this spring, i worked within [WXML](https://wxml.math.washington.edu/) on a project with [Stefan Steinerberger](https://math.washington.edu/people/stefan-steinerberger) alongside some other students on the **Bad Science Matrix problem** which consisted in finding, among all $$\mathbf{A} \in \mathbb{R}^{n \times n}$$, with rows having unit $$\ell^2$$ norm, the one that maximized 
   <p style = "overflow-x:auto">
