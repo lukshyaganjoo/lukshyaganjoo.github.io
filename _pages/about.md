@@ -6,7 +6,7 @@ permalink: /
 profile:
   align: right
   image: prof_pic2_luksh.jpg # relative path to the profile image
-  image_size: 270 # size of the profile image in pixels
+  image_size: 230 # size of the profile image in pixels
   image_circular: true # crops the image to make it circular
 
 news: false # includes a list of news items
