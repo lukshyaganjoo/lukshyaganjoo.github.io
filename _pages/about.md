@@ -6,8 +6,8 @@ permalink: /
 profile:
   align: right
   image: prof_pic2.jpg # relative path to the profile image
-  image_size: 270 # size of the profile image in pixels
-  image_circular: true # crops the image to make it circular
+  image_size: 250 # size of the profile image in pixels
+  image_circular: false # crops the image to make it circular
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
