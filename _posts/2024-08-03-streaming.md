@@ -62,16 +62,18 @@ in order to answer this question, we consider the following modification to the 
 ### a potentially flawed solution 
 <p style = "overflow-x:auto">
 $$
-\begin{array}{l}
-\textbf{function} \; \texttt{incorrectEstimateDistinct}(\text{stream},  k): \\
-\quad \text{initialize a} \text{ hash function } h \text{ which hashes elements to } [0, 1] \\
-\quad \texttt{val} \leftarrow \infty
-\quad \text{for } i = 1 \text{ to } n: \\
-\quad \quad x \leftarrow \texttt{stream}[i] \\
-\quad \quad \quad \texttt{val}_i \leftarrow \min\{\texttt{val}_i, h(x)\} \\
-\quad Z \leftarrow \min \limits_{i \in [k]} \texttt{val}_i \\
-\quad \text{return } \bigg\lfloor \frac{1}{Z} - 1 \bigg\rfloor \\
-\end{array}
+\[
+  \begin{array}{l}
+  \textbf{function } \texttt{incorrectEstimateDistinct(stream, k)} \\
+  \quad \text{initialize a hash function } h \text{ to } [0,1] \\
+  \quad \texttt{val} \gets \infty \\
+  \quad \textbf{for } i = 1 \textbf{ to } n: \\
+  \quad\quad x \gets \texttt{stream}[i] \\
+  \quad\quad \texttt{val}_i \gets \min(\texttt{val}_i, h(x)) \\
+  Z \gets \min_{i \in [k]} \texttt{val}_i \\
+  \textbf{return } \left\lfloor \frac{1}{Z} - 1 \right\rfloor
+  \end{array}
+\]
 $$
 </p>
 it turns out that the above algorithm produces the correct solution on average! (in fact we use this very fact in the proof of the main theorem). 
@@ -133,7 +135,7 @@ $$
 $$
 </p>
 
-## theorems and references 
+## appendix 
 
 > **theorem 1**
 >
@@ -200,4 +202,8 @@ $$
 \end{align*}
 $$
 </p>
+
+## references 
+
+- []
 
