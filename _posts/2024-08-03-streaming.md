@@ -36,7 +36,7 @@ in a "stream" and we have to process them one by one. given that the number of e
 
 > **definition**
 >
-> a **hash function** is a function $$h : A \to B$$ where $$A = \{a \in \{0, 1\}^j \mid j \in \mathbb{N}\}$$ is the set of all bit sequences of aritrary length and $$B = \{0, 1\}^k$$ is the set of all bit sequences of a specific length $$k \in \mathbb{N}$$. Note that it is not important to understand deeply the definition of a hash function, rather simply that with the appropriate independence assumptions, it essentially behaves like a uniform random variable.
+> a **hash function** is a function $$h : A \to B$$ where $$A = \{a \in \{0, 1\}^j \mid j \in \mathbb{N}\}$$ is the set of all bit sequences of arbitrary length and $$B = \{0, 1\}^k$$ is the set of all bit sequences of a specific length $$k \in \mathbb{N}$$. Note that it is not important to understand deeply the definition of a hash function, rather simply that with the appropriate independence assumptions, it essentially behaves like a uniform random variable.
 
 ## a surprisingly simple solution 
 <p style = "overflow-x:auto">
