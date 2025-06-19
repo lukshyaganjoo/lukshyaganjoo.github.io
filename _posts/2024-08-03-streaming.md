@@ -63,14 +63,14 @@ in order to answer this question, we consider the following modification to the 
 <p style = "overflow-x:auto">
 $$
 \begin{array}{l}
-  \textbf{function} \; \texttt{incorrectEstimateDistinct}(\text{stream},  k): \\
-  \quad \text{initialize a} \text{ hash function } h \text{ which hashes elements to } [0, 1] \\
-  \quad \texttt{val} \leftarrow \infty
-  \quad \text{for } i = 1 \text{ to } n: \\
-  \quad \quad x \leftarrow \texttt{stream}[i] \\
-  \quad \quad \quad \texttt{val}_i \leftarrow \min\{\texttt{val}_i, h(x)\} \\
-  \quad Z \leftarrow \min \limits_{i \in [k]} \texttt{val}_i \\
-  \quad \text{return } \bigg\lfloor \frac{1}{Z} - 1 \bigg\rfloor \\
+\textbf{function} \; \texttt{incorrectEstimateDistinct}(\text{stream},  k): \\
+\quad \text{initialize a} \text{ hash function } h \text{ which hashes elements to } [0, 1] \\
+\quad \texttt{val} \leftarrow \infty
+\quad \text{for } i = 1 \text{ to } n: \\
+\quad \quad x \leftarrow \texttt{stream}[i] \\
+\quad \quad \quad \texttt{val}_i \leftarrow \min\{\texttt{val}_i, h(x)\} \\
+\quad Z \leftarrow \min \limits_{i \in [k]} \texttt{val}_i \\
+\quad \text{return } \bigg\lfloor \frac{1}{Z} - 1 \bigg\rfloor \\
 \end{array}
 $$
 </p>
