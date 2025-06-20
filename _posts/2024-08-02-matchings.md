@@ -68,15 +68,11 @@ Since $$n = 2t$$ (there are an even number of vertices in a perfect matching), w
 $$
 \begin{align*}
     \frac{(n - 2)!!}{(n - 1)!!} &= \frac{(2t - 2)!!}{(2t - 1)!!} = \frac{(2t - 2) \cdot (2t - 4) \cdots 2}{(2t - 1) \cdot (2t - 3) \cdots 1} \\
-    &= \frac{2^{t - 1} \cdot (t - 1)!}{(2t - 1) \cdot (2t - 3) \cdots 1} = \frac{2^{t - 1} \cdot (t - 1)!}{(2t - 1)!!} \\
-    &= \frac{2^{t - 1} (t - 1)!}{\frac{(2t)!}{(2t)!!}} = \frac{2^{t - 1} (2t)!! (t - 1)!}{(2t)!} \\
-    &= \frac{2^{t - 1} (t - 1)!}{(2t)!} (2t)(2t - 2) \cdots 2 = \frac{2^{t - 1} (t - 1)!}{(2t)!} \cdot 2^t t! \\
+    &= \frac{2^{t - 1} (2t)!! (t - 1)!}{(2t)!} \\
     &= 2^{2t - 1} \cdot \frac{(t - 1)!}{(2t)!} \cdot k! \\
     &\approx 2^{2t - 1} \cdot \frac{\left(\frac{t - 1}{e}\right)^{t - 1}}{\left(\frac{2t}{e}\right)^{2t}} \cdot \frac{t^{t}}{e^{t}} &&\text{ Stirling's approximation} \\
-    &= 2^{2t - 1} \cdot \frac{(t - 1)^{t - 1} / e^{t - 1}}{(2t)^{2t} / e^{2t}} \cdot \frac{t^{t}}{e^{t}} \\
-    &= 2^{2t - 1} \cdot \frac{(t - 1)^{t - 1}}{e^{t - 1}} \cdot \frac{e^{2t}}{(2t)^{2t}} \cdot \frac{t^{t}}{e^{t}} = 2^{2t - 1} e \cdot \frac{(t - 1)^{t - 1}}{2^{2t} t^{2t}} \cdot t^{t} \\
     &= \frac{e}{2} \cdot \frac{(t - 1)^{t - 1}}{t^{2t}} \cdot t^{t} = \frac{e}{2} \cdot \frac{(t - 1)^{t - 1}}{t^t} \\
-    &= \frac{e}{2} \cdot \frac{\left(\frac{t - 1}{t}\right)^{t - 1}}{t} = \frac{e}{2} \cdot \frac{\left(1 - \frac{1}{t}\right)^{t - 1}}{t} \\
+    &= \frac{e}{2} \cdot \frac{\left(1 - \frac{1}{t}\right)^{t - 1}}{t} \\
     &\approx e \cdot \frac{e^{-1/t (t - 1)}}{2k} = e \cdot \frac{e^{1/t - 1}}{2t} \\
     &= e/n \cdot e^{1/t - 1} = e^{1/t} / n && \text{since } n = 2t
 \end{align*}
