@@ -70,37 +70,15 @@ $$
     \frac{(n - 2)!!}{(n - 1)!!} &= \frac{(2t - 2)!!}{(2t - 1)!!} = \frac{(2t - 2) \cdot (2t - 4) \cdots 2}{(2t - 1) \cdot (2t - 3) \cdots 1} \\
     &= \frac{2^{t - 1} (2t)!! (t - 1)!}{(2t)!} \\
     &= 2^{2t - 1} \cdot \frac{(t - 1)!}{(2t)!} \cdot k! \\
-    &\approx 2^{2t - 1} \cdot \frac{\left(\frac{t - 1}{e}\right)^{t - 1}}{\left(\frac{2t}{e}\right)^{2t}} \cdot \frac{t^{t}}{e^{t}} &&\text{ Stirling's approximation} \\
+    &\approx 2^{2t - 1} \cdot \frac{\left(\frac{t - 1}{e}\right)^{t - 1}}{\left(\frac{2t}{e}\right)^{2t}} \cdot \frac{t^{t}}{e^{t}} \\
     &= \frac{e}{2} \cdot \frac{(t - 1)^{t - 1}}{t^{2t}} \cdot t^{t} = \frac{e}{2} \cdot \frac{(t - 1)^{t - 1}}{t^t} \\
     &= \frac{e}{2} \cdot \frac{\left(1 - \frac{1}{t}\right)^{t - 1}}{t} \\
     &\approx e \cdot \frac{e^{-1/t (t - 1)}}{2k} = e \cdot \frac{e^{1/t - 1}}{2t} \\
-    &= e/n \cdot e^{1/t - 1} = e^{1/t} / n && \text{since } n = 2t
-\end{align*}
-$$
+    &= e/n \cdot e^{1/t - 1} = e^{1/t} / n 
+\end{align*} 
+$$ where all the approximations were via Stirlings and we made use of the fact that $$n = 2t$$. 
 </p>
-It is clear that  
-<p style = "overflow-x:auto">
-$$
-\begin{align*}
-    e^{1/t} / n = e^{2/n} / n \to 0 \text{ as } n \to \infty
-\end{align*}
-$$
-</p>
-Another way to see this is to note that for $$n$$ large enough, since $$n \geq 2$$,  
-<p style = "overflow-x:auto">
-$$
-\begin{align*}
-    e^{2/n} / n \leq e^{2/2} / n = e / n \to 0 \text{ as } n \to \infty
-\end{align*}
-$$
-</p>
-The claim thus follows since,  
-<p style = "overflow-x:auto">
-$$
-\begin{align*}
-    \Pr[\mathcal{G}_k \text{ is connected}] = \frac{(n - 2)!!}{(n - 1)!!} = \frac{e^{1/t}}{n} \to 0 \text{ as } n \to \infty
-\end{align*}
-$$
+The desired result follows by noting that $$\lim \limits_{n \to \infty} \frac{e^{1/t}}{n} = 0$$. 
 </p>
 
 ### the main result
