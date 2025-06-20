@@ -61,16 +61,16 @@ in order to answer this question, we consider the following modification to the 
 
 <p style = "overflow-x:auto">
 $$
-  \begin{array}{l}
-  \textbf{function } \texttt{incorrectEstimateDistinct(stream, k)} \\
-  \quad \text{initialize a hash function } h \text{ to } [0,1] \\
-  \quad \texttt{val} \gets \infty \\
-  \quad \textbf{for } i = 1 \textbf{ to } n: \\
-  \quad\quad x \gets \texttt{stream}[i] \\
-  \quad\quad \texttt{val}_i \gets \min(\texttt{val}_i, h(x)) \\
-  Z \gets \min_{i \in [k]} \texttt{val}_i \\
-  \textbf{return } \left\lfloor \frac{1}{Z} - 1 \right\rfloor
-  \end{array}
+\begin{array}{l}
+    \textbf{function } \texttt{incorrectEstimateDistinct(stream, k)} \\
+    \quad \text{initialize a hash function } h \text{ to } [0,1] \\
+    \quad \texttt{val} \gets \infty \\
+    \quad \textbf{for } i = 1 \textbf{ to } n: \\
+    \quad\quad x \gets \texttt{stream}[i] \\
+    \quad\quad \texttt{val}_i \gets \min(\texttt{val}_i, h(x)) \\
+    \quad Z \gets \min_{i \in [k]} \texttt{val}_i \\
+    \quad \textbf{return } \left\lfloor \frac{1}{Z} - 1 \right\rfloor
+\end{array}
 $$
 </p>
 while the above algorithm is not sufficient for our purposes, it does produces the correct solution on average! (in fact we use this very fact in the proof of the main theorem). 
