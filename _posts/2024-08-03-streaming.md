@@ -60,6 +60,7 @@ in order to answer this question, we consider the following modification to the 
 
 <p style = "overflow-x:auto">
 $$
+\noindent
 \begin{array}{H}
     \textbf{function } \texttt{incorrectEstimateDistinct(stream, k)} \\
     \quad \text{initialize a hash function } h : \{0, \dots, n - 1\} \to [0, 1] \\
