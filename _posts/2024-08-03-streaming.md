@@ -43,7 +43,7 @@ in a "stream" and we have to process them one by one. given that the number of e
 $$
 \begin{array}{l}
     \textbf{function} \; \texttt{estimateDistinct}(\text{stream},  k): \\
-    \quad \text{initialize } k \text{ independent hash functions } h_1, h_2, \dots, h_k, \text{ where } h_i : \{0, \dots, n - 1\} \to [0, 1] \\
+    \quad \text{initialize } k \text{ independent hash functions } h_1, h_2, \dots, h_k : \{0, \dots, n - 1\} \to [0, 1] \\
     \quad \texttt{val}_1 \leftarrow \infty, \texttt{ val}_2 \leftarrow \infty, \dots, \texttt{ val}_k \leftarrow \infty \\
     \quad \text{for } i = 1 \text{ to } n: \\
     \quad \quad x \leftarrow \texttt{stream}[i] \\
@@ -63,7 +63,7 @@ in order to answer this question, we consider the following modification to the 
 $$
 \begin{array}{l}
     \textbf{function } \texttt{incorrectEstimateDistinct(stream, k)} \\
-    \quad \text{initialize a hash function } h \text{ to } [0,1] \\
+    \quad \text{initialize a hash function } h : \{0, \dots, n - 1\} \to [0, 1] \\
     \quad \texttt{val} \gets \infty \\
     \quad \textbf{for } i = 1 \textbf{ to } n: \\
     \quad\quad x \gets \texttt{stream}[i] \\
