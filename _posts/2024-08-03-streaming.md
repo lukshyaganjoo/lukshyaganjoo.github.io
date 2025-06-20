@@ -202,5 +202,7 @@ $$
 
 ## references 
 
-- []
+- [uw's exposition on sketching and hashing algorithms](https://courses.cs.washington.edu/courses/cse521/23au/521-lecture-6.pdf)
+- [some lovely notes on variance reduction and streaming](https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-f20/www/notes/lec11.pdf)
+- [count min-hash by alex tsun @ stanford](https://courses.cs.washington.edu/courses/cse312/20su/files/student_drive/section4_distinct_elements_notes.pdf)
 
