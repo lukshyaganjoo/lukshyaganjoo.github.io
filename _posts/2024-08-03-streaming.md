@@ -14,10 +14,9 @@ toc:
   - name: the problem 
   - name: a surprisingly simple solution
   - name: why is an average of minimums necessary?
-  - subsections: 
-    - name: a potentially flawed solution
   - name: the proof
-  - name: theorems and references
+  - name: appendix
+  - name: references
 ---
 
 ## introduction
