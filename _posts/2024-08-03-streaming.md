@@ -59,10 +59,8 @@ what the above algorithm is essentially doing is hashing each element in the str
 ## why is an average of minimums necessary?
 in order to answer this question, we consider the following modification to the algorithm. 
 
-### a potentially flawed solution 
 <p style = "overflow-x:auto">
 $$
-\[
   \begin{array}{l}
   \textbf{function } \texttt{incorrectEstimateDistinct(stream, k)} \\
   \quad \text{initialize a hash function } h \text{ to } [0,1] \\
@@ -73,10 +71,9 @@ $$
   Z \gets \min_{i \in [k]} \texttt{val}_i \\
   \textbf{return } \left\lfloor \frac{1}{Z} - 1 \right\rfloor
   \end{array}
-\]
 $$
 </p>
-it turns out that the above algorithm produces the correct solution on average! (in fact we use this very fact in the proof of the main theorem). 
+while the above algorithm is not sufficient for our purposes, it does produces the correct solution on average! (in fact we use this very fact in the proof of the main theorem). 
 
 > **lemma 1**
 >
