@@ -57,8 +57,6 @@ what the above algorithm is essentially doing is hashing each element in the str
 
 ## why is an average of minimums necessary?
 in order to answer this question, we consider the following modification to the algorithm. 
-
-<p style = "overflow-x:auto">
 $$
 \begin{array}{l}
     \textbf{function } \texttt{incorrectEstimateDistinct(stream, k)} \\
