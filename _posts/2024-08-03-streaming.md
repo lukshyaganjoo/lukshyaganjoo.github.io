@@ -69,7 +69,6 @@ $$
     \quad \textbf{return } \left\lfloor \frac{1}{Z} - 1 \right\rfloor
 \end{array}
 $$
-</p>
 while the above algorithm is not sufficient for our purposes, it does produces the correct solution on average! (in fact we use this very fact in the proof of the main theorem). 
 
 > **lemma 1**
