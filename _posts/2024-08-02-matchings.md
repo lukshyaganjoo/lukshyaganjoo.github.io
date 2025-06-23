@@ -16,6 +16,7 @@ toc:
   - subsections: 
     - name: identifying the problem-child
     - name: the main result
+  - name: references
 ---
 
 ## introduction and some background
@@ -73,10 +74,8 @@ $$
     &= \frac{e}{2} \cdot \frac{\left(1 - \frac{1}{t}\right)^{t - 1}}{t} \approx e \cdot \frac{e^{-1/t (t - 1)}}{2k} = e \cdot \frac{e^{1/t - 1}}{2t} \\
     &= e/n \cdot e^{1/t - 1} = e^{1/t} / n 
 \end{align*} 
-$$ where all the approximations were via Stirlings and we made use of the fact that $$n = 2t$$. 
-</p>
-The desired result follows by noting that $$\lim \limits_{n \to \infty} \frac{e^{1/t}}{n} = 0$$. 
-</p>
+$$ 
+</p> where all the approximations were via Stirlings and we made use of the fact that $$n = 2t$$. The desired result follows by noting that $$\lim \limits_{n \to \infty} \frac{e^{1/t}}{n} = 0$$. 
 
 ### the main result
 now that we have established the necessity of the condition $$k \geq 3$$, we can proceed with the main result. specifically we show that the claim is true for $$k = 3$$ and our method immediately generalizes to any $$k > 3$$.
@@ -95,17 +94,12 @@ We want to show that this probability approaches 1 for $$n \to \infty$$. Note th
 $$
     \Pr\bigg[G_k \text{ is disconnected}\bigg] \to 0 \text{ as } n \to \infty
 $$ 
-</p> following from a simple application of complementation. 
-
-Using De Morgan's Law and simplifying slightly, we have  
-
+</p> Now using De Morgan's Law and simplifying slightly, we have  
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
     \Pr\bigg[\mathcal{G}_k \text{ is disconnected}\bigg] &= \Pr\bigg[\left(\bigcap_{\omega \in \Omega} \omega \text{ contains an edge}\right)^c\bigg] \\
-    &= \Pr\bigg[\bigcup_{\omega \in \Omega} \left(\omega \text{ contains an edge}\right)^c\bigg] && \text{De Morgan's Law} \\
-    &= \Pr\bigg[\bigcup_{\omega \in \Omega} \omega \text{ contains no edges}\bigg] \\
-    &\leq \sum_{\omega \in \Omega} \Pr\bigg[\omega \text{ contains no edges}\bigg] && \text{Union Bound}
+    &= \Pr\bigg[\bigcup_{\omega \in \Omega} \omega \text{ contains no edges}\bigg] \leq \sum_{\omega \in \Omega} \Pr\bigg[\omega \text{ contains no edges}\bigg] && \text{Union Bound}
 \end{align*}
 $$  
 </p>
@@ -117,7 +111,6 @@ $$
     \# \text{ of perfect matchings on } 2i \text{ vertices} = \frac{(2i)!}{2^i i!} = (2i - 1)!!
 $$  
 </p>
-
 where $$!!$$ indicates the double factorial. This number can be found via picking a vertex $$v_1$$, noting that there are $$2i - 1$$ choices for the vertex $$v_2$$ as its endpoint (since it cannot be itself), then find another vertex $$v_3$$, observing that it has $$2i - 3$$ vertices to choose from (cannot be any of the previous 2 or itself) and so on. Therefore, all this implies that finding the number of perfect matchings on $$n$$ vertices with no edges is equivalent to finding a perfect matching on $$S$$ and a perfect matching on $$V \setminus S$$ where $$\lvert S \rvert = 2i, \lvert V \setminus S \rvert = 2n - 2i$$.
 
 We partition over the size of all possible cuts. Considering the cuts of size $$2i$$ and $$2n - 2i$$ where $$i \in \{1, \dots, n - 1\}$$ and then noting that for a single perfect matching, the probability that a cut of size $$2i$$ doesn't have an edge is given by  
@@ -134,40 +127,19 @@ The probability that all 3 perfect matchings have no edges crossing this cut is 
 $$
     \Pr[\text{cut of size } 2i \text{ has no edges for 3 perfect matchings}] = \left(\frac{\frac{(2i)!}{2^i i!} \cdot \frac{(2n - 2i)!}{2^{n - i} (n - i)!}}{\frac{(2n)!}{2^n n!}}\right)^3
 $$
-</p> since the matchings are drawn uniformly at random. 
-
-We also note that there are $$\binom{2n}{2i}$$ ways to choose the vertices for the cut. Therefore trudging through all the algebra in the sum we had earlier gives us 
+</p> since the matchings are drawn uniformly at random. We also note that there are $$\binom{2n}{2i}$$ ways to choose the vertices for the cut. Therefore the algebra in the sum we had earlier gives us 
 
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
     \Pr\bigg[G_k \text{ is disconnected}\bigg] &\leq \sum_{i = 1}^{n - 1} \Pr[\text{cut of size } 2i \text{ has no edges}] \\
     &= \sum_{i = 1}^{n - 1} \binom{2n}{2i} \cdot \left(\frac{\frac{(2i)!}{2^i i!} \cdot \frac{(2n - 2i)!}{2^{n - i} (n - i)!}}{\frac{(2n)!}{2^n n!}}\right)^3 \\
-    &= \sum_{i = 1}^{n - 1} \binom{2n}{2i} \left(\frac{\frac{(2i)! (2n - 2i)}{i! (n - i)!}}{\frac{(2n)!}{n!}}\right)^3 \\
-    &= \sum_{i = 1}^{n - 1} \binom{2n}{2i} \left(\frac{\frac{n!}{i!(n - i)!}}{\frac{(2n)!}{(2i)! (2n - 2i)!}}\right)^3 &&\text{rearranging} \\
-    &= \sum_{i = 1}^{n - 1} \binom{2n}{2i} \left(\frac{\binom{n}{i}}{\binom{2n}{2i}}\right)^3 \\
-    &= \sum_{i = 1}^{n - 1} \frac{\binom{n}{i}^3}{\binom{2n}{2i}^2} 
-\end{align*}
-$$
-</p>
-
-Note that this is slightly overcounting (by a factor of 2 in fact) since for a cut of size $$2k$$, and the complementary cut of size $$2n - 2k$$, we count this cut $$(S, V \setminus S)$$ twice once for the $$i = k$$ case and another time for the $$i = n - k$$. However, this only changes a factor of 2 and asymptotically derives the same result, so we push through unfazed. Inspecting the summand and applying Stirlings more times than I can count gives us  
-
-<p style = "overflow-x:auto">
-$$
-\begin{align*}
-    \frac{\binom{n}{i}^3}{\binom{2n}{2i}^2} &= \frac{\left(\frac{n!}{i!(n - i)!}\right)^3}{\left(\frac{(2n)!}{(2i)! (2n - 2i)!}\right)^2} \\
-    &\approx \frac{\left(\left(\frac{n}{e}\right)^n \cdot \left(\frac{e}{i}\right)^i \cdot \left(\frac{e}{n - i}\right)^{n - i}\right)^3}{\left(\left(\frac{2n}{e}\right)^{2n} \cdot \left(\frac{e}{2i}\right)^{2i} \cdot \left(\frac{e}{2n - 2i}\right)^{2n - 2i}\right)^2} 
-    && \text{Stirling's Approximation} \\
-    &= \frac{\left(\frac{n^n}{e^n} \cdot \frac{e^i}{i^i}\cdot \frac{e^{n - i}}{(n - i)^{n - i}}\right)^3}{\left(\frac{(2n)^{2n}}{e^{2n}} \cdot \frac{e^{2i}}{(2i)^{2i}} \cdot \frac{e^{2n - 2i}}{(2n - 2i)^{2n - 2i}}\right)^2} = 
-    \frac{\frac{n^{3n}}{i^{3i} (n - i)^{3(n - i)}}}{\frac{(2n)^{4n}}{(2i)^{4i} (2n - 2i)^{4(n - i)}}} \\
-    &= \frac{\frac{n^{3n}}{i^{3i} (n - i)^{3(n - i)}}}{\frac{2^{4n} n^{4n}}{2^{4i} i^{4i} 2^{4(n - i)} (n - i)^{4(n - i)}}} = 
-    \frac{\frac{n^{3n}}{i^{3i} (n - i)^{3(n - i)}}}{\frac{n^{4n}}{ i^{4i} (n - i)^{4(n - i)}}} &&\text{simplifying} \\
+    &\approx \sum_{i = 1}^{n - 1} \frac{\left(\left(\frac{n}{e}\right)^n \cdot \left(\frac{e}{i}\right)^i \cdot \left(\frac{e}{n - i}\right)^{n - i}\right)^3}{\left(\left(\frac{2n}{e}\right)^{2n} \cdot \left(\frac{e}{2i}\right)^{2i} \cdot \left(\frac{e}{2n - 2i}\right)^{2n - 2i}\right)^2} \\
     &= \frac{n^{3n}}{i^{3i} (n - i)^{3(n - i)}} \cdot \frac{i^{4i} (n - i)^{4(n - i)}}{n^{4n}} = 
     \frac{i^i (n - i)^{n - i}}{n^n} &&\text{simplifying} 
 \end{align*}
 $$
-</p>
+</p> where we have once again made use of Striling's approximation. Note that this is slightly overcounting (by a factor of 2 in fact) since for a cut of size $$2k$$, and the complementary cut of size $$2n - 2k$$, we count this cut $$(S, V \setminus S)$$ twice once for the $$i = k$$ case and another time for the $$i = n - k$$. However, this only changes a factor of 2 and asymptotically derives the same result, so we push through unfazed. 
 
 We now turn our attention to bounding the following sum, for $$u = 3$$.  
 <p style = "overflow-x:auto">
@@ -175,8 +147,7 @@ $$
     \Pr[G_k \text{ is disconnected}] \leq \frac{1}{n^{n}} \sum_{i = 1}^{n - 1} i^{i} (n - i)^{n - 1}
 $$
 </p>
-Therefore, reiterating things so I don't lose sight of the goal  
-
+Therefore, the expression of interest has now become 
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -187,9 +158,7 @@ $$
 \end{align*}
 $$
 </p>
-
 Now, getting slightly more formal with things. We define $$f : [2, n/2] \to \mathbb{R}$$ where $$f(x) = x^x (n - x)^{n - x}$$. Since $$f$$ is continuous, we also have that $$f$$ is bounded which is quite nice! Taking logs on both sides gives us  
-
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -210,9 +179,7 @@ $$
     &= \log \left(\frac{x}{n - x}\right) < 0 && \text{since } x < n - x
 \end{align*}
 $$
-</p>
-
-where the last inequality follows from the fact that $$x \leq n/2$$, and so we have $$\frac{x}{n - x} < 1$$ and therefore $$\log \left(\frac{x}{n - x}\right) < 0$$.
+</p> where the last inequality follows from the fact that $$x \leq n/2$$, and so we have $$\frac{x}{n - x} < 1$$ and therefore $$\log \left(\frac{x}{n - x}\right) < 0$$.
 
 Therefore the maximum of $$f$$ for $$2 \leq x \leq n/2$$ is attained at $$x = 2$$, which gives us the very useful fact that for all $$x \in [2, n/2]$$, $$f(x) \leq f(2)$$, i.e.  
 <p style = "overflow-x:auto">
@@ -221,7 +188,6 @@ $$
 $$
 </p>
 Putting all these facts together, we have 
-
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -232,21 +198,7 @@ $$
     &= \frac{2 \left(\frac{n - 1}{n}\right)^{n - 1}}{n} + \frac{4 \left(\frac{n - 2}{n}\right)^{n - 2}}{n} 
 \end{align*}
 $$
-</p>
-
-As $$n \to \infty$$, clearly  
-<p style = "overflow-x:auto">
-$$
-    e^{-1 + 1/n} = e^{-1/n(n - 1)} \approx \left(1 - 1/n\right)^{n - 1} = \left(\frac{n - 1}{n}\right)^{n - 1} \to 1/e
-$$
-</p>
-and
-<p style = "overflow-x:auto">
-$$
-    e^{-2 + 4/n} = e^{-2/n(n - 2)} \approx \left(1 - 2/n\right)^{n - 2} = \left(\frac{n - 2}{n}\right)^{n - 2} \to 1/e^2
-$$
-</p>
-Taking limits, we get  
+</p> Taking limits, we get  
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -263,3 +215,7 @@ $$
 $$
 </p>
 and we are finally done. We have emerged victorious. 
+
+## references 
+- [high-dimensional expanders](https://resources.mpi-inf.mpg.de/departments/d1/teaching/ss13/gitcs/lecture7.pdf)
+- [perfect matchings](https://people.math.sc.edu/lu/teaching/2006spring_777/math776/lecture7.pdf)
