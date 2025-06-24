@@ -81,7 +81,6 @@ $$
 now that we have established the necessity of the condition $$k \geq 3$$, we can proceed with the main result. specifically we show that the claim is true for $$k = 3$$ and our method immediately generalizes to any $$k > 3$$.
 
 Observe that a graph is said to be connected if and only if every cut contains an edge. We define $$\mathcal{G}_k = (V, E)$$ to be a multi-graph with $$2n$$ vertices (since perfect matchings only exist on graphs with an even number of vertices). Let $$\Omega$$ be the set of all possible cuts in $$\mathcal{G}_k$$. We then have  
-
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -99,13 +98,12 @@ $$
 $$
 \begin{align*}
     \Pr\bigg[\mathcal{G}_k \text{ is disconnected}\bigg] &= \Pr\bigg[\left(\bigcap_{\omega \in \Omega} \omega \text{ contains an edge}\right)^c\bigg] \\
-    &= \Pr\bigg[\bigcup_{\omega \in \Omega} \omega \text{ contains no edges}\bigg] \leq \sum_{\omega \in \Omega} \Pr\bigg[\omega \text{ contains no edges}\bigg] && \text{Union Bound}
+    &= \Pr\bigg[\bigcup_{\omega \in \Omega} \omega \text{ contains no edges}\bigg] \\
+    &\leq \sum_{\omega \in \Omega} \Pr\bigg[\omega \text{ contains no edges}\bigg] && \text{Union Bound}
 \end{align*}
 $$  
 </p>
-
 We are now interested in the probability that a cut doesn't have an edge. Therefore we fix some cut $$C = (S, V \setminus S)$$ such that $$\lvert S \rvert = l$$ and $$\lvert V \setminus S \rvert = 2n - l$$. We're interested in computing the probability that there is no edge between $$S$$ and $$V \setminus S$$, i.e. $$\Pr[\lvert E(S, V \setminus S) \rvert = 0]$$. We make the observation that if $$\lvert E(S, V \setminus S) \rvert = 0$$, then the perfect matchings restricted to $$S$$ are also a perfect matching. Note that since we have perfect matchings, any cut of odd size is assured to have size greater than zero. Thus, it suffices to consider the cases where the cut $$C$$ divides graph into a subsets of size $$2i, 2n - 2i$$ where $$1 \leq i \leq n - 1$$, allowing us to conclude that $$l = 2i$$. Note that the number of perfect matchings on $$2i$$ vertices is given by  
-
 <p style = "overflow-x:auto">
 $$
     \# \text{ of perfect matchings on } 2i \text{ vertices} = \frac{(2i)!}{2^i i!} = (2i - 1)!!
@@ -114,29 +112,24 @@ $$
 where $$!!$$ indicates the double factorial. This number can be found via picking a vertex $$v_1$$, noting that there are $$2i - 1$$ choices for the vertex $$v_2$$ as its endpoint (since it cannot be itself), then find another vertex $$v_3$$, observing that it has $$2i - 3$$ vertices to choose from (cannot be any of the previous 2 or itself) and so on. Therefore, all this implies that finding the number of perfect matchings on $$n$$ vertices with no edges is equivalent to finding a perfect matching on $$S$$ and a perfect matching on $$V \setminus S$$ where $$\lvert S \rvert = 2i, \lvert V \setminus S \rvert = 2n - 2i$$.
 
 We partition over the size of all possible cuts. Considering the cuts of size $$2i$$ and $$2n - 2i$$ where $$i \in \{1, \dots, n - 1\}$$ and then noting that for a single perfect matching, the probability that a cut of size $$2i$$ doesn't have an edge is given by  
-
 <p style = "overflow-x:auto">
 $$
     \Pr[\text{cut of size } 2i \text{ has no edges for a perfect matching}] = \frac{\frac{(2i)!}{2^i i!} \cdot \frac{(2n - 2i)!}{2^{n - i} (n - i)!}}{\frac{(2n)!}{2^n n!}}
 $$  
 </p>
-
 The probability that all 3 perfect matchings have no edges crossing this cut is given by  
-
 <p style = "overflow-x:auto">
 $$
     \Pr[\text{cut of size } 2i \text{ has no edges for 3 perfect matchings}] = \left(\frac{\frac{(2i)!}{2^i i!} \cdot \frac{(2n - 2i)!}{2^{n - i} (n - i)!}}{\frac{(2n)!}{2^n n!}}\right)^3
 $$
 </p> since the matchings are drawn uniformly at random. We also note that there are $$\binom{2n}{2i}$$ ways to choose the vertices for the cut. Therefore the algebra in the sum we had earlier gives us 
-
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
     \Pr\bigg[G_k \text{ is disconnected}\bigg] &\leq \sum_{i = 1}^{n - 1} \Pr[\text{cut of size } 2i \text{ has no edges}] \\
     &= \sum_{i = 1}^{n - 1} \binom{2n}{2i} \cdot \left(\frac{\frac{(2i)!}{2^i i!} \cdot \frac{(2n - 2i)!}{2^{n - i} (n - i)!}}{\frac{(2n)!}{2^n n!}}\right)^3 \\
     &\approx \sum_{i = 1}^{n - 1} \frac{\left(\left(\frac{n}{e}\right)^n \cdot \left(\frac{e}{i}\right)^i \cdot \left(\frac{e}{n - i}\right)^{n - i}\right)^3}{\left(\left(\frac{2n}{e}\right)^{2n} \cdot \left(\frac{e}{2i}\right)^{2i} \cdot \left(\frac{e}{2n - 2i}\right)^{2n - 2i}\right)^2} \\
-    &= \frac{n^{3n}}{i^{3i} (n - i)^{3(n - i)}} \cdot \frac{i^{4i} (n - i)^{4(n - i)}}{n^{4n}} = 
-    \frac{i^i (n - i)^{n - i}}{n^n} &&\text{simplifying} 
+    &= \sum_{i = 1}^{n - 1} \frac{n^{3n}}{i^{3i} (n - i)^{3(n - i)}} \cdot \frac{i^{4i} (n - i)^{4(n - i)}}{n^{4n}} = \sum_{i = 1}^{n - 1} \frac{i^i (n - i)^{n - i}}{n^n}
 \end{align*}
 $$
 </p> where we have once again made use of Striling's approximation. Note that this is slightly overcounting (by a factor of 2 in fact) since for a cut of size $$2k$$, and the complementary cut of size $$2n - 2k$$, we count this cut $$(S, V \setminus S)$$ twice once for the $$i = k$$ case and another time for the $$i = n - k$$. However, this only changes a factor of 2 and asymptotically derives the same result, so we push through unfazed. 
@@ -153,7 +146,7 @@ $$
 \begin{align*}
     \Pr\bigg[G_k \text{ is disconnected}\bigg] &\leq \sum_{i = 1}^{n - 1} \frac{i^i (n - i)^{n - i}}{n^n} = 
     \frac{1}{n^n} \sum_{i = 1}^{n - 1} i^i (n - i)^{n - i} \\
-    &\approx \frac{2}{n^n} \left(\sum_{i = 1}^{n/2} i^i (n - i)^{n - i} \right) && \text{since } i^i (n - i)^{n - i} \text{ is symmetric} \\ 
+    &\approx \frac{2}{n^n} \left(\sum_{i = 1}^{n/2} i^i (n - i)^{n - i} \right) \\ 
     &= \frac{2}{n^n} \left((n - 1)^{n - 1} + \sum_{i = 2}^{n/2} i^i (n - i)^{n - i} \right)
 \end{align*}
 $$
