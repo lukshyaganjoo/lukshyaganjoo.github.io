@@ -4,7 +4,7 @@ title: the probabilistic method is pretty funny
 description: reframing conventionally simple computations with limited models of computation
 tags: math
 giscus_comments: false
-date: 2024-08-03
+date: 2023-10-23
 featured: false
 
 bibliography: 2018-12-22-distill.bib

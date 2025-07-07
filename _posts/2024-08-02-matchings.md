@@ -4,7 +4,7 @@ title: perfect matchings and how most graphs are connected
 description: a taste of the types of results one works with when dealing with expander graphs
 tags: math
 giscus_comments: false
-date: 2024-08-02
+date: 2023-10-09
 featured: false
 
 bibliography: 2018-12-22-distill.bib
