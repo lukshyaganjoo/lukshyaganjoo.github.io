@@ -168,7 +168,7 @@ $$
 \begin{align*}
     f'(x) / f(x) &= \frac{d}{dx} \left(\left(x \log x\right) + (n - x) \log (n - x)\right) \\
     &= \frac{d}{dx} \left(x \log x\right) + \frac{d}{dx} \left((n - x) \log (n - x)\right) \\
-    &= 1 + \log x - \log (n - x) - 1 = \log x + \log (n - x) \\
+    &= 1 + \log x - \log (n - x) - 1 = \log x - \log (n - x) \\
     &= \log \left(\frac{x}{n - x}\right) < 0 && \text{since } x < n - x
 \end{align*}
 $$
@@ -185,7 +185,7 @@ Putting all these facts together, we have
 $$
 \begin{align*}
     \Pr\bigg[G_k \text{ is disconnected}\bigg] &\leq \frac{2}{n^n} \left((n - 1)^{n - 1} + \sum_{i = 2}^{n/2} i^i (n - i)^{n - i} \right) \\
-    &\leq \frac{2}{n^n} \left((n - 1)^{n - 1} + \sum_{i = 2}^{n/2} 4 (n - 2)^{n - 2} \right) &&\text{from the claim above} \\
+    &\leq \frac{2}{n^n} \left((n - 1)^{n - 1} + \sum_{i = 2}^{n/2} 4 (n - 2)^{n - 2} \right) \\
     &\leq \frac{2}{n^n} \left((n - 1)^{n - 1} + 4 (n - 2)^{n - 2} \cdot \frac{n}{2} \right) \\
     &= \frac{2 (n - 1)^{n - 1}}{n^n} + \frac{4 (n - 2)^{n - 2}}{n^{n - 1}} \\
     &= \frac{2 \left(\frac{n - 1}{n}\right)^{n - 1}}{n} + \frac{4 \left(\frac{n - 2}{n}\right)^{n - 2}}{n} 
