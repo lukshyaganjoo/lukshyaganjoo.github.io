@@ -66,7 +66,8 @@ $$
 
 \begin{align*}
 \Pr[\vert X\vert \leq 1] &= \Pr[\vert X_1 + a_1 \sigma_1\vert \leq 1] \\\
-&= \Pr[\vert X_1 + a_1 \sigma_1\vert \leq 1 \mid \mathcal{A}] \cdot \Pr[\mathcal{A}] + \Pr[\vert X_1 + a_1 \sigma_1\vert \leq 1 \mid \mathcal{A}^c] \cdot \Pr[\mathcal{A}^c] \\\
+&= \Pr[\vert X_1 + a_1 \sigma_1\vert \leq 1 \mid \mathcal{A}] \cdot \Pr[\mathcal{A}] \\\
+&+ \Pr[\vert X_1 + a_1 \sigma_1\vert \leq 1 \mid \mathcal{A}^c] \cdot \Pr[\mathcal{A}^c] \\\
 &\geq \Pr[\vert X_1 + a_1 \sigma_1\vert \leq 1 \mid \mathcal{A}] \cdot \Pr[\mathcal{A}] \\\
 &= \frac{1}{2} \cdot \Pr[\vert X_1 + a_1 \sigma_1\vert \leq 1 \mid \mathcal{A}] \\\
 &\geq \frac{1}{2} \cdot \Pr[\vert X_1\vert - \vert a_1 \vert \leq 1]  \frac{1}{2} \cdot \Pr[\vert X_1\vert \leq 1 + \vert a_1 \vert ] &&\text{triangle inequality} \\\
