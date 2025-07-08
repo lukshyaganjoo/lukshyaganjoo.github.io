@@ -89,49 +89,32 @@ $$
 > </p>
 
 **proof:** We define the random variables $$Y, Z$$ as follows
-
 <p style = "overflow-x:auto">
 $$
 Y = \sum_{i = 1}^{n/2} a_{2i - 1} \sigma_{2i - 1} \quad \text{and} \quad Z = \sum_{i = 1}^{n/2} a_{2i} \sigma_{2i}
 $$
-</p>
-
-We have that
-
+</p> We have that
 <p style = "overflow-x:auto">
 $$
 Y + Z = \sum_{i = 1}^{n/2} a_{2i - 1} \sigma_{2i - 1} + \sum_{i = 1}^{n/2} a_{2i} \sigma_{2i} = \sum_{i = 1}^{n} a_i \sigma_i = X
 $$
-</p>
-
-This necessarily implies as a consequence of the linearity of variance for independent random variables that
-
+</p> This necessarily implies as a consequence of the linearity of variance for independent random variables that
 <p style = "overflow-x:auto">
 $$
 \begin{align}
 1 = \text{Var}\left(\sum_{i = 1}^{n} a_i \sigma_i\right)= \text{Var}(X) = \text{Var}(Y) + \text{Var}(Z)
 \end{align}
 $$
-</p>
-
-As a consequence of theorem 4 and $$(1)$$, we have that
-
+</p> As a consequence of theorem 4 and $$(1)$$, we have that
 <p style = "overflow-x:auto">
 $$
 \text{Var}(Y) + \text{Var}(Z) = 1 \quad \text{and} \quad \text{Var}(Y) - \text{Var}(Z) < 1/2
-$$
-</p>
-
-Putting two and two together, we can finally ascertain that
-
+$$ </p> Putting two and two together, we can finally ascertain that
 <p style = "overflow-x:auto">
 $$
 1/4 \leq \text{Var}(Z) \leq \text{Var}(Y) \leq 3/4
 $$
-</p>
-
-We now define the event $$\mathcal{S}$$ to be the event that $$Y$$ and $$Z$$ have different signs. Note that since $$\sigma_1, \sigma_2, \dots, \sigma_n$$ are uniformly random signs, $$\Pr[\mathcal{S}] = 1/2$$. We therefore have that
-
+</p> We now define the event $$\mathcal{S}$$ to be the event that $$Y$$ and $$Z$$ have different signs. Note that since $$\sigma_1, \sigma_2, \dots, \sigma_n$$ are uniformly random signs, $$\Pr[\mathcal{S}] = 1/2$$. We therefore have that
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -155,36 +138,28 @@ $$
 </p>
 
 ## theorems and references
-
 > **theorem 1**
 >
 > For uniformly random signs $$\sigma_1, \sigma_2 \dots, \sigma_n \in \{-1, 1\}$$, $$\text{Var}(\sigma_i) = 1$$ for all $$i \in [n]$$ and $$\mathbb{E}[\sigma_i] = 0$$.
 
 **proof:**
 We first compute the expectation of $$\sigma_i$$ which by definition comes out to be
-
 <p style = "overflow-x:auto">
 $$
     \mathbb{E}[\sigma_i] = \sum_{x \in \Omega_X} x \cdot \Pr[X = x] = 1/2 - 1/2 = 0
 $$
-</p>
-
-The second step in computing the variance of $$\sigma_i$$ is computing out $$\mathbb{E}
+</p> The second step in computing the variance of $$\sigma_i$$ is computing out $$\mathbb{E}
 [\sigma_i^{2}]$$ which by definition is simply
-
 <p style = "overflow-x:auto">
 $$
     \mathbb{E}[\sigma_i^2] = \sum_{x \in \Omega_X} x^2 \cdot \Pr[X = x] = 1/2 + 1/2 = 1
 $$
-</p>
-
-Therefore we have from the definition of variance that
-
+</p> Therefore we have from the definition of variance that
 <p style = "overflow-x:auto">
 $$
     \text{Var}(\sigma_i) = \mathbb{E}[\sigma_i^2] - \mathbb{E}[\sigma_i]^2 = 1 - 0 = 1
 $$
-</p>
+</p> thereby settling the proof.
 
 > **theorem 2**
 >
@@ -192,7 +167,6 @@ $$
 
 **proof:**
 Note that the setting we're interested in is when the $$\sigma_i$$'s are independently and identically distributed which makes our life a lot easier. We therefore have that
-
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -204,47 +178,38 @@ $$
 &= 1 - a_{1}^2 = 1 - \vert a_{1}\vert ^{2} &&\text{since } a_1 \in \mathbb{R}
 \end{align*}
 $$
-</p>
-
-The rest of our argument follows from a simple bounding argument on $$\vert  a_1 \vert $$ therefore giving us
-
+</p> The rest of our argument follows from a simple bounding argument on $$\vert  a_1 \vert $$ therefore giving us
 <p style = "overflow-x:auto">
 $$
 \vert a_1 \vert \geq 1/\sqrt{2} \implies \vert a_1 \vert ^2 \geq 1/2 \implies - \vert a_1 \vert ^2 \leq 1/2 \implies
 \text{Var}(X_1) = 1 - \vert a_1 \vert ^2 \leq 1/2
 $$
-</p>
+</p> thereby settling the proof.
 
 > **theorem 3**
 >
 > If we define the random variable $$Y = \sum \limits_{i = 1}^{n/2} a_{2i - 1} \sigma_{2i - 1}$$ and $$Z = \sum \limits_{i = 1}^{n/2} a_{2i} \sigma_{2i}$$, then we have that $$\mathbb{E}[Y] = 0$$ and $$\mathbb{E}[Z] = 0$$.
 
-
 **proof:** We have as a consequence of Theorem 1 and linearity of expectation that
-
 <p style = "overflow-x:auto">
 $$
 \mathbb{E}[Y] = \mathbb{E}\left[\sum_{i = 1}^{n/2} a_{2i - 1} \sigma_{2i - 1}\right] = \sum_{i = 1}^{n/2} a_{2i - 1} \mathbb{E}[\sigma_{2i - 1}] = 0
 $$
-</p>
-
-Similarly, we have that
-
+</p> Similarly, we have that
 <p style = "overflow-x:auto">
 $$
 \mathbb{E}[Z] = \mathbb{E}\left[\sum_{i = 1}^{n/2} a_{2i} \sigma_{2i}\right] = \sum_{i = 1}^{n/2} a_{2i} \mathbb{E}[\sigma_{2i}] = 0
 $$
-</p>
+</p> thereby settling the proof.
 
 > **theorem 4**
 >
 > Based on the above definitions of $$Y$$ and $$Z$$, we have that
 > <p style = "overflow-x:auto">
 > $$\text{Var}(Y) - \text{Var}(Z) < 1/2$$
-> </p>
+> </p> 
 
 **proof:** We have that
-
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -257,4 +222,4 @@ $$
  &= a_1^2 + \sum_{i = 2}^{n/2} \underbrace{(a_{2i - 1}^2 - a_{2i - 2}^2)}_{< 0} < a_1^2 < 1/2
 \end{align*}
 $$
-</p>
+</p> thereby settling the proof.
