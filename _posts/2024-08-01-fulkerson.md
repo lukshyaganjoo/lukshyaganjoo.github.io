@@ -4,7 +4,7 @@ title: why gym rats love ford-fulkerson
 description: what most people associate with the passage of water and time; a nightmarish combinatorial optimization problem for those in cs.
 tags: math
 giscus_comments: false
-date: 2024-08-01
+date: 2022-02-24
 featured: false
 
 bibliography: 2018-12-22-distill.bib
@@ -14,6 +14,7 @@ toc:
   - name: the problem
   - name: the solution and where ford and fulkerson come in
   - name: the proof
+  - name: references
 ---
 
 In any standard algorithms class, there's going to be an entire section of the course dedicated to what computer scientists refer to as "flow". Besides being creatively named, it is also quite powerful in solving a variety of problems. For the purposes of motivation, I will go over some background, one of the more important network flow algorithms, and an application of this algorithm in the context of proving a seemingly unnatural equivalence.
@@ -218,3 +219,8 @@ now FINALLY, we can proceed with the proof of the max-flow min-cut theorem. we w
   $$
   </p>
 - $$3 \implies 1:$$ let $$C(S, T)$$ be a cut with capacity $$c(S, T) = \text{val}(f)$$ and let $$f'$$ be the maximum flow in $$\mathcal{G}$$, i.e. $$\text{val}(f) \leq \text{val}(f')$$. Since $$\text{val}(f) = c(S, T)$$, we have that $$c(S, T) \leq \text{val}(f')$$. By corollary 1, we have that $$\text{val}(f') \leq c(S, T)$$ and therefore $$\text{val}(f) = c(S, T) = \text{val}(f')$$. This implies that $$f$$ is a max flow and we're done :)
+
+## references 
+- [robbie's perspective on flow from uw's algos class](https://courses.cs.washington.edu/courses/cse421/23wi/lecture/18-flow2.pdf)
+- [a self-contained proof @ toronto](https://www.cs.toronto.edu/~lalla/373s16/notes/MFMC.pdf)
+- [yet another proof of könig and menger's theorems](https://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Staples-Moore.pdf)
