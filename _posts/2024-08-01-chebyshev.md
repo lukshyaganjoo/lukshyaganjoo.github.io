@@ -70,7 +70,7 @@ $$
 &\geq \Pr[\vert X_1 + a_1 \sigma_1\vert \leq 1 \mid \mathcal{A}] \cdot \Pr[\mathcal{A}] \\\
 &= \frac{1}{2} \cdot \Pr[\vert X_1 + a_1 \sigma_1\vert \leq 1 \mid \mathcal{A}] \\\
 &\geq \frac{1}{2} \cdot \Pr[\vert X_1\vert - \vert a_1 \vert \leq 1]  \frac{1}{2} \cdot \Pr[\vert X_1\vert \leq 1 + \vert a_1 \vert ] &&\text{triangle inequality} \\\
-&= \frac{1}{2} \left(1 - \Pr[\vert X_1\vert \geq 1 + \vert a_1 \vert ]\right) \geq \frac{1}{2} \left(1 - \frac{\text{Var}(X_1)}{(1 + \vert a_1 \vert )^2}\right) &&\text{Chebyshev's inequality} \\\
+&= \frac{1}{2} \left(1 - \Pr[\vert X_1\vert \geq 1 + \vert a_1 \vert ]\right) \geq \frac{1}{2} \left(1 - \frac{\text{Var}(X_1)}{(1 + \vert a_1 \vert )^2}\right) &&\text{Chebyshev's and Theorem 2} \\\
 &\geq 1/4
 \end{align*}
 
