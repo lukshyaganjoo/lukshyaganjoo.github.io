@@ -131,7 +131,7 @@ cv_path: /assets/pdf/luksh_phd_cv.pdf # path to your CV
 # -----------------------------------------------------------------------------
 
 blog_name: mosaic # the name of your blog
-blog_description: vignettes of math, cs and everything in [between](https://ganjoo.substack.com/)
+blog_description: vignettes of math, cs and everything in between
 permalink: /blog/:year/:title/
 
 # Pagination
