@@ -3,7 +3,7 @@ layout: distill
 title: why gym rats love ford-fulkerson
 description: what most people associate with the passage of water and time; a nightmarish combinatorial optimization problem for those in cs.
 tags: math
-giscus_comments: false
+giscus_comments: true
 date: 2022-02-24
 featured: false
 

@@ -3,7 +3,7 @@ layout: distill
 title: so i gave a theory talk
 description: the petersen graph is in almost every sense of the word; a universal counter-example
 tags: math
-giscus_comments: false
+giscus_comments: true
 date: 2024-07-30
 featured: false
 
