@@ -102,7 +102,7 @@ $$
 <p style = "overflow-x:auto">
 $$
 \begin{align}
-1 = \text{Var}\left(\sum_{i = 1}^{n} a_i \sigma_i\right)= \text{Var}(X) = \text{Var}(Y) + \text{Var}(Z)
+1 = \text{Var}\left(\sum_{i = 1}^{n} a_i \sigma_i\right) = \text{Var}(X) = \text{Var}(Y) + \text{Var}(Z)
 \end{align}
 $$
 </p> As a consequence of theorem 4 and $$(1)$$, we have that
@@ -120,9 +120,8 @@ $$
 \begin{align*}
 \Pr[\vert X \vert \leq 1] &= \Pr[\vert Y + Z \vert \leq 1] \\\
  &= \Pr[\vert Y + Z \vert \leq 1 \mid \mathcal{S}] \cdot \Pr[\mathcal{S}] \\\
- &+ \Pr[\vert Y + Z \vert \leq 1 \mid \mathcal{S}^c] \cdot \Pr[\mathcal{S}^c] &&\text{law of total probability} \\\
- &\geq \Pr[\vert Y + Z \vert \leq 1 \mid \mathcal{S}] \cdot \Pr[\mathcal{S}] \\\
- &= \frac{1}{2} \cdot \Pr[\vert Y + Z \vert \leq 1 \mid \mathcal{S}] &&\text{since } \Pr[\mathcal{S}] = 1/2 \\\
+ &+ \Pr[\vert Y + Z \vert \leq 1 \mid \mathcal{S}^c] \cdot \Pr[\mathcal{S}^c] \\\
+ &\geq \Pr[\vert Y + Z \vert \leq 1 \mid \mathcal{S}] \cdot \Pr[\mathcal{S}] = \frac{1}{2} \cdot \Pr[\vert Y + Z \vert \leq 1 \mid \mathcal{S}] &&\text{since } \Pr[\mathcal{S}] \\\
  &= \frac{1}{2} \cdot \Pr[\big\vert \vert Y \vert - \vert Z \vert \big\vert \leq \vert Y + Z \vert \leq 1] &&\text{reverse triangle inequality} \\\
 &\geq \frac{1}{2} \cdot \Pr[\big\vert \vert Y \vert - \vert Z \vert \big\vert \leq 1] \\\
  &\geq \frac{1}{2} \cdot \Pr[\vert Y \vert \leq 1 \cap \vert Z \vert \leq 1] \\\
