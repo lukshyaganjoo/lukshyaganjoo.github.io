@@ -4,7 +4,7 @@ title: so i gave a theory talk
 description: the petersen graph is in almost every sense of the word; a universal counter-example
 tags: math
 giscus_comments: true
-date: 2024-07-30
+date: 2022-08-12
 featured: false
 
 bibliography: 2018-12-22-distill.bib
@@ -476,3 +476,10 @@ For all the other cases, we have that
 
 There's a lemma floating around the internet somewhere where it states that Moore graphs
 don't exist for diameters greater than 2 which is kind of insane if you think about it. It's also the reason their existence is so fascinating and why we've listed most of if not all the Moore graphs there can be.
+
+## references 
+- [fun facts about the petersen graph](https://cp4space.hatsya.com/2013/09/06/ten-things-you-possibly-didnt-know-about-the-petersen-graph/)
+- [a survey on the degree-diameter problem](https://www.combinatorics.org/ds14)
+- progress on the degree-diameter problem
+  - [trees and pseudotrees](https://www.tandfonline.com/doi/epdf/10.1080/09728600.2013.12088753?needAccess=true)
+  - [plane graphs with pentagonal faces](https://arxiv.org/abs/2401.11187)
