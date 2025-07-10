@@ -2,7 +2,6 @@
 layout: distill
 title: perfect matchings and how most graphs are connected
 description: a taste of the types of results one works with when dealing with expander graphs
-tags: math
 giscus_comments: true
 date: 2023-10-09
 featured: false

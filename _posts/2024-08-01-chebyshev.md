@@ -2,7 +2,6 @@
 layout: distill
 title: chebyshev ruins convocations
 description: i spent far too much time looking at normal distributions for this one
-tags: math
 giscus_comments: false
 date: 2023-06-15
 featured: false

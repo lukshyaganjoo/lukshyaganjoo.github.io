@@ -2,7 +2,6 @@
 layout: distill
 title: the probabilistic method is pretty funny
 description: reframing conventionally simple computations with limited models of computation
-tags: math
 giscus_comments: true
 date: 2023-10-23
 featured: false
