@@ -22,3 +22,9 @@ formally, the version of the state discrimination problem we will be dealing wit
 > goal is to output which state $$\ket{\psi}$$ really is. 
 
 **remark:** there is a generalization of this problem where the distinguisher is handed a (possibly mixed) quantum state $$\rho \in \mathcal{L}(\mathbb{C}^{2^d})$$ and is tasked with deciphering whether they were handed the state $$\rho_1$$ or $$\rho_2$$. it turns out that the classical analog of this problem is well-defined. in essence it equivocates to distinguishing between probability distributions $$\{p\}, \{q\}$$ by drawing a single sample $$x$$. further generalizations involve distinguishing between not just $$2$$ states but rather a finite state $$\mathcal{S}$$. 
+
+in order to quantify the performance of the strategies we come up with (natural or otherwise); for any algorithm $\mathcal{A}$, define how well it distinguises two states $\ket{\psi_1}$ and $\ket{\psi_2}$ by 
+
+$$
+\
+$$
