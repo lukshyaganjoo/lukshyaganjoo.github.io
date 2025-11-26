@@ -21,8 +21,3 @@ i particularly enjoy things in loose and broad association with quantum algorith
 when i'm not obsessing over the next big thing in cs theory or trying to decipher an algebra proof, i spend a lot of my time playing [botc](https://bloodontheclocktower.com/) with friends, [writing](https://ganjoo.substack.com/) and looking for novel ways to spruce up the humble bagel and toast.
 
 if you're in the same city, looking to chat, or find yourself in need of a scrumptious banana bread recipe i'm always looking forward to making new friends :), feel free to reach out!
-
-some relevant links
-
-- [quantum group @ uw](https://quantum.cs.washington.edu/)
-- [theory group @ uw](https://theory.cs.washington.edu/)
