@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /uw/
-title: stuff @ uw
+permalink: /stuff/
+title: stuff
 nav: true
 nav_order: 3
 ---
@@ -58,7 +58,7 @@ some important links if pedagogy and education in cs are interesting/relevant to
 - [cs education seminar](https://courses.cs.washington.edu/courses/cse590e/)
 - [association for computing and education (student rso)](https://uwace.vercel.app/)
 
-## reading and research
+<!-- ## reading and research
 
 - i'm currently working with [Andrea Coladangelo](https://www.andreacoladangelo.com/) and [Chinmay Nirkhe](https://homes.cs.washington.edu/~nirkhe/) on the $$\textsf{QMC}$$ problem where we're trying to develop better approximation algorithms to find a high energy state for a class of $$k$$-local hamiltonians that while physically motivated, also serve as a generalization for the [max-cut](https://en.wikipedia.org/wiki/Maximum_cut) problem. 
   - [theory lunch slides](/assets/pdf/qmc.pdf)
@@ -81,4 +81,4 @@ some important links if pedagogy and education in cs are interesting/relevant to
 ## lecture notes 
 as u can already tell; i'm a huge fan of writing. also a big $$\latex$$ person; whatever that may entail. here are some lecture notes i've written; many of which are still works in progress.
 
-- [notes on graph theory ]
+- [notes on graph theory ] -->
