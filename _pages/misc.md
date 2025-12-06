@@ -52,7 +52,7 @@ i've been a teaching assistant for the cs department at uw since the summer righ
   </li>
 </ul>
 
-some important links if pedagogy and education in cs are interesting/relevant to you
+some important links if pedagogy and education in cs are interesting $$\land \lor$$relevant to you
 
 - [ta home page](https://www.cs.washington.edu/academics/teaching-assistants/)
 - [cs education seminar](https://courses.cs.washington.edu/courses/cse590e/)
