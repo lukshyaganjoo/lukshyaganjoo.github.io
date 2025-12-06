@@ -56,7 +56,7 @@ some important links if pedagogy and education in cs are interesting $$\land \lo
 
 - [ta home page](https://www.cs.washington.edu/academics/teaching-assistants/)
 - [cs education seminar](https://courses.cs.washington.edu/courses/cse590e/)
-- [association for computing and education (student rso)](https://uwace.vercel.app/)
+- [association for computing and education (student rso)](https://ace.cs.washington.edu/)
 
 <!-- ## reading and research
 
