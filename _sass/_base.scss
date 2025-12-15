@@ -196,7 +196,17 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 40%;
+  width: 100%;
+  overflow: hidden; /* crop overflow when we zoom the image */
+
+  img {
+    max-width: none;
+    width: auto;
+    height: 275px; /* fixed container height so object-fit can crop */
+    object-fit: cover;
+    object-position: center; /* shift the visible area to the right */
+    vertical-align: center;
+  }
 
   .more-info {
     margin-bottom: 5px;
@@ -211,11 +221,19 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 2rem; /* push further to the right */
 }
 
 .profile.float-left {
   margin-right: 1rem;
+}
+
+@media (max-width: 576px) {
+  .profile img {
+    height: 140px;
+    transform: scale(1.05);
+    object-position: center; /* center on small screens */
+  }
 }
 
 @media (min-width: 576px) {
