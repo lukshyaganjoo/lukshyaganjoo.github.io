@@ -215,11 +215,6 @@ ul.task-list input[type="checkbox"] {
     object-fit: cover; /* Ensures the image covers the area without distortion */
   }
 
-  img.rounded-circle {
-    width: 270px; /* make square for circular crop */
-    height: 270px;
-  }
-
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
