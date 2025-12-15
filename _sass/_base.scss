@@ -196,7 +196,7 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 80%;
+  width: 100%;
   overflow: hidden; /* crop overflow when we zoom the image */
 
   img {
@@ -204,8 +204,11 @@ ul.task-list input[type="checkbox"] {
     width: auto;
     height: 275px; /* fixed container height so object-fit can crop */
     object-fit: cover;
-    object-position: center; /* shift the visible area to the right */
-    vertical-align: center;
+  }
+
+  img.rounded-circle {
+    width: 275px; /* make square for circular crop */
+    height: 275px;
   }
 
   .more-info {
@@ -233,6 +236,12 @@ ul.task-list input[type="checkbox"] {
     height: 140px;
     transform: scale(1.05);
     object-position: center; /* center on small screens */
+  }
+
+  .profile img.rounded-circle {
+    width: 140px; /* make square for circular crop on mobile */
+    height: 140px;
+    transform: none; /* remove scale transform for circular images */
   }
 }
 
