@@ -20,14 +20,14 @@ i particularly enjoy things in loose and broad association with quantum algorith
 when i'm not thinking about cs or math, i spend a lot of my time playing [botc](https://bloodontheclocktower.com/) with friends, [writing](https://ganjoo.substack.com/) and reading [the new yorker](https://www.newyorker.com/). if you're in the same city, looking to chat, or find yourself in need of a new garlic bread recipe, i'm always looking forward to making new <br> friends :) feel free to reach out!
 
 <!-- _pages/publications.md -->
-## publications 
+
+## publications
 
 <div class="publications">
 
 {% bibliography %}
 
 </div>
-
 
 ## teaching
 
