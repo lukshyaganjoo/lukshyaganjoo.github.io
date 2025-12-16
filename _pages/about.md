@@ -13,7 +13,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-hello there! my name is lukshya. i'm a first-year phd student at ucsd advised by [Daniel Grier](https://danielgrier.com/). in another life i studied cs and math at the university of washington.
+hello there! i'm a first-year phd student at ucsd advised by [Daniel Grier](https://danielgrier.com/). in another life i studied cs and math at the university of washington.
 
 i particularly enjoy things in loose and broad association with quantum algorithms, learning theory and property testing. also seemingly unrelated, but i think a lot about unitary designs.
 
