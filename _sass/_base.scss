@@ -204,14 +204,12 @@ ul.task-list input[type="checkbox"] {
     // width: auto;
     // height: 275px; /* fixed container height so object-fit can crop */
     // object-fit: cover;
-    float: center; /* Makes the image float to the right */
-    width: 270px; /* Set the width of the image */
-    height: 270px; /* Set the height of the image */
+    width: 270px; /* Set the preferred width of the image */
+    height: 270px; /* Set the preferred height of the image */
     display: block;
     max-width: 100%;
-    border-radius: 90%; /* Makes the image circular */
-    margin-left: 10px; /* Adds space between the image and text */
-    margin-bottom: 10px; /* Adds space below the image */
+    border-radius: 50%; /* Makes the image circular */
+    margin: 0 0 10px 10px; /* Default spacing between image and text */
     object-fit: cover; /* Ensures the image covers the area without distortion */
   }
 
@@ -229,10 +227,27 @@ ul.task-list input[type="checkbox"] {
 
 .profile.float-right {
   margin-left: 2rem; /* push further to the right */
+  img {
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .profile.float-left {
   margin-right: 1rem;
+  img {
+    float: left;
+    margin-right: 0;
+  }
+}
+
+/* Center profile image when not explicitly floated */
+.profile:not(.float-right):not(.float-left) img {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 @media (max-width: 576px) {
