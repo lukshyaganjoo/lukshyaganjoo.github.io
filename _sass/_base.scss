@@ -151,6 +151,52 @@ ul.task-list input[type="checkbox"] {
 .equation {
   margin-bottom: 1rem;
   text-align: center;
+  overflow-x: auto; /* allow horizontal scroll for wide equations */
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0.5rem;
+}
+
+/* Make display math and math renderers responsive on small screens */
+.katex-display,
+.MathJax_Display,
+.equation,
+.math-display {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  border-radius: 6px;
+}
+
+/* Allow inline math to break and wrap on narrow viewports */
+.math-inline,
+.inline-math,
+.katex-inline,
+.MathJax_inline {
+  white-space: normal !important;
+  word-break: break-word;
+}
+
+@media (max-width: 576px) {
+  .katex-display,
+  .MathJax_Display,
+  .equation,
+  .math-display {
+    font-size: 0.95rem; /* slightly reduce size so it feels less cramped */
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* ensure SVG/math images don't overflow their container */
+  .katex-display svg,
+  .MathJax_Display svg,
+  .equation img,
+  .equation svg {
+    max-width: none;
+    height: auto;
+  }
 }
 
 // Caption
@@ -252,9 +298,14 @@ ul.task-list input[type="checkbox"] {
 
 @media (max-width: 576px) {
   .profile img {
+    width: 140px !important;
     height: 140px;
-    transform: scale(1.05);
-    object-position: center; /* center on small screens */
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    transform: none;
+    object-position: center;
   }
 
   .profile img.rounded-circle {
