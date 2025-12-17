@@ -89,6 +89,6 @@ $$
 \end{align*}
 $$
 
-**remark**: in this case, the POVM being applied is $$\{ |\mathbf{v}\rangle \langle \mathbf{v}|\}, \mathbb{I} - |\mathbf{v}\rangle \langle \mathbf{v}|\}$$ where $$\ket{\mathbf{v}}$$ is the angle bisector between $$\ket{\psi_1}, \ket{\psi_2}$$. Phrasing things here in terms of born's rule instead of the POVM language is convenient since we're dealing with pure states. However this generalization will be critical when we are dealing with mixed states (and shows up in demonstrating optimality)
+**remark**: in this case, the POVM being applied is $$\{\vert \mathbf{v}\rangle \langle \mathbf{v}\vert, \mathbb{I} - \vert\mathbf{v}\rangle \langle \mathbf{v} \vert\}$$ where $$\ket{\mathbf{v}}$$ is the angle bisector between $$\ket{\psi_1}, \ket{\psi_2}$$. Phrasing things here in terms of born's rule instead of the POVM language is convenient since we're dealing with pure states. However this generalization will be critical when we are dealing with mixed states (and shows up in demonstrating optimality)
 
 ## generalizing to mixed states
