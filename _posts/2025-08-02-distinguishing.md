@@ -33,9 +33,11 @@ formally, the version of the state discrimination problem we will be dealing wit
 
 in order to quantify the performance of the strategies we come up with (natural or otherwise); for any algorithm $\mathcal{A}$, define how well it distinguishes two states $\ket{\psi_1}$ and $\ket{\psi_2}$ by
 
+<p style = "overflow-x:auto">
 $$
 \Delta(\mathcal{A}) := \max(\Pr\left[\text{guess } \ket{\psi_1} \;\big|\; \ket{\psi_2}\right], \Pr\left[\text{guess } \ket{\psi_2} \;\big|\; \ket{\psi_2}\right])
 $$
+</p>
 
 in words, $$\Delta$$ quantifies exactly the $$2$$ kinds of errors, we as distinguishers might make. either we guess $$\ket{\psi_1}$$ when given $$\ket{\psi_2}$$ or we guess $$\ket{\psi_2}$$ when given $$\ket{\psi_1}$$.
 
@@ -80,6 +82,7 @@ After sufficient amounts of meditation, one can show that steps $$2$$ and $$3$$ 
 It now remains to compute $$\Delta$$ for this strategy. Notice from the above description, that our strategy $$\mathcal{A}$$ is symmetric with respect to $$\ket{\psi_1}$$ and $$\ket{\psi_2}$$. Therefore without loss of generality, we may assume $$\Delta = | \langle \mathbf{v}_1 \mid \psi_1 \rangle|^2$$. Making use of the fact that the basis in which the measurement is made
 is orthonormal and the vectors $$\ket{\mathbf{v}_0}, \ket{\mathbf{v}_1}$$ are completely real, one has
 
+<p style = "overflow-x:auto">
 $$
 \begin{align*}
   \Delta &= \left| \langle \mathbf{v}_1 \mid \psi_1 \rangle\right|^2
@@ -88,7 +91,25 @@ $$
   &= \left|\frac{1}{2} + \frac{1}{2} \sin(\theta)\right| = 1/2 + \sqrt{1 - |\braket{\psi_0|\psi_1}|^2}
 \end{align*}
 $$
+</p>
 
 **remark**: in this case, the POVM being applied is $$\{\vert \mathbf{v}\rangle \langle \mathbf{v}\vert, \mathbb{I} - \vert\mathbf{v}\rangle \langle \mathbf{v} \vert\}$$ where $$\ket{\mathbf{v}}$$ is the angle bisector between $$\ket{\psi_1}, \ket{\psi_2}$$. Phrasing things here in terms of born's rule instead of the POVM language is convenient since we're dealing with pure states. However this generalization will be critical when we are dealing with mixed states (and shows up in demonstrating optimality)
 
 ## generalizing to mixed states
+As alluded to in the precursor of this text, we study the version of this problem where we are handed mixed states instead of pure ones. Recall the definition of a mixed state. A mixed state can be formally defined as a **distribution** over quantum states, i.e. $$\{p_i, \Phi_i\}_{i = 1}^n$$ indicating that with probability $$p_i$$, the state is given by $$\ket{\Phi_i}$$. Mathematically, it can be represented by 
+$$\rho = \sum \limits_{i = 1}^n p_i \vert \Phi_i \rangle \langle \Phi_i \vert$$. As in the prior set-up, we are promised to receive $$\rho$$ which is either $$\rho_1$$ or $$\rho_2$$ with equal probability. Before we analyze what the optimal quantum strategy looks like, let us answer this question classically so as to inform our intuition for quantum approaches. 
+
+### At long last, the classical analogue 
+$$\mathcal{D}_1$$ and $$\mathcal{D}
+_2 : [d] \to [0, 1]$$ are two probability distributions and we receive one sample $$x \sim \{\mathcal{D}_1, \mathcal{D}_2\}$$ and are tasked with identifying which distribution our sample came from. Classically strategies can be completely specified by functioons $$f : [d] \to \{\mathcal{D}_1, \mathcal{D}_2\}$$ where in words $$f$$ guides our guess of distribution when receiving some arbitrary sample. 
+
+### An optimal classical strategy 
+Put $$p_i := \Pr \limits_{\mathcal{D}_1}[i]$$, $$q_i := \Pr \limits_{\mathcal{D}_2}[i]$$. Further define $$\mathcal{S} := \{i \in [d] : p_i \geq q_i\}$$. The optimal strategy is now upon receiving some arbitrary sample $$j \sim \{\mathcal{D}_1, \mathcal{D}_2\}$$. If $$j \in \mathcal{S}$$, guess $$\mathcal{D}_1$$. Otherwise guess $$\mathcal{D}_2$$. Similar to above, we compute $$\Delta$$ for this strategy. Let $$j$$ be our sample. Then, we have that 
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+\Pr[\text{guess } \mathcal{D}_1 \mid i \in \mathcal{D}_2] &= 
+\end{align*}
+$$
+</p>
