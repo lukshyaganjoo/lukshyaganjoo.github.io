@@ -15,10 +15,10 @@ toc:
       - name: a remark on the form of strategies we're considering
       - name: an optimal algorithm
   - name: generalizing to mixed states
-  - subsections: 
-    - name: At long last, the classical analogue 
-    - name: an argument for (classical) optimality
-    - name: an argumeent for (quantum) optimality
+  - subsections:
+      - name: At long last, the classical analogue
+      - name: an argument for (classical) optimality
+      - name: an argumeent for (quantum) optimality
 ---
 
 ## introduction
@@ -41,13 +41,14 @@ in order to quantify the performance of the strategies we come up with (natural 
 $$
 \Delta(\mathcal{A}) := \frac{1}{2} \bigg[\Pr\left[\text{guess } \ket{\psi_1} \;\big|\; \ket{\psi_1}\right] + \Pr\left[\text{guess } \ket{\psi_2} \;\big|\; \ket{\psi_2}\right]\bigg]
 $$
-</p> where in words, $$\Delta$$ quantifies our probability of success. 
+</p> where in words, $$\Delta$$ quantifies our probability of success.
 
 ## towards an optimal algorithm
 
 ### what the naive strategy buys you
 
 the most natural strategy is to measure in a basis for which $$\ket{\psi_1}$$ is a basis element and guess "outcome $$1$$" if the measurement is $$\ket{\psi_2}$$ otherwise. The success probability from this process via Born's rule can be written as
+
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -97,15 +98,18 @@ $$
 **remark**: in this case, the POVM being applied is $$\{\vert \mathbf{v}\rangle \langle \mathbf{v}\vert, \mathbb{I} - \vert\mathbf{v}\rangle \langle \mathbf{v} \vert\}$$ where $$\ket{\mathbf{v}}$$ is the angle bisector between $$\ket{\psi_1}, \ket{\psi_2}$$. Phrasing things here in terms of born's rule instead of the POVM language is convenient since we're dealing with pure states. However this generalization will be critical when we are dealing with mixed states (and shows up in demonstrating optimality)
 
 ## generalizing to mixed states
-As alluded to in the precursor of this text, we study the version of this problem where we are handed mixed states instead of pure ones. Recall the definition of a mixed state. A mixed state can be formally defined as a **distribution** over quantum states, i.e. $$\{p_i, \Phi_i\}_{i = 1}^n$$ indicating that with probability $$p_i$$, the state is given by $$\ket{\Phi_i}$$. Mathematically, it can be represented by 
-$$\rho = \sum \limits_{i = 1}^n p_i \vert \Phi_i \rangle \langle \Phi_i \vert$$. As in the prior set-up, we are promised to receive $$\rho$$ which is either $$\rho_1$$ or $$\rho_2$$ with equal probability. Before we analyze what the optimal quantum strategy looks like, let us answer this question classically so as to inform our intuition for quantum approaches. 
 
-### At long last, the classical analogue 
+As alluded to in the precursor of this text, we study the version of this problem where we are handed mixed states instead of pure ones. Recall the definition of a mixed state. A mixed state can be formally defined as a **distribution** over quantum states, i.e. $$\{p_i, \Phi_i\}_{i = 1}^n$$ indicating that with probability $$p_i$$, the state is given by $$\ket{\Phi_i}$$. Mathematically, it can be represented by
+$$\rho = \sum \limits_{i = 1}^n p_i \vert \Phi_i \rangle \langle \Phi_i \vert$$. As in the prior set-up, we are promised to receive $$\rho$$ which is either $$\rho_1$$ or $$\rho_2$$ with equal probability. Before we analyze what the optimal quantum strategy looks like, let us answer this question classically so as to inform our intuition for quantum approaches.
+
+### At long last, the classical analogue
+
 $$\mathcal{D}_1$$ and $$\mathcal{D}
-_2 : [d] \to [0, 1]$$ are two probability distributions and we receive one sample $$x \sim \{\mathcal{D}_1, \mathcal{D}_2\}$$ and are tasked with identifying which distribution our sample came from. Classically strategies can be completely specified by functioons $$f : [d] \to \{\mathcal{D}_1, \mathcal{D}_2\}$$ where in words $$f$$ guides our guess of distribution when receiving some arbitrary sample. 
+_2 : [d] \to [0, 1]$$ are two probability distributions and we receive one sample $$x \sim \{\mathcal{D}_1, \mathcal{D}_2\}$$ and are tasked with identifying which distribution our sample came from. Classically strategies can be completely specified by functioons $$f : [d] \to \{\mathcal{D}_1, \mathcal{D}_2\}$$ where in words $$f$$ guides our guess of distribution when receiving some arbitrary sample.
 
-### An optimal classical strategy 
-Put $$p_i := \Pr \limits_{\mathcal{D}_1}[i]$$, $$q_i := \Pr \limits_{\mathcal{D}_2}[i]$$. Further define $$\mathcal{S} := \{i \in [d] : p_i \geq q_i\}$$. The optimal strategy is now upon receiving some arbitrary sample $$j \sim \{\mathcal{D}_1, \mathcal{D}_2\}$$. If $$j \in \mathcal{S}$$, guess $$\mathcal{D}_1$$. Otherwise guess $$\mathcal{D}_2$$. Similar to above, we compute $$\Delta$$ for this strategy. Let $$j$$ be our sample. Then, we have that 
+### An optimal classical strategy
+
+Put $$p_i := \Pr \limits_{\mathcal{D}_1}[i]$$, $$q_i := \Pr \limits_{\mathcal{D}_2}[i]$$. Further define $$\mathcal{S} := \{i \in [d] : p_i \geq q_i\}$$. The optimal strategy is now upon receiving some arbitrary sample $$j \sim \{\mathcal{D}_1, \mathcal{D}_2\}$$. If $$j \in \mathcal{S}$$, guess $$\mathcal{D}_1$$. Otherwise guess $$\mathcal{D}_2$$. Similar to above, we compute $$\Delta$$ for this strategy. Let $$j$$ be our sample. Then, we have that
 
 <p style = "overflow-x:auto">
 $$
@@ -115,12 +119,14 @@ $$
 &= \frac{1}{2} + \frac{1}{2} \bigg[\Pr[j \in \mathcal{S} \mid j \sim \mathcal{D}_1] - \Pr[j \in \mathcal{S} \mid j \sim \mathcal{D}_2]\bigg] \\
 &= \frac{1}{2} + \frac{1}{2} \sum_{i \in \mathcal{S}} p_i - q_i = \frac{1}{2} + \frac{1}{2} \vert \vert \mathcal{D}_1 - \mathcal{D}_2 \vert \vert_{\text{TV}}
 \end{align*}$$ 
-</p> 
+</p>
 
-where the second equality in the last line comes from our choice of $$\mathcal{S}$$ and the norm in question is referring to the [total variation distance](https://perso.lpsm.paris/~merle/slides_3.1.TV.pdf) between two probability measures. 
+where the second equality in the last line comes from our choice of $$\mathcal{S}$$ and the norm in question is referring to the [total variation distance](https://perso.lpsm.paris/~merle/slides_3.1.TV.pdf) between two probability measures.
 
-### an argument for (classical) optimality 
-Based on our above computation, optimality follows immediately. Inspired by our definition of classical strategies, put $$S := \{i : f(i) \in \mathcal{D}_1\}$$. Then to a calculation similar as the above; we obtain 
+### an argument for (classical) optimality
+
+Based on our above computation, optimality follows immediately. Inspired by our definition of classical strategies, put $$S := \{i : f(i) \in \mathcal{D}_1\}$$. Then to a calculation similar as the above; we obtain
+
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -128,9 +134,10 @@ $$
   &= \frac{1}{2} \bigg[\sum_{i \in S} p_i + \sum_{i \notin S} q_i\bigg] = \frac{1}{2} + \frac{1}{2} \bigg[\sum_{i \in S} p_i - q_i\bigg]
 \end{align*}
 </p>
-$$ 
+$$
 
-and so the above problem now reduces to choosing $$S \subseteq [d]$$ in order to maximize $$\sum \limits_{i \in S} (p_i - q_i)$$. This is friendly since the maximizing $$S^*$$ is given by 
+and so the above problem now reduces to choosing $$S \subseteq [d]$$ in order to maximize $$\sum \limits_{i \in S} (p_i - q_i)$$. This is friendly since the maximizing $$S^*$$ is given by
+
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
@@ -138,6 +145,40 @@ $$
 \end{align*}
 $$
 </p> 
-This completes the proof. 
+This completes the proof.
 
 ### an argument for (quantum) optimality
+
+The arrangement of things here is slightly strange since we haven't explicitly argued a strategy for distinguishing between two mixed states, but it may help to first see what the maximum likelihood of success is for a general quantum strategy and construct a measurement procedure (POVM) in order to acheive this. Recall form three of our quantum strategy. We may therefore assume without loss of generality that our quantum strategy consists of a two-outcome POVM $$\{\Pi_1, \Pi_1\}$$ that that when we measure outcome $$1$$, we guess $$\rho_1$$ and otherwise we guess $$\rho_2$$. The probability of success is thereby
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+\Delta &= \frac{1}{2} \bigg\{\Pr[\text{guess } \rho_1 \mid \rho_1 ] + \Pr[\text{guess } \rho_2 \mid \rho_2 ]\bigg\} \\
+&= \frac{1}{2} + \frac{1}{2} \bigg\{\Pr[\text{guess } \rho_1 \mid \rho_1 ] - \Pr[\text{guess } \rho_1 \mid \rho_2 ]\bigg\} \\
+&= \frac{1}{2} + \frac{1}{2} \left\{\text{Tr}(\Pi_1 \rho_1) - \text{Tr}(\Pi_1 \rho_2)\right\} \\
+&= \frac{1}{2} + \frac{1}{2} \text{Tr} [\Pi_1(\rho_1 - \rho_2)]
+\end{align*}
+$$
+</p> 
+and so therefore the guessing probability is given by 
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+  \textsf{OPT} := \max_{\mathbf{0} \preceq \Pi_1 \preceq \mathbb{I}} 
+  \bigg[\frac{1}{2} + \frac{1}{2} \text{Tr} [\Pi_1(\rho_1 - \rho_2)]\bigg]
+\end{align*}
+$$
+</p>
+
+The game is now completely governed by picking an appropriate $$\Pi_1$$. Now, since $$\rho_1 - \rho_2$$ is Hermitian, by the [spectral theorem](https://en.wikipedia.org/wiki/Spectral_theorem) we can write
+$$\rho_1 - \rho_2 = \sum \limits_{i} \lambda_i \vert v_i \rangle \langle v_i \vert$$ where $$\{\vert v_1 \rangle, \ldots, \vert v_n\rangle\}$$ is the shared eigenbasis and $$\lambda_i$$ are the corresponding eigenvalues. This then provides
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+  \text{Tr}[\Pi_1 (\rho_1 - \rho_2)] &= \sum_{i} \lambda_i \text{Tr}[\Pi_1 \vert v_i \rangle \langle v_i \vert] = \sum_i \lambda_i \underbrace{\langle v_i \vert \Pi_1 \vert v_i \rangle}_{\in [0, 1]} \\
+  &\leq \sum_{i : \lambda_i \geq 0} \lambda_i 
+\end{align*}
+$$
+</p>
