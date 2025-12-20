@@ -15,6 +15,10 @@ toc:
       - name: a remark on the form of strategies we're considering
       - name: an optimal algorithm
   - name: generalizing to mixed states
+  - subsections: 
+    - name: At long last, the classical analogue 
+    - name: an argument for (classical) optimality
+    - name: an argumeent for (quantum) optimality
 ---
 
 ## introduction
@@ -35,23 +39,20 @@ in order to quantify the performance of the strategies we come up with (natural 
 
 <p style = "overflow-x:auto">
 $$
-\Delta(\mathcal{A}) := \max(\Pr\left[\text{guess } \ket{\psi_1} \;\big|\; \ket{\psi_2}\right], \Pr\left[\text{guess } \ket{\psi_2} \;\big|\; \ket{\psi_2}\right])
+\Delta(\mathcal{A}) := \frac{1}{2} \bigg[\Pr\left[\text{guess } \ket{\psi_1} \;\big|\; \ket{\psi_1}\right] + \Pr\left[\text{guess } \ket{\psi_2} \;\big|\; \ket{\psi_2}\right]\bigg]
 $$
-</p>
-
-in words, $$\Delta$$ quantifies exactly the $$2$$ kinds of errors, we as distinguishers might make. either we guess $$\ket{\psi_1}$$ when given $$\ket{\psi_2}$$ or we guess $$\ket{\psi_2}$$ when given $$\ket{\psi_1}$$.
+</p> where in words, $$\Delta$$ quantifies our probability of success. 
 
 ## towards an optimal algorithm
 
 ### what the naive strategy buys you
 
-the most natural strategy is to measure in a basis for which $$\ket{\psi_1}$$ is a basis element
-and guess "outcome $$1$$" if the measurement is $$\ket{\psi_2}$$ otherwise. The measurement error from this process via Born's rule can be written as
-
+the most natural strategy is to measure in a basis for which $$\ket{\psi_1}$$ is a basis element and guess "outcome $$1$$" if the measurement is $$\ket{\psi_2}$$ otherwise. The success probability from this process via Born's rule can be written as
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
-  \Delta(\mathcal{A}) &:= \max\left(\left|\langle \psi_1 | \psi_2 \rangle\right|^2, \left|\langle \psi_2 | \psi_1 \rangle\right|^2\right) = \left|\langle \psi_1 | \psi_2 \rangle\right|^2
+  \Delta(\mathcal{A}) &:= \frac{1}{2}\bigg[\left|\langle \psi_1 | \psi_1 \rangle\right|^2 + (1 - \left|\langle \psi_1 | \psi_2 \rangle\right|^2)\bigg] \\
+  &= 1 - \frac{1}{2}\left|\langle \psi_1 | \psi_2 \rangle\right|^2
 \end{align*}
 </p>
 $$given the wording of the title of this section, it might not be surprising to most; that it is possible to do better.
@@ -71,7 +72,7 @@ After sufficient amounts of meditation, one can show that steps $$2$$ and $$3$$ 
 ### an optimal algorithm
 
 > There exists a quantum strategy $$\mathcal{A}$$ for which
-> $$\Delta(\mathcal{A}) := 1/2 + \sqrt{1 - |\braket{\psi_0|\psi_1}|^2}$$
+> $$\Delta(\mathcal{A}) := \frac{1}{2} + \frac{1}{2}\sqrt{1 - |\braket{\psi_0|\psi_1}|^2}$$
 
 **proof:** Our strategy $$\mathcal{A}$$ is as follows. Let $$\ket{\mathbf{v}_0}, \ket{\mathbf{v}_1}$$ be states in the span of $$\ket{\psi_0}, \ket{\psi_1}$$ such that $$\langle \mathbf{v}_0 \mid \mathbf{v}_1 \rangle = 0$$ and they are symmetric with respect to the angle bisector of $$\ket{\psi_0}$$ and $$\ket{\psi_1}$$ where $$\ket{\mathbf{v}_i}$$ is closer to $$\ket{\psi_i}$$. On outcome $$\ket{\mathbf{v}_i}$$ we guess $$\ket{\psi_i}$$. Illustratively, we have the following diagram.
 
@@ -88,7 +89,7 @@ $$
   \Delta &= \left| \langle \mathbf{v}_1 \mid \psi_1 \rangle\right|^2
   = \big|\braket{\psi_1|\mathbf{v}_1}\big|^2 = \|{\psi_0} \|^2 \|\mathbf{v}_0 \|^2 \cdot \cos(\angle (\psi_1, \mathbf{v}_1))^2 \\
   &= \cos^2\left(\frac{\pi/2 - \theta}{2}\right) = \bigg| \frac{1}{2} + \frac{1}{2} \cos\left(\frac{\pi}{2} - \theta\right) \bigg|\\
-  &= \left|\frac{1}{2} + \frac{1}{2} \sin(\theta)\right| = 1/2 + \sqrt{1 - |\braket{\psi_0|\psi_1}|^2}
+  &= \left|\frac{1}{2} + \frac{1}{2} \sin(\theta)\right| = \frac{1}{2} + \frac{1}{2}\sqrt{1 - |\braket{\psi_0|\psi_1}|^2}
 \end{align*}
 $$
 </p>
@@ -109,7 +110,34 @@ Put $$p_i := \Pr \limits_{\mathcal{D}_1}[i]$$, $$q_i := \Pr \limits_{\mathcal{D}
 <p style = "overflow-x:auto">
 $$
 \begin{align*}
-\Pr[\text{guess } \mathcal{D}_1 \mid i \in \mathcal{D}_2] &= 
+\Delta(\mathcal{A}) &= \frac{1}{2} \bigg[\Pr[\text{guess } \mathcal{D}_1 \mid \mathcal{D}_1] + \Pr[\text{guess } \mathcal{D}_2 \mid \mathcal{D}_2]\bigg] \\
+&= \frac{1}{2} \bigg[\Pr[\text{guess } \mathcal{D}_1 \mid \mathcal{D}_1] + 1 - \Pr[\text{guess } \mathcal{D}_1 \mid \mathcal{D}_2]\bigg] \\
+&= \frac{1}{2} + \frac{1}{2} \bigg[\Pr[j \in \mathcal{S} \mid j \sim \mathcal{D}_1] - \Pr[j \in \mathcal{S} \mid j \sim \mathcal{D}_2]\bigg] \\
+&= \frac{1}{2} + \frac{1}{2} \sum_{i \in \mathcal{S}} p_i - q_i = \frac{1}{2} + \frac{1}{2} \vert \vert \mathcal{D}_1 - \mathcal{D}_2 \vert \vert_{\text{TV}}
+\end{align*}$$ 
+</p> 
+
+where the second equality in the last line comes from our choice of $$\mathcal{S}$$ and the norm in question is referring to the [total variation distance](https://perso.lpsm.paris/~merle/slides_3.1.TV.pdf) between two probability measures. 
+
+### an argument for (classical) optimality 
+Based on our above computation, optimality follows immediately. Inspired by our definition of classical strategies, put $$S := \{i : f(i) \in \mathcal{D}_1\}$$. Then to a calculation similar as the above; we obtain 
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+  \Delta &= \frac{1}{2} \bigg[\Pr[\text{guess } \mathcal{D}_1 \mid \mathcal{D}_1] + \Pr[\text{guess } \mathcal{D}_2 \mid \mathcal{D}_2]\bigg] \\
+  &= \frac{1}{2} \bigg[\sum_{i \in S} p_i + \sum_{i \notin S} q_i\bigg] = \frac{1}{2} + \frac{1}{2} \bigg[\sum_{i \in S} p_i - q_i\bigg]
+\end{align*}
+</p>
+$$ 
+
+and so the above problem now reduces to choosing $$S \subseteq [d]$$ in order to maximize $$\sum \limits_{i \in S} (p_i - q_i)$$. This is friendly since the maximizing $$S^*$$ is given by 
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+  S^* = \{i \in [d] : p_i - q_i \geq 0\} = \{i \in [d] : p_i \geq q_i\}
 \end{align*}
 $$
-</p>
+</p> 
+This completes the proof. 
+
+### an argument for (quantum) optimality
