@@ -19,6 +19,9 @@ toc:
       - name: At long last, the classical analogue
       - name: an argument for (classical) optimality
       - name: an argumeent for (quantum) optimality
+  - name: An outline of the optimal quantum strategy
+  - name: A final connection to the trace distance
+  - name: references
 ---
 
 ## introduction
@@ -133,8 +136,8 @@ $$
   \Delta &= \frac{1}{2} \bigg[\Pr[\text{guess } \mathcal{D}_1 \mid \mathcal{D}_1] + \Pr[\text{guess } \mathcal{D}_2 \mid \mathcal{D}_2]\bigg] \\
   &= \frac{1}{2} \bigg[\sum_{i \in S} p_i + \sum_{i \notin S} q_i\bigg] = \frac{1}{2} + \frac{1}{2} \bigg[\sum_{i \in S} p_i - q_i\bigg]
 \end{align*}
-</p>
 $$
+</p>
 
 and so the above problem now reduces to choosing $$S \subseteq [d]$$ in order to maximize $$\sum \limits_{i \in S} (p_i - q_i)$$. This is friendly since the maximizing $$S^*$$ is given by
 
@@ -182,3 +185,39 @@ $$
 \end{align*}
 $$
 </p>
+
+It now remains to argue that this upper bound can actually be acheived. Indeed picking $$\Pi_1 := \sum \limits_{i : \lambda_i \geq 0} \lambda_i \vert v_i \rangle \langle v_i \vert$$ suffices to achieve the optimal value (It can also be verified that this is a valid choice of POVM).
+
+## An outline of the optimal quantum strategy
+
+After all is said and done, we can now outline the quantum strategy that is the object of today's study. Let $$\{\vert v_1 \rangle, \ldots, \vert v_n \rangle\}$$ be an eigenbasis of $$\rho_1 - \rho_2$$ with correponding eigenvalues $$\{\lambda_1, \ldots, \lambda_n\}$$. Put $$S := \{i \in [d] : \lambda_i \geq 0\}$$. The optimal strategy is on receiving $$\rho$$ to measure the state in the aforementioned eigenbasis and upon receiving outcome $$i$$, guess $$\rho_1$$ iff $$i \in S$$. Otherwise guess $$\rho_2$$.
+
+## A final connection to the trace distance
+
+The optimal success probability from our exposition above is given by
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+  \Delta_{\textsf{OPT}} &= \frac{1}{2} + \frac{1}{2} \sum_{i : \lambda_i \geq 0} \lambda_i = \frac{1}{2} + \frac{1}{4} \sum_{i} |\lambda_i| \\
+  &= \frac{1}{2} + \frac{1}{4} \vert \vert \rho_1 - \rho_2 \vert \vert_{1} = \frac{1}{2} + \frac{1}{2} \vert \vert \rho_1 - \rho_2 \vert \vert_{\text{tr}}  
+\end{align*}
+$$
+</p>
+
+where the second equality in the first line follows from $$\text{Tr}(\rho_1 - \rho_2) = 0$$ and the norms in question are the sum of the singular values of $$\rho_1 - \rho_2$$ and $$\vert \vert \cdot \vert \vert_{\text{tr}}$$ is defined to be the trace distance and is equal to half the "$$\ell_1$$-distance". This is also why sometimes the trace distance is sometimes defined as the maximum distingushing probability between two states, i.e.
+
+<p style = "overflow-x:auto">
+$$
+\begin{align*}
+  \vert \vert \rho - \sigma \vert \vert_{\text{tr}} &= \sup_{\mathbf{0} \preceq \Pi \preceq \mathbb{I}} \text{Tr}[\Pi(\rho - \sigma)] 
+\end{align*}
+$$
+</p>
+
+## references
+
+- [notes from a quantum learning class](https://drive.google.com/file/d/1fewHTiDDpVR-m96bdypWjNtV7lIwgdK0/view)
+- [distinguishing between two quantum states](https://people.eecs.berkeley.edu/~jswright/quantumlearningtheory24/scribe%20notes/lecture01.pdf)
+- [more on distinguishing between two states](https://www.cs.cmu.edu/~odonnell/quantum15/lecture17.pdf)
+- [mixed states](https://www.scottaaronson.com/qclec/6.pdf)
