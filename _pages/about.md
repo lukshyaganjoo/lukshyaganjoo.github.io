@@ -81,7 +81,8 @@ some important links if pedagogy and education in cs are interesting $$\land \lo
 - [cs education seminar](https://courses.cs.washington.edu/courses/cse590e/)
 - [association for computing and education (student rso)](https://ace.cs.washington.edu/)
 
-## miscellaneous 
+## miscellaneous
+
 - [better algorithms for quantum max cut](/assets/pdf/qmc.pdf)
 - [matrix completion via randomized basis pursuit](/assets/pdf/cse521-finalproj.pdf)
 - [a friendly introduction to algebraic geometry](/assets/pdf/commutative_algebra.pdf)
