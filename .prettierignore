@@ -7,7 +7,7 @@ assets/plotly/demo.html
 lighthouse_results/**
 _posts/2024-07-30-cauchy.md
 _posts/2024-07-30-so-i-gave-a-theory-talk.md
-_posts/2024-08-01-chebyshev.md
+_layouts/bib.liquid
 _posts/2024-08-01-fulkerson.md
 _posts/2024-08-02-matchings.md
 _posts/2024-08-03-streaming.md
