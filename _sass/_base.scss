@@ -72,7 +72,9 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
-  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
 
   &:hover {
     color: var(--global-hover-color);
@@ -256,7 +258,9 @@ ul.task-list input[type="checkbox"] {
   border-radius: 1rem;
   box-shadow: 0 10px 30px var(--global-shadow-color);
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-2px);
