@@ -124,7 +124,7 @@ $$
 \end{align*}$$ 
 </p>
 
-where the second equality in the last line comes from our choice of $$\mathcal{S}$$ and the norm in question is referring to the [total variation distance](https://perso.lpsm.paris/~merle/slides_3.1.TV.pdf) between two probability measures.
+where the second equality in the last line comes from our choice of $$\mathcal{S}$$ and the norm in question is referring to the [total variation distance](https://principlesofcryptography.com/distinguishing-in-a-probabilistic-world-part-3/) between two probability measures.
 
 ### an argument for (classical) optimality
 
