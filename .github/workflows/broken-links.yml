@@ -48,5 +48,5 @@ jobs:
         uses: lycheeverse/lychee-action@v1.9.0
         with:
           fail: true
-          # removed md files that include liquid tags
-          args: --base https://lukshyaganjoo.github.io --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --verbose --no-progress './**/*.md' './**/*.html'
+          # Check published content only; repository docs and generated output are not deployed.
+          args: --base-url https://lukshyaganjoo.github.io --exclude-path README.md --exclude-path FAQ.md --exclude-path INSTALL.md --exclude-path CONTRIBUTING.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path '_site/**' --exclude 'people.eecs.berkeley.edu' --exclude 'tandfonline.com' --exclude 'resources.mpi-inf.mpg.de' --verbose --no-progress './**/*.md' './**/*.html'
