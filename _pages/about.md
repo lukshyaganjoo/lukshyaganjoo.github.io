@@ -83,6 +83,6 @@ some important links if pedagogy and education in cs are interesting $$\land \lo
 
 ## miscellaneous
 
-- [better algorithms for quantum max cut](/assets/pdf/qmc.pdf)
+- [better algorithms for quantum max cut](/assets/pdf/qmc_pres.pdf)
 - [matrix completion via randomized basis pursuit](/assets/pdf/cse521-finalproj.pdf)
 - [a friendly introduction to algebraic geometry](/assets/pdf/commutative_algebra.pdf)
